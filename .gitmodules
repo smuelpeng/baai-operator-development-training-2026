@@ -1,0 +1,13 @@
+[submodule "lab1"]
+	path = lab1
+	url = https://gitee.com/sunxt-0719/lab1.git
+[submodule "completed_lab2"]
+	path = completed_lab2
+	url = https://gitee.com/sunxt-0719/completed_lab2
+[submodule "day2-lab5"]
+	path = day2-lab5
+	url = https://gitee.com/yihan-long/day2-lab5.git
+[submodule "FlagPrism"]
+	path = FlagPrism
+	url = https://github.com/flagos-ai/FlagPrism.git
+

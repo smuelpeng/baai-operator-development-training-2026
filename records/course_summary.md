@@ -1,0 +1,96 @@
+# 课程资料总结
+
+更新时间：2026-08-07
+
+## 一、课程与参训信息
+
+- 群名：2026智源智算课程研修班1期。
+- 时间：2026 年 8 月 4 日至 8 日；8 月 4 日上午报到，具体日程以群内通知为准。
+- 地点：北京中关村创业大街 12 号楼 5 层。
+- 装备：笔记本电脑、电源适配器。
+- 费用：研修不收费；交通、住宿、餐饮自理，按各单位要求报销。
+- 联系人：群内须知消息列出余老师、赵老师和李老师的手机号。为减少私人联系方式扩散，本整理文件不重复抄录；需要时以群内原始须知为准。
+
+## 二、已确认的学习主线
+
+### 1. BI-V150 与 Triton 基础
+
+`lab1` 面向天数智芯 BI-V150，使用 CoreX 适配的 PyTorch 和 Triton。两天实验从环境与设备执行开始，依次覆盖：
+
+1. Vector Add：program、grid、offset、mask、load/store。
+2. Softmax、LayerNorm：数值稳定性、尾块处理和 fp32 reduction。
+3. Tiled GEMM：二维 tile、stride、K-loop、`tl.dot`，fp16 输入/输出和 fp32 accumulator。
+4. Benchmark：warmup、同步、重复采样、中位数和输出复用。
+5. 调优：block sweep、scheduler sweep 与 Triton autotune。
+
+Day 1 的核心任务是补全 Vector Add kernel；Day 2 的核心任务是依据 sweep 的 PASS 结果配置少量代表性 autotune candidates。所有性能比较先经过 correctness gate，不能只保留最快结果。
+
+### 2. 算子全栈实验：Fused Add + RMSNorm
+
+`completed_lab2` 以一个融合算子贯穿 PyTorch 栈：
+
+1. 编写 Triton 前向 kernel。
+2. 推导并实现反向 kernel。
+3. 通过 PyTorch dispatcher 注册自定义算子。
+4. 验证 `torch.compile` 捕获注册算子且无 graph break。
+5. 与 PyTorch、拆分 Triton baseline 和 FlagGems 比较正确性与吞吐。
+
+算子契约为：先计算 `z = x + residual`，再用 `rrms = 1 / sqrt(mean(z*z) + eps)` 归一化，并乘以可学习权重。float32 前向和梯度误差目标低于 `2e-5`；在 `4096 x 4096` 上，融合实现吞吐目标至少达到 FlagGems 的 90%。
+
+### 3. 算子开发生态定位
+
+当前目录已有调研报告把学习生态分为几层：TileLang/Triton 负责底层 kernel；FlagGems/FlagTree/FlagPerf 分别对应 PyTorch 算子接入、多后端编译和评测；MiniCPM/LLaMA Factory 更适合作为真实模型 workload，而不是底层算子开发工具。
+
+### 4. AI 编译器、集合通信与性能工程
+
+8月6日至7日新增材料把学习主线从单算子实现扩展到系统优化：
+
+1. AI 编译器：从计算图、`torch.compile`、TorchDynamo/AOTAutograd/TorchInductor，继续下沉到 Triton/TileLang、MLIR pass 与硬件代码生成。
+2. 集合通信：围绕 Broadcast、Reduce、AllReduce、AllGather、ReduceScatter、AlltoAll，比较树形、环形和 halving-doubling 算法，并把通信量、时延和带宽写成可计算模型。
+3. 性能诊断：先做 Benchmark，再用 Roofline 判断 compute-bound 或 memory-bound，最后用 `ixsmi`、`ixsys`、`ixkn-cli` 找到 kernel 级停顿证据。
+4. Profiler/Debugger：在 Triton/IR 到设备执行之间插入观测算子，分别采集数值摘要、访存地址、完整值和时间线，解决高层语句与底层指令语义难对齐的问题。
+5. 配套 Lab：`day2-lab5` 已克隆，实验产物包括 benchmark、Roofline、诊断结果和最终报告；当前只完成代码与文档审阅，未在 BI-V150 环境运行。
+
+模块四授课版在原有 AllReduce 比较之后增加了 Broadcast 专题。分析先约定单端口、同构全连接网络和 `α + nβ` 传输模型，再讨论轮数下界、MST/二项树、消息分块流水化及 simultaneous trees。学习时需要区分“启动时延 α 的轮数优化”和“每字节成本 β 的带宽优化”，并根据消息大小选择树、环或流水方案。
+
+### 5. 教学转化、实验资源和后续支持
+
+8月7日晚新增的国转中心介绍把课程资源延伸到高校成果转化和算力申请。材料介绍免费 GPU/云资源、概念验证、中试、孵化与投融资支持，并列出大模型、具身智能、多模态、AI for Science 和 AI+产业等方向。相关规模、资金和年度目标来自宣介课件，尚未进行外部独立核验。
+
+学生实验资源申请表要求学校和教师说明课程、实验、FlagOS 相关性、共享存储、起止日期、卡数或参与人数，并另附包含手机号或邮箱的学生名单。该表涉及个人联系方式，归档时只保存空表，不代填或扩散学生信息。
+
+8月8日教学研讨安排为：
+
+- 09:00-10:30：王晶教授，人工智能课程体系建设及赛教融合。
+- 10:30-10:45：茶歇。
+- 10:45-11:00：高校 AI 系统软件教学现状交流。
+- 11:00-11:15：课程内容与教学方法讨论。
+- 11:15-11:30：实验平台与 AI 教育平台讨论。
+- 11:30-12:00：结业仪式与证书颁发。
+
+日程封面写“周六”，正文页误写“周五”；2026年8月8日实际为周六。
+
+## 三、建议的学习记录模板
+
+每次实验至少记录：
+
+- 仓库 commit SHA、分支和是否有本地修改；
+- 设备型号、驱动、CoreX、PyTorch、Triton 版本；
+- 测试 shape、dtype、tile/config；
+- correctness gate、最大误差、NaN/Inf 检查；
+- warmup、同步、采样次数、统计量；
+- PASS/FAIL、资源错误和原因；
+- 与 baseline/FlagGems 的公平比较口径。
+
+## 四、课件归档状态
+
+截至2026年8月7日23:30，已从微信本地文件缓存归档26份唯一PDF和1份DOCX，共136.09 MiB，覆盖通知、研修须知、8月8日教学研讨日程、实验资源申请表，以及8月4日至7日已落盘课程材料。详见 `records/courseware_inventory.md`。
+
+以下内容尚未声称完成：
+
+- 群聊消息的逐条回溯与完整摘要；
+- 8月8日活动结束后的最终增量检查；
+- 对群内其他 Gitee 链接的完整性核验；
+- 群文件发布者和每条文件消息时间的逐项映射。
+
+后续应继续在 `source_ledger.md` 中补充发布者、发布时间和对应群消息。
