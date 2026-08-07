@@ -1,0 +1,9 @@
+{
+  "name": "BI-V150",
+  "arch": "ivcore11",
+  "notes": "Verify peak_tflops_fp16 and hbm_bandwidth_GBps against the BI-V150 datasheet on FlagOS, then edit the YOUR CODE HERE block in configs/student_todos.py (or overwrite these two fields).",
+  "peak_tflops_fp16": 192.0,
+  "hbm_bandwidth_GBps": 1228.8,
+  "hbm_capacity_GB": 64,
+  "memory_type": "HBM2e"
+}

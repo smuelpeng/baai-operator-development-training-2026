@@ -1,8 +1,10 @@
-# 微信群课件归档清单
+# 课件归档清单
 
 归档时间：2026-08-07
 
 来源：微信群“2026智源智算课程研修班1期”的微信本地文件缓存。
+
+本地位置：五个主模块位于 `materials/courseware/`，专题材料位于 `materials/seminars/`，平台说明位于 `materials/platform/`，通知与表格位于 `materials/administration/`。带个人姓名的邀请函单独放在 `materials/administration/private/`。
 
 ## 归档结果
 

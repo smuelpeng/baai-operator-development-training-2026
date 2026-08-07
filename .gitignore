@@ -2,7 +2,8 @@
 **/.DS_Store
 tmp/
 logs/
+**/__pycache__/
+*.py[cod]
 *.swp
 *.tmp
 ~$*
-

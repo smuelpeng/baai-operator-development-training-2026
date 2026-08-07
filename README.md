@@ -1,45 +1,84 @@
-# 2026 智源智算课程研修班 1 期：算子开发资料归档
+# 从 Triton 算子到系统性能：2026 智源智算研修班学习仓库
 
-本仓库用于保存并整理“2026智源智算课程研修班1期”的内部学习资料。课程时间为 2026 年 8 月 4 日至 8 日，地点为北京中关村创业大街 12 号楼 5 层。
+这是一套面向高校教师和学生的算子开发课程。主线从一个 Triton kernel 出发，经过算子融合、AI 编译器、分布式通信，最终落到 Benchmark、Roofline 与 Profiler 的性能证据。
 
-> 内部资料：仓库应保持为 GitHub 私有仓库。课件、名单模板、邀请函和群内资料不得公开转载；具体使用范围以主办方要求为准。
+课程原始资料来自“2026 年暑期全国高校人工智能自主软硬件技术课程公益研修班（第一期）”。本仓库在保留课件和代码快照的基础上，补充了教学顺序、学习目标、实验任务、产出要求和验收标准。
 
-## 目录
+> 使用范围：仓库包含内部课件、通知和邀请函，必须保持 Private。转发、授课和二次使用前请遵守主办方及原作者的授权要求。
 
-- `lab1/`：Git 子模块，BI-V150 上的 Triton 两日实验。
-- `completed_lab2/`：Git 子模块，Fused Add + RMSNorm 完整算子实验。
-- `day2-lab5/`：Git 子模块，Benchmark、Roofline 和 Profiling 实验。
-- `FlagPrism/`：Git 子模块，FlagTree Debugger/Profiler 工具套件。
-- `chat_files/`：微信群课件原件，按通知和课程日期分类。
-- `records/course_summary.md`：课程内容、学习主线与待办总结。
-- `records/source_ledger.md`：来源、版本、同步状态与完整性记录。
-- `records/courseware_inventory.md`：26份PDF和1份DOCX的分类、页数与版本记录。
-- `records/courseware.sha256`：课件原件的SHA-256清单。
-- `records/source_manifest.sha256`：已归档文件的 SHA-256 清单。
-- `ai_open_source_components_research_report.md`：当前目录已有的算子开发开源组件调研报告。
+## 一条完整的学习路径
 
-## 获取仓库
-
-```bash
-git clone --recurse-submodules git@github.com:smuelpeng/baai-operator-development-training-2026.git
+```text
+异构计算与 Triton
+        ↓ 写出正确 kernel
+高性能算子与融合
+        ↓ 理解调度、注册和融合收益
+AI 编译器
+        ↓ 看懂 Python → TTIR → TTGIR → LLVM/设备代码
+分布式训练与通信
+        ↓ 从单卡算子进入多卡系统
+性能评测与诊断
+        ↓ 用 Benchmark → Roofline → Profiler 形成证据闭环
 ```
 
-若已完成普通 clone：
+## 五个模块
+
+| 模块 | 核心问题 | 实践入口 | 学习产出 |
+|---|---|---|---|
+| [01 AI 系统软件与 Triton](modules/01-ai-system-and-triton/) | kernel 如何映射到异构硬件？ | Vector Add、Softmax、LayerNorm、GEMM、Autotune | 正确性记录与 GEMM 调优报告 |
+| [02 高性能 AI 算子](modules/02-high-performance-operators/) | 融合为什么会快，什么时候会变慢？ | Fused Add + RMSNorm 前向、反向、Dispatcher | 学生实现、测试结果、性能对照 |
+| [03 AI 编译器](modules/03-ai-compiler/) | 一段 Triton 代码如何变成设备指令？ | 编译链追踪、IR 对照阅读 | 一份算子 lowering 地图 |
+| [04 分布式训练与通信](modules/04-distributed-training-and-communication/) | 多卡训练的显存、通信与流水如何权衡？ | ZeRO/并行策略分析、AllReduce 推演 | 通信成本表与策略说明 |
+| [05 性能工程](modules/05-performance-engineering/) | 如何证明优化有效并定位瓶颈？ | Benchmark、Roofline、Profiling、FlagPrism | 可复核的性能诊断报告 |
+
+## 建议用法
+
+学生按模块顺序学习。每个模块先读模块 README 中的“进入条件”和“概念地图”，再完成课件阅读、实验或推演任务，最后提交列出的产出物。教师可直接使用 [教师授课指南](docs/TEACHING_GUIDE.md) 组织 5 天集中课或 10 次常规课。
 
 ```bash
-git submodule update --init --recursive
+git clone git@github.com:smuelpeng/baai-operator-development-training-2026.git
+cd baai-operator-development-training-2026
 ```
 
-## 使用原则
+实验依赖 BI-V150、CoreX 适配的 PyTorch/Triton 及 FlagOS 工具。请先阅读 [环境说明](docs/ENVIRONMENT.md)，不要用公开版 `torch` 或 `triton` wheel 覆盖平台环境。
 
-1. 群文件原件保持原文件名，不直接修改；整理性说明放在 `records/`。
-2. 外部代码仓库以 Git 子模块固定 commit，保留上游来源和版本证据。
-3. 任何实验结果必须同时记录设备、软件版本、shape、dtype、正确性结果和性能口径。
-4. BI-V150 使用 CoreX 的 CUDA 兼容接口，但不是 NVIDIA GPU；API 兼容、源码可移植和性能可移植应分别判断。
+## 教学导航
 
-## 当前归档状态
+- [课程地图](docs/COURSE_MAP.md)：先修知识、模块关系和学习节奏。
+- [教师授课指南](docs/TEACHING_GUIDE.md)：讲授重点、课堂问题、实验组织和易错点。
+- [原班日程与复用课表](docs/SCHEDULE.md)：研修班原日程和可复用的 5 天安排。
+- [环境说明](docs/ENVIRONMENT.md)：BI-V150、CoreX、FlagOS 和实验边界。
+- [作业与验收](docs/ASSESSMENT.md)：每个模块的提交物和评分口径。
+- [课件索引](materials/README.md)：主课件、专题材料、平台资料与行政文件。
+- [课程内容总结](records/course_summary.md)：对全部材料的内容级总结。
 
-- 26 份唯一 PDF、1 份 DOCX，共 136.09 MiB。
-- 4 个实验或工具仓库以子模块引用。
-- 微信群消息尚未完成逐条回溯；当前材料范围以 `records/source_ledger.md` 为准。
-- Notion 正文草稿保存在 `records/0807_materials_update.md`，尚未同步到原知识库。
+## 仓库结构
+
+```text
+.
+├── modules/                 # 五个可教学模块
+│   ├── 01-ai-system-and-triton/
+│   ├── 02-high-performance-operators/
+│   ├── 03-ai-compiler/
+│   ├── 04-distributed-training-and-communication/
+│   └── 05-performance-engineering/
+├── materials/               # 原始课件、专题材料、平台与行政文件
+├── docs/                    # 课程地图、授课指南、课表、环境和验收
+├── records/                 # 来源、版本、文件清单和 SHA-256
+└── ai_open_source_components_research_report.md
+```
+
+五个 Gitee 教学仓库和 FlagPrism 均已转为普通目录。GitHub 页面可以直接浏览源码，不需要初始化 submodule。每份源码的上游地址和固定提交见 [代码来源清单](records/code_repository_inventory.md)。
+
+## 学习记录的最低要求
+
+一次可信实验需要同时保存：
+
+- 源码 commit、设备型号和软件版本；
+- shape、dtype、tile/config 与测试命令；
+- correctness gate、误差、NaN/Inf 和失败配置；
+- warmup、同步、样本数、median/P99 等统计口径；
+- 基线与优化实现的公平对照；
+- 结论对应的原始 JSON、trace 或 profiler 证据。
+
+当前仓库完成了资料归档、课程化重组和静态检查；没有在本机声称完成 BI-V150 实验运行。实验结果应由授课环境重新生成。

@@ -1,27 +1,24 @@
 # 来源与同步台账
 
-更新时间：2026-08-07
+更新时间：2026-08-08
 
-| 资料 | 来源 | 当前版本/状态 | 本地位置 | 备注 |
+| 资料 | 来源 | 当前状态 | 本地位置 | 证据边界 |
 |---|---|---|---|---|
-| BI-V150 Triton 试听实验 | `https://gitee.com/sunxt-0719/lab1` | `main@1969ed2741c5dbadf8961c85d827e7d05e3f0c30` | `lab1/` | 2026-08-05 重新克隆到当前归档目录；HEAD 提交时间 2026-08-04 13:05:04 +08:00 |
-| Fused Add + RMSNorm Lab | `https://gitee.com/sunxt-0719/completed_lab2` | `master@3ba8e2d6d94556ba45be9ce15c8751d44986affe` | `completed_lab2/` | 2026-08-05 执行 `git pull --ff-only`，结果为 Already up to date；HEAD 提交时间 2026-08-05 08:13:56 +08:00 |
-| 模块五配套实验 day2-lab5 | `https://gitee.com/yihan-long/day2-lab5` | `master@5fb8557f19fffb14f2c0316f0b26fe4fa026a52f` | `day2-lab5/` | 2026-08-07 克隆；覆盖 Benchmark、Roofline、ixsmi/ixsys/ixkn Profiling 与报告生成；尚未在 BI-V150 上运行 |
-| FlagPrism | `https://github.com/flagos-ai/FlagPrism` | `main@8d2647ba280aa66e328ff606f1ffb9a4e2962947` | `FlagPrism/` | 2026-08-07 克隆；仓库 README 标注 active development，提供 FlagTree Debugger/Profiler 可选组件入口 |
-| GitHub 私有归档仓库 | `https://github.com/smuelpeng/baai-operator-development-training-2026` | `main@cb9871ffade4c2f6721f30bc7d87bb44a5e515bf`（首次归档提交） | 当前工作区根目录 | 2026-08-07 创建并完成首次推送；仓库可见性已核验为 Private，课件原件直接保存，4个外部代码仓库使用子模块固定版本 |
-| 微信群通知与课件 | 微信本地文件缓存 | 已归档26份唯一PDF和1份DOCX，共136.09 MiB | `chat_files/` | 覆盖通知、日程及8月4日至8日已落盘材料；另登记1个与预习版 SHA 相同的授课版文件名别名 |
-| 微信群对话 | “2026智源智算课程研修班1期”，界面显示 90 名成员 | 待完整回溯 | `records/course_summary.md` | 已记录截图可核验的新文件和仓库链接；微信目前要求扫码重新登录，未把未读取消息视为已总结 |
-| WeChat MCP 读取通道 | `BiboyQG/WeChat-MCP`（第三方开源项目） | 已注册并通过 MCP 握手；23:30 再次读取未成功 | Codex MCP 名称 `wechat-mcp` | 微信进程可激活，但当前客户端未向 AX 暴露聊天标题、会话列表或搜索框；新增文件改由本地缓存补齐。它不是腾讯官方 API |
-| 8月8日教学研讨 | 微信缓存 PDF | 已归档并提取日程 | `chat_files/00_通知与日程/8月8日教学研讨日程安排_2026年暑期研修班.pdf` | PDF封面写周六，正文标题误写周五；2026-08-08实际为周六。09:00开始，12:00结束 |
-| 学生实验资源申请 | 微信缓存 DOCX | 已归档，待按需填写 | `chat_files/00_通知与日程/附录3+学生实验资源申请表v3.docx` | 申请需说明与FlagOS关系、实验窗口、共享存储、卡数/学生人数和学生联系方式；不擅自填写个人信息 |
-| 全国高校人工智能区域技术转移转化中心（北京）介绍 | 微信缓存 PDF | 已归档并初读 | `chat_files/05_0807课件/0807——国转中心介绍.pdf` | 介绍高校成果转化、免费算力、项目征集、孵化和基金支持；项目/资金/人数为课件宣介口径，未做外部独立核验 |
-| 算子开发开源组件调研 | 当前工作区已有文件 | 未绑定群内来源 | `ai_open_source_components_research_report.md` | 保留为辅助学习资料，不冒充群文件 |
-| Notion：算子开发知识库｜智源智算研修班 | `https://app.notion.com/p/f467fd7204e44bd384a29ee3f00cdf74` | 原有19条记录；本次新增待同步5条、待更新1条 | 数据源 `collection://efabea14-d470-4e1b-81ee-3d8d7dc3a01f` | 2026-08-07 连接器登录到了另一 Notion 工作区，为避免误写已停止同步；完整正文草稿见 `records/0807_materials_update.md` |
+| 五个 Gitee 课程仓库 | 群内发布的 Gitee 地址 | 固定提交已归档 | `modules/01-*`、`modules/02-*`、`modules/05-*` | 版本与用途见 `code_repository_inventory.md`；未声称实验已运行 |
+| FlagPrism | `https://github.com/flagos-ai/FlagPrism` | `main@8d2647b...` 固定快照 | `modules/05-performance-engineering/tools/FlagPrism/` | README 标注 active development |
+| 课程课件 | 微信本地文件缓存 | 26 份唯一 PDF、1 份 DOCX | `materials/` | 页数、大小、版本差异见 `courseware_inventory.md` |
+| GitHub 私有课程仓库 | `https://github.com/smuelpeng/baai-operator-development-training-2026` | `main` | 当前工作区 | 课件和源码均直接保存，无 submodule |
+| 微信群对话 | “2026智源智算课程研修班1期” | 尚未完成逐条回溯 | `records/course_summary.md` | 已核对截图可见信息与本地缓存；未读取消息不写成已总结 |
+| WeChat MCP | 第三方 `BiboyQG/WeChat-MCP` | 已注册，当前 UI 可访问性不足 | `logs/wechat_mcp.log` | 并非腾讯官方 API；不能据此声称群消息完整 |
+| 腾讯会议 | 会议号 `466-8665-3784` | 只有会议号，尚无可定位录制 ID/回放链接 | 待补 | 会议号本身不能证明录制存在，也不能直接取得逐字稿 |
+| 8 月 8 日教学研讨 | 群内 PDF | 已归档并提取日程 | `materials/administration/8月8日教学研讨日程安排_2026年暑期研修班.pdf` | 封面写周六，正文误写周五；实际日期为周六 |
+| 学生实验资源申请 | 群内 DOCX | 保存空表 | `materials/administration/附录3+学生实验资源申请表v3.docx` | 不代填或扩散学生联系方式 |
+| 国转中心介绍 | 群内 PDF | 已归档并初读 | `materials/seminars/0807——国转中心介绍.pdf` | 规模、资金和年度目标按宣介课件记录，未独立核验 |
+| Notion 知识库 | 原“算子开发知识库｜智源智算研修班” | 正文草稿保存在本地，尚未同步 | `records/0807_materials_update.md` | 连接器登录到另一工作区时已停止写入，避免误建空记录 |
 
 ## 完整性约定
 
-- `已同步` 只表示本地仓库与远端对应分支一致，不代表实验已运行通过。
-- 当前归档覆盖截至2026-08-07 23:30已落入微信本地缓存、且能通过名称或群截图确认属于本研修班的文件；已包含8月8日教学研讨安排和实验资源申请表。
-- 群消息中的 `FlagPrism/pull/68/changes` 链接当前返回 404，且仓库远端不存在可直接 fetch 的 `pull/68/head`；已保留为待核验线索，不写成已确认变更。
-- 微信截图中可见信息与 Gitee 仓库内容分开记账，避免把推断写成群内事实。
-- Notion 中的“已入库”表示元数据、学习入口和证据边界已经建立，不表示课件已经逐页精读；精读完成后再更新“学习状态”“事实核验”“突出贡献”和正文笔记。
+- 课程源码与课件的 SHA-256 由 `source_manifest.sha256` 和 `courseware.sha256` 记录。
+- 5 个 Gitee 仓库为 `lab1`、`lab1-day2`、`lab2`、`completed_lab2`、`day2-lab5`；FlagPrism 是独立 GitHub 工具仓库。
+- 群消息中的 `FlagPrism/pull/68/changes` 当前返回 404，远端也没有可直接 fetch 的 `pull/68/head`，保持为待核验线索。
+- 课件内容、群截图和外部仓库分别记账。推断、课件声称和本地实测不能混写。

@@ -10,7 +10,7 @@
 
 - 日期：2026-08-06
 - 版本：授课版，34 页；预习版为 32 页，两版均保留。
-- 本地文件：`chat_files/04_0806课件/0806-课件-授课版本-模块三：AI 编译器原理与优化.pdf`
+- 本地文件：`materials/courseware/module-03/0806-课件-授课版本-模块三：AI 编译器原理与优化.pdf`
 - SHA-256：`e47dc4834611d05aff1e273b04edb90fcf057707082764b4ec70e415f338493d`
 - 一句话：把 PyTorch 计算图经过 `torch.compile`、DSL、MLIR/LLVM lowering 到硬件代码的路径串成完整编译链，并解释图优化和 pass 在哪一层发生。
 
@@ -29,7 +29,7 @@
 ## 二、模块四：分布式通信原语与拓扑优化（新增）
 
 - 日期：2026-08-07
-- 本地文件：`chat_files/05_0807课件/0807-课件-预习版本-模块四：分布式通信原语.pdf`
+- 本地文件：`materials/courseware/module-04/0807-课件-预习版本-模块四：分布式通信原语.pdf`
 - 页数：39
 - SHA-256：`a965c3bba8547724a30688d89660f0b13acd7edc14776e08fb39166592082719`
 - 一句话：用集合通信原语、网络拓扑和 α-β 成本模型解释分布式训练中 AllReduce 算法为何要随消息规模切换。
@@ -56,7 +56,7 @@
 ## 三、模块五：性能评测与下一代内核生成（新增）
 
 - 日期：2026-08-07
-- 本地文件：`chat_files/05_0807课件/0807-课件-预习版本-模块五：性能评测与下一代内核生成.pdf`
+- 本地文件：`materials/courseware/module-05/0807-课件-预习版本-模块五：性能评测与下一代内核生成.pdf`
 - 页数：38
 - SHA-256：`f985e98bc973ee33f1d709d705367c3149dc335622c0a63058d1364f6e2a5e5c`
 - 关联实验：`https://gitee.com/yihan-long/day2-lab5`
@@ -87,7 +87,7 @@ Autotuning 的搜索变量包括 tiling、unrolling、vectorization 与线程/�
 
 - 日期：2026-08-07
 - 讲师：周炽金（水木羽林研究员、华东师范大学助理教授，按课件署名）
-- 本地文件：`chat_files/05_0807课件/基于 FlagTree 生态的 Profiler&Debugger 初探 - 周炽金 老师.pdf`
+- 本地文件：`materials/courseware/module-05/基于 FlagTree 生态的 Profiler&Debugger 初探 - 周炽金 老师.pdf`
 - 页数：23
 - SHA-256：`7ac96f0508f4cf4cd4f1390b8a54bd1ab99202788d4a4341ee8e0a88c724d140`
 - 关联仓库：`https://github.com/flagos-ai/FlagPrism`
@@ -121,8 +121,8 @@ Profiler 输出包括 `profile.timeline.json`、`profile.hatchet`、`profile.met
 
 - 来源：Gitee
 - 地址：`https://gitee.com/yihan-long/day2-lab5`
-- 本地目录：`day2-lab5/`
-- 版本：`master@5fb8557f19fffb14f2c0316f0b26fe4fa026a52f`
+- 本地目录：`modules/05-performance-engineering/labs/performance-analysis/`
+- 版本：`main@5fb8557f19fffb14f2c0316f0b26fe4fa026a52f`
 - 提交时间：2026-07-31 17:18:35 +0800
 - 一句话：把同一 GEMM workload 的速度、瓶颈类型和 kernel 级停顿串成三层证据，并自动汇总实验报告。
 
@@ -143,7 +143,7 @@ Profiler 输出包括 `profile.timeline.json`、`profile.hatchet`、`profile.met
 
 - 来源：GitHub
 - 地址：`https://github.com/flagos-ai/FlagPrism`
-- 本地目录：`FlagPrism/`
+- 本地目录：`modules/05-performance-engineering/tools/FlagPrism/`
 - 版本：`main@8d2647ba280aa66e328ff606f1ffb9a4e2962947`
 - 提交时间：2026-08-05 18:01:47 +0800
 - 一句话：作为 FlagTree 的可选组件集合，为不同后端提供统一的 Debugger/Profiler 构建入口与共享插桩能力。
