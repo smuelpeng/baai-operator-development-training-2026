@@ -8,6 +8,7 @@
 | Fused Add + RMSNorm Lab | `https://gitee.com/sunxt-0719/completed_lab2` | `master@3ba8e2d6d94556ba45be9ce15c8751d44986affe` | `completed_lab2/` | 2026-08-05 执行 `git pull --ff-only`，结果为 Already up to date；HEAD 提交时间 2026-08-05 08:13:56 +08:00 |
 | 模块五配套实验 day2-lab5 | `https://gitee.com/yihan-long/day2-lab5` | `master@5fb8557f19fffb14f2c0316f0b26fe4fa026a52f` | `day2-lab5/` | 2026-08-07 克隆；覆盖 Benchmark、Roofline、ixsmi/ixsys/ixkn Profiling 与报告生成；尚未在 BI-V150 上运行 |
 | FlagPrism | `https://github.com/flagos-ai/FlagPrism` | `main@8d2647ba280aa66e328ff606f1ffb9a4e2962947` | `FlagPrism/` | 2026-08-07 克隆；仓库 README 标注 active development，提供 FlagTree Debugger/Profiler 可选组件入口 |
+| GitHub 私有归档仓库 | `https://github.com/smuelpeng/baai-operator-development-training-2026` | `main@cb9871ffade4c2f6721f30bc7d87bb44a5e515bf`（首次归档提交） | 当前工作区根目录 | 2026-08-07 创建并完成首次推送；仓库可见性已核验为 Private，课件原件直接保存，4个外部代码仓库使用子模块固定版本 |
 | 微信群通知与课件 | 微信本地文件缓存 | 已归档26份唯一PDF和1份DOCX，共136.09 MiB | `chat_files/` | 覆盖通知、日程及8月4日至8日已落盘材料；另登记1个与预习版 SHA 相同的授课版文件名别名 |
 | 微信群对话 | “2026智源智算课程研修班1期”，界面显示 90 名成员 | 待完整回溯 | `records/course_summary.md` | 已记录截图可核验的新文件和仓库链接；微信目前要求扫码重新登录，未把未读取消息视为已总结 |
 | WeChat MCP 读取通道 | `BiboyQG/WeChat-MCP`（第三方开源项目） | 已注册并通过 MCP 握手；23:30 再次读取未成功 | Codex MCP 名称 `wechat-mcp` | 微信进程可激活，但当前客户端未向 AX 暴露聊天标题、会话列表或搜索框；新增文件改由本地缓存补齐。它不是腾讯官方 API |

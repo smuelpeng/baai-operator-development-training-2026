@@ -21,7 +21,7 @@
 ## 获取仓库
 
 ```bash
-git clone --recurse-submodules <private-repository-url>
+git clone --recurse-submodules git@github.com:smuelpeng/baai-operator-development-training-2026.git
 ```
 
 若已完成普通 clone：
