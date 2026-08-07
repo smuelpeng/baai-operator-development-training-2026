@@ -6,6 +6,35 @@
 
 > 使用范围：仓库包含内部课件、通知和邀请函，必须保持 Private。转发、授课和二次使用前请遵守主办方及原作者的授权要求。
 
+## 用 AI Coding 开始第一个算子任务
+
+仓库已经内置编码助手需要的项目上下文、任务路由、开发规则、验证脚本和 Triton 任务脚手架。
+
+```bash
+# 1. 查看 AI 必读入口
+make context
+
+# 2. 创建独立算子工作区
+make new-task NAME=fused-silu TITLE="Fused SiLU"
+
+# 3. 填写算子合同
+open workspaces/fused-silu/TASK.md
+
+# 4. 做不依赖加速卡的仓库检查
+make validate
+```
+
+然后向 AI Coding 助手发送：
+
+```text
+阅读 AGENTS.md、docs/AI_CONTEXT.md、docs/KNOWLEDGE_INDEX.md，
+以及 workspaces/fused-silu/TASK.md。
+先复述算子合同、正确性矩阵和最小 kernel 设计，再开始修改代码。
+正确性通过前不要调优；缺少 BI-V150 时不要生成虚构性能结果。
+```
+
+详细流程见 [AI 辅助算子开发手册](docs/OPERATOR_DEVELOPMENT_PLAYBOOK.md)。
+
 ## 一条完整的学习路径
 
 ```text
@@ -44,6 +73,11 @@ cd baai-operator-development-training-2026
 
 ## 教学导航
 
+- [AI Coding 项目上下文](docs/AI_CONTEXT.md)：可直接供编码助手读取的平台事实与代码地图。
+- [算子开发知识索引](docs/KNOWLEDGE_INDEX.md)：按问题定位最短代码与课件路径。
+- [AI 辅助算子开发手册](docs/OPERATOR_DEVELOPMENT_PLAYBOOK.md)：从任务合同到正确性、调优和交付。
+- [AI Coding 任务配方](docs/AI_TASK_RECIPES.md)：可复制的新 kernel、融合、调优和诊断请求。
+- [算子开发任务目录](docs/TASK_CATALOG.md)：从 T01 到 T10 的可直接分配任务与最快学习路线。
 - [课程地图](docs/COURSE_MAP.md)：先修知识、模块关系和学习节奏。
 - [教师授课指南](docs/TEACHING_GUIDE.md)：讲授重点、课堂问题、实验组织和易错点。
 - [原班日程与复用课表](docs/SCHEDULE.md)：研修班原日程和可复用的 5 天安排。
@@ -56,6 +90,8 @@ cd baai-operator-development-training-2026
 
 ```text
 .
+├── AGENTS.md                # AI Coding 默认操作手册
+├── Makefile                 # 新建任务与仓库验证入口
 ├── modules/                 # 五个可教学模块
 │   ├── 01-ai-system-and-triton/
 │   ├── 02-high-performance-operators/
@@ -64,6 +100,9 @@ cd baai-operator-development-training-2026
 │   └── 05-performance-engineering/
 ├── materials/               # 原始课件、专题材料、平台与行政文件
 ├── docs/                    # 课程地图、授课指南、课表、环境和验收
+├── templates/               # 可复制的 Triton 算子任务脚手架
+├── workspaces/              # 新算子与调优任务的独立工作区
+├── scripts/                 # 任务生成和无硬件静态检查
 ├── records/                 # 来源、版本、文件清单和 SHA-256
 └── ai_open_source_components_research_report.md
 ```
