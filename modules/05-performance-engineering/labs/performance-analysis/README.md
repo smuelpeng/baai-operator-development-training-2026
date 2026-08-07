@@ -11,12 +11,12 @@ Lab1 Day1–2 解决「如何写出并调好 Triton GEMM」；本模块解决：
 ## Quick Start
 
 ```bash
-cd day2-lab5
+cd modules/05-performance-engineering/labs/performance-analysis
 bash setup.sh
 python3 00_check_env.py
 python3 00_smoke_cuda.py
 
-export LAB_DAY2_ROOT=$PWD/../lab1-day2   # 推荐：对接 Day2 GEMM
+export LAB_DAY2_ROOT="$PWD/../../../01-ai-system-and-triton/labs/gemm-tuning"
 
 python3 01_benchmark.py --scenario offline
 python3 01_benchmark.py --scenario server

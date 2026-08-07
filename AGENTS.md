@@ -11,6 +11,8 @@
 3. `docs/KNOWLEDGE_INDEX.md`：根据问题找到最短参考路径；
 4. 对应模块 README 与最接近的代码样例。
 
+需要进入 FlagOS 实例时，另读 `docs/FLAGOS_ONLINE_LAB.md`，先保存实例配额、运行时路径和设备指纹，再执行实验。
+
 如果任务没有 `TASK.md`，先用 `python3 scripts/new_operator_task.py <name>` 创建工作区，再补全任务合同。合同不明确时可以实现参考函数和测试框架，但不能猜测会改变算子语义的行为。
 
 ## 任务路由
@@ -79,6 +81,7 @@
 - `cuda:0` 和 `torch.cuda` 是 CoreX 兼容接口，不代表 NVIDIA 硬件。
 - 课程环境记录的 warp size 为 64。不要默认采用 32-thread warp 假设。
 - 不要安装公开版 `torch` 或 `triton` 覆盖平台适配版本。
+- CoreX 4.4 中的 `torch.__version__` 可能不含 `+corex`；结合 `torch.__file__`、`COREX_HOME`、库路径、设备属性和最小 kernel 判断环境。
 - 其他平台的 tile、二进制和性能数字只能作为候选假设，需要在目标平台重测。
 - 缺少 BI-V150 时可以完成静态分析、参考实现、测试设计和语法检查；报告必须写明“未在目标平台运行”。
 

@@ -29,9 +29,9 @@ def _fused_add_rms_norm_kernel(
     tl.store(updated_residual_ptr + row_offsets, updated, mask=mask)
 
     variance = tl.sum(updated * updated, axis=0) / n_cols
-    # TODO BEGIN: Compute the reciprocal RMS and apply normalization + weight.
-
-    # TODO END
+    # Complete reference: reciprocal RMS followed by per-column weighting.
+    rrms = 1.0 / tl.sqrt(variance + eps)
+    out = updated * rrms * weight
     tl.store(out_ptr + row_offsets, out, mask=mask)
 
 def naive_add_rms_norm(x, residual, weight, eps=1e-6):

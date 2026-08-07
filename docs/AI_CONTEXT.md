@@ -23,6 +23,9 @@
 - 典型 GEMM：fp16 输入/输出、fp32 accumulator。
 
 兼容接口不等于 NVIDIA 设备。平台相关配置和性能必须在 BI-V150 上验证。
+FlagOS 实例配额、CoreX 环境指纹和低风险上机顺序见
+[`FLAGOS_ONLINE_LAB.md`](FLAGOS_ONLINE_LAB.md)。CoreX 4.4 的版本字符串可能不含
+`+corex`，核验时还要读取包路径、运行时路径、设备属性并执行最小 kernel。
 
 ## 最短代码地图
 
@@ -55,7 +58,8 @@
 
 - 课程源码、课件和来源已经归档并校验；
 - 本仓库所在 Mac 不具备已确认的 BI-V150/CoreX 环境；
-- 仓库中的性能目标来自课程实验要求，不能当作本机复现结果；
+- 2026-08-08 已在 FlagOS 一卡 BI-V150 实例动态验证模块 1、2、5 的代表性链路，命令、固定提交和结果见 [`records/experiments/2026-08-08-flagos-bi-v150-validation.md`](../records/experiments/2026-08-08-flagos-bi-v150-validation.md)；
+- 模块 3、4 和双卡路径仍未动态验收，课件中的性能目标不能当作现有复现结果；
 - 新任务应在 `workspaces/` 开发，避免覆盖固定上游快照。
 
 ## 给 AI 的最小请求格式

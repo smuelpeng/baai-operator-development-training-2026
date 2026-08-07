@@ -8,8 +8,11 @@ This lab follows one operator through the PyTorch stack:
 4. Verify that torch.compile captures the registered operator without a graph break.
 5. Compare the fused implementation with PyTorch, a split Triton baseline, and FlagGems.
 
-The complete reference implementation remains one directory above this lab.
-Do not copy it into the lab directory while solving the exercises.
+The complete reference implementation is the sibling lab at
+`../fused-rmsnorm-reference/` relative to this README. From the runnable
+`rmsnorm_fusion_lab/` directory, its path is
+`../../fused-rmsnorm-reference/`. Do not copy it into the student lab while
+solving the exercises.
 
 ## Operator Contract
 
@@ -39,16 +42,23 @@ the original input dtype.
 `benchmark.py` is intentionally complete.  It is the final acceptance harness
 and must use the installed FlagGems implementation rather than a local fallback.
 
+The TODO markers in this student copy are intentional teaching checkpoints,
+not missing files or an incomplete download. The validation commands below are
+expected to pass only after TODO(1-5) have been completed; keep the untouched
+student copy when demonstrating the exercise setup.
+
 ## Validation Commands
 
-Run from this directory with the flaggems conda environment:
+From the repository root, enter the runnable lab directory first. Use the
+FlagGems conda environment supplied by the course image:
 
 ```bash
-python fused_rms_norm.py
-python grad_kernel.py --m 128 --n 256 --dtype float32
-python compile_demo.py --m 128 --n 256
-python benchmark.py --m 4096 --n 4096 --dtype float32
-python benchmark.py --m 4096 --n 4096 --dtype bfloat16
+cd modules/02-high-performance-operators/labs/fused-rmsnorm-student/rmsnorm_fusion_lab
+python3 fused_rms_norm.py
+python3 grad_kernel.py --m 128 --n 256 --dtype float32
+python3 compile_demo.py --m 128 --n 256
+python3 benchmark.py --m 4096 --n 4096 --dtype float32
+python3 benchmark.py --m 4096 --n 4096 --dtype bfloat16
 ```
 
 Expected targets:

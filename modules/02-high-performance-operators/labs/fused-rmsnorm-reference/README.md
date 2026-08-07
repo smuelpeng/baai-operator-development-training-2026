@@ -1,4 +1,4 @@
-# Fused Add + RMSNorm Lab
+# Fused Add + RMSNorm Reference
 
 This lab follows one operator through the PyTorch stack:
 
@@ -8,8 +8,9 @@ This lab follows one operator through the PyTorch stack:
 4. Verify that torch.compile captures the registered operator without a graph break.
 5. Compare the fused implementation with PyTorch, a split Triton baseline, and FlagGems.
 
-The complete reference implementation remains one directory above this lab.
-Do not copy it into the lab directory while solving the exercises.
+This directory is the runnable reference implementation. The untouched student
+exercise is the sibling directory `../fused-rmsnorm-student/`; keep that copy
+when demonstrating the TODO workflow.
 
 ## Operator Contract
 
@@ -26,23 +27,24 @@ Inputs and outputs support float32 and bfloat16.  For bfloat16, arithmetic
 inside the RMSNorm reduction must use float32, while the returned tensors keep
 the original input dtype.
 
-## Exercise Order
+## Reference Coverage
 
-- TODO, `fused_rms_norm.py`: after computing `variance`, compute its reciprocal
-  root mean square (`rrms`) and use it with `updated` and `weight` to produce
-  `out`. Fill only the region marked `TODO BEGIN` and `TODO END`.
-
-The backward kernel, PyTorch operator registration, compile demonstration, and
-benchmark are complete and can be run directly after this TODO is filled.
+- `fused_rms_norm.py`: complete fused forward kernel and numerical checks;
+- `grad_kernel.py`: complete backward kernel and gradient comparison;
+- `custom_op.py`: PyTorch dispatcher registration;
+- `compile_demo.py`: eager and `torch.compile` graph-capture validation;
+- `benchmark.py`: PyTorch, split Triton, fused Triton and FlagGems comparison.
 
 `benchmark.py` is intentionally complete.  It is the final acceptance harness
 and must use the installed FlagGems implementation rather than a local fallback.
 
 ## Validation Commands
 
-Run from this directory with the flaggems conda environment:
+From the repository root, enter this directory and use the FlagGems environment
+supplied by the course image:
 
 ```bash
+cd modules/02-high-performance-operators/labs/fused-rmsnorm-reference
 python3 fused_rms_norm.py
 python3 grad_kernel.py --m 128 --n 256 --dtype float32
 python3 compile_demo.py --m 128 --n 256
@@ -62,9 +64,10 @@ The current environment supports Dynamo graph capture with
 support the Inductor backend together; this is an environment issue rather
 than a lab requirement.
 
-## Reference Answer
+## Forward Kernel Detail
 
-Fill the TODO in `_fused_add_rms_norm_kernel` with:
+The two lines below are the completed normalization step in
+`_fused_add_rms_norm_kernel`:
 
 ```python
 rrms = 1.0 / tl.sqrt(variance + eps)

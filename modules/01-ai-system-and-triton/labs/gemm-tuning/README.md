@@ -51,7 +51,7 @@ tile、grid 规模、K-loop 次数、数据复用和资源需求。Day 2 因此�
 ## Quick Start
 
 ```bash
-cd agi-lab/student/day2
+cd modules/01-ai-system-and-triton/labs/gemm-tuning
 bash setup.sh
 python3 00_baseline.py
 python3 01_block_sweep.py
@@ -119,8 +119,8 @@ Day 2 将检验三个命题：
 | Hardware | 天垓 150（BI-V150），ivcore11 |
 | Warp | 64 threads |
 | Device API | `cuda:0` / `torch.cuda` CoreX 兼容接口 |
-| PyTorch | 平台 `+corex` 适配版 |
-| Triton | 平台 `+corex` 适配版 |
+| PyTorch | 平台适配版；CoreX 4.4 镜像可能显示普通 `2.7.1` 版本号 |
+| Triton | 平台适配版；结合模块路径和 CoreX 运行时路径核验 |
 | Input/output dtype | fp16 |
 | Accumulator | fp32 |
 
@@ -155,7 +155,7 @@ Day 2 将检验三个命题：
 | autotune 因某一配置中止 | 搜索空间包含已知不合法或过大的 tile | 先用 Step 01 筛选，再缩小 config list |
 | fixed 与 autotuned 同 tile 仍差很多 | scheduler metadata、独立 JIT 或测量波动 | 使用 Step 02 的 exact-config 对照并重复测量 |
 | 不同 shape 的 winner 不同 | 工作分解、边界浪费与 K-loop 次数不同 | 这是预期结果，分别记录并解释 |
-| 版本中没有 `+corex` | 可能使用了错误 wheel | 停止升级，核对官方镜像与 `pip list` |
+| 版本中没有 `+corex` | CoreX 4.4 镜像可能省略版本后缀，也可能误装了公开 wheel | 不要升级；运行 Day 1 环境检查，结合 `torch.__file__`、`COREX_HOME` 和库路径核验 |
 
 ---
 

@@ -82,6 +82,8 @@ cd baai-operator-development-training-2026
 - [教师授课指南](docs/TEACHING_GUIDE.md)：讲授重点、课堂问题、实验组织和易错点。
 - [原班日程与复用课表](docs/SCHEDULE.md)：研修班原日程和可复用的 5 天安排。
 - [环境说明](docs/ENVIRONMENT.md)：BI-V150、CoreX、FlagOS 和实验边界。
+- [FlagOS 在线实验室指南](docs/FLAGOS_ONLINE_LAB.md)：实例配额、CoreX 环境指纹、上机顺序和数据保全。
+- [BI-V150 动态验证报告](records/experiments/2026-08-08-flagos-bi-v150-validation.md)：模块 1、2、5 的命令、结果、失败记录和结论边界。
 - [作业与验收](docs/ASSESSMENT.md)：每个模块的提交物和评分口径。
 - [课件索引](materials/README.md)：主课件、专题材料、平台资料与行政文件。
 - [课程内容总结](records/course_summary.md)：对全部材料的内容级总结。
@@ -120,4 +122,4 @@ cd baai-operator-development-training-2026
 - 基线与优化实现的公平对照；
 - 结论对应的原始 JSON、trace 或 profiler 证据。
 
-当前仓库完成了资料归档、课程化重组和静态检查；没有在本机声称完成 BI-V150 实验运行。实验结果应由授课环境重新生成。
+截至 2026-08-08，仓库除资料归档、课程化重组和静态检查外，已在 FlagOS 一卡 BI-V150 实例上动态验证模块 1、2、5 的代表性链路。模块 3、4 以及双卡分布式链路尚未动态验收；复现实验时应以验证报告记录的源码提交、shape 和测试口径为准，重新生成本实例结果。
