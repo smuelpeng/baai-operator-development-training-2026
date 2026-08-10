@@ -21,6 +21,7 @@ REQUIRED = [
     "docs/AI_CONTEXT.md",
     "docs/AI_TASK_RECIPES.md",
     "docs/KNOWLEDGE_INDEX.md",
+    "docs/OFFICIAL_OPENCOURSE.md",
     "docs/OPERATOR_DEVELOPMENT_PLAYBOOK.md",
     "docs/TASK_CATALOG.md",
     "templates/triton-operator/TASK.md",
@@ -47,6 +48,7 @@ def teaching_markdown() -> list[Path]:
             files.extend(entry.rglob("*.md"))
     files.extend((ROOT / "modules").glob("*/README.md"))
     files.extend((ROOT / "modules").glob("*/exercises/*.md"))
+    files.extend((ROOT / "modules").glob("*/labs/official-*/README.md"))
     files.extend((ROOT / "templates").rglob("*.md"))
     return sorted(set(files))
 
@@ -218,6 +220,100 @@ def check_workspaces(errors: list[str]) -> None:
             errors.append(f"workspace {task.name} missing: {', '.join(missing)}")
 
 
+def check_official_opencourse(errors: list[str]) -> tuple[int, int]:
+    edition = ROOT / "records" / "official_opencourse_2026_edition.tsv"
+    tree = ROOT / "records" / "official_opencourse_tree.tsv"
+    edition_count = 0
+    tree_count = 0
+
+    if not edition.is_file():
+        errors.append("missing official OpenCourse edition inventory")
+    else:
+        official_paths: set[str] = set()
+        local_paths: set[str] = set()
+        allowed_status = {
+            "exact-local",
+            "archived",
+            "archived-variant",
+            "archived-upstream-mislabeled",
+        }
+        for number, line in enumerate(
+            edition.read_text(encoding="utf-8").splitlines(), 1
+        ):
+            if not line or line.startswith("#"):
+                continue
+            fields = line.split("\t")
+            if len(fields) != 5:
+                errors.append(f"malformed official edition row:{number}")
+                continue
+            expected, raw_bytes, official_path, status, local_path = fields
+            if not re.fullmatch(r"[0-9a-f]{64}", expected):
+                errors.append(f"invalid official edition SHA-256:{number}")
+            try:
+                expected_bytes = int(raw_bytes)
+            except ValueError:
+                errors.append(f"invalid official edition byte count:{number}")
+                continue
+            if status not in allowed_status:
+                errors.append(f"invalid official edition status:{number}: {status}")
+            if official_path in official_paths:
+                errors.append(f"duplicate official edition path: {official_path}")
+            if local_path in local_paths:
+                errors.append(f"duplicate official edition local path: {local_path}")
+            official_paths.add(official_path)
+            local_paths.add(local_path)
+
+            local = Path(local_path)
+            if local.is_absolute():
+                errors.append(f"absolute official edition local path:{number}")
+                continue
+            target = ROOT / local
+            if not target.is_file():
+                errors.append(f"official edition local target missing: {local_path}")
+                continue
+            data = target.read_bytes()
+            if len(data) != expected_bytes:
+                errors.append(f"official edition byte mismatch: {local_path}")
+            if hashlib.sha256(data).hexdigest() != expected:
+                errors.append(f"official edition checksum mismatch: {local_path}")
+            edition_count += 1
+        if edition_count != 24:
+            errors.append(f"official edition coverage is {edition_count}, expected 24")
+
+    if not tree.is_file():
+        errors.append("missing official OpenCourse tree inventory")
+    else:
+        text = tree.read_text(encoding="utf-8")
+        commit = "cb6b9e0a3c01d9cd31bc2187127a6f44f6626990"
+        if f"# commit={commit}\n" not in text:
+            errors.append("official OpenCourse tree commit marker changed")
+        paths: set[str] = set()
+        for number, line in enumerate(text.splitlines(), 1):
+            if not line or line.startswith("#"):
+                continue
+            fields = line.split("\t")
+            if len(fields) != 5:
+                errors.append(f"malformed official tree row:{number}")
+                continue
+            mode, object_type, object_id, raw_bytes, path = fields
+            if not re.fullmatch(r"[0-7]{6}", mode):
+                errors.append(f"invalid official tree mode:{number}")
+            if object_type != "blob":
+                errors.append(f"unexpected official tree object type:{number}")
+            if not re.fullmatch(r"[0-9a-f]{40}", object_id):
+                errors.append(f"invalid official tree object id:{number}")
+            if raw_bytes != "-" and not raw_bytes.isdigit():
+                errors.append(f"invalid official tree byte count:{number}")
+            if path in paths:
+                errors.append(f"duplicate official tree path: {path}")
+            paths.add(path)
+            tree_count += 1
+        if tree_count != 503:
+            errors.append(f"official OpenCourse tree coverage is {tree_count}, expected 503")
+
+    return edition_count, tree_count
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -234,6 +330,7 @@ def main() -> int:
     check_nested_metadata(errors)
     check_knowledge_portability(errors)
     check_workspaces(errors)
+    official_edition_count, official_tree_count = check_official_opencourse(errors)
     course_count = verify_manifest(
         "records/courseware.sha256", errors, coverage_root="materials"
     )
@@ -245,6 +342,8 @@ def main() -> int:
     print(f"mode: {mode}")
     print(f"teaching Markdown: {len(teaching_markdown())}")
     print(f"course files verified: {course_count}")
+    print(f"official edition files mapped: {official_edition_count}")
+    print(f"official OpenCourse tree entries: {official_tree_count}")
     if args.strict:
         print(f"source snapshot files verified: {source_count}")
     if errors:

@@ -22,7 +22,7 @@
 | Triton 语法、mask、tile、reduction | `modules/01-ai-system-and-triton/` |
 | GEMM、block sweep、autotune | `modules/01-ai-system-and-triton/labs/gemm-tuning/` |
 | 算子融合、反向、Dispatcher、Meta | `modules/02-high-performance-operators/` |
-| `torch.compile`、TTIR/TTGIR、lowering | `modules/03-ai-compiler/` |
+| `torch.compile`、TTIR/TTGIR、lowering | `modules/03-ai-compiler/`；官方候选源码见 `labs/official-triton-ir/`，运行前先读其冲突说明 |
 | 多卡并行、collective、α-β 模型 | `modules/04-distributed-training-and-communication/` |
 | Benchmark、Roofline、Profiler | `modules/05-performance-engineering/` |
 | FlagTree Debugger/Profiler 源码 | `modules/05-performance-engineering/tools/FlagPrism/` |
@@ -32,6 +32,7 @@
 - `materials/` 是群内原始资料。除归档任务外不要修改、重命名或重新导出。
 - `records/` 保存来源与 SHA-256。只有资料同步或版本更新任务才应改动。
 - `modules/*/labs/` 和 `modules/05-*/tools/FlagPrism/` 是固定上游快照。学习任务可以按明确要求填写 TODO；新算子开发默认在 `workspaces/<task>/` 进行。
+- `official-triton-ir/upstream/` 与 `official-inference-deployment/upstream/` 也是固定上游精选快照。不要直接改写；前者的 BI-V150 README 与随仓 H200 结果曾冲突，后者包含安装、模型下载和服务启动命令，均须先在独立任务中核验。
 - `templates/` 是脚手架源文件。创建具体任务后，在生成的工作区中开发。
 - 参考实现只能用于理解和最终核对。先完成学生版或工作区实现，再对照参考代码。
 

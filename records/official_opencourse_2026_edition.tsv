@@ -1,0 +1,28 @@
+# upstream=https://github.com/flagos-ai/OpenCourse
+# commit=cb6b9e0a3c01d9cd31bc2187127a6f44f6626990
+# edition=editions/china-2026-summer-faculty
+# fields=sha256	bytes	official_path	status	local_path
+fddaa28635543bc79b74df41b6ecc7c48075f88cd330bb5e11465b70780b16d4	5009689	00-overview/01-开场介绍-朱其罡.pdf	exact-local	materials/seminars/开场介绍-朱其罡.pdf
+6004be2c51e1427fb970d50a455361c6c6006df962b86376d886617146809c36	8221704	00-overview/02-FlagOS_AI开放计算_教师培训-林咏华.pdf	exact-local	materials/seminars/FlagOS_AI开放计算_教师培训-林咏华.pdf
+fed4bc14215df89b017b1c627268470aabfd9ef7271a58a29a29be03b6ad35cb	17537532	00-overview/03-面向国产算力生态的智能计算系统课程-罗国杰.pdf	exact-local	materials/seminars/面向国产算力生态的智能计算系统课程-罗国杰(1).pdf
+67744d81d1f0fa840c246fd1ca0b88a33ee368144ee1b1f69edf66f85fa15f01	1853644	00-overview/04-众智FlagOS线上实验室平台介绍-董娜.pdf	archived-variant	materials/platform/official-release/04-众智FlagOS线上实验室平台介绍-董娜.pdf
+da46dfac32193f61679344d5202aa17519f841f53d1cc250076ed6fbcfd3477d	47	01_module_ai_system_heterogeneous/lab_handout.md	archived	materials/official-opencourse/china-2026-summer-faculty/lab-handouts/module-01.md
+efed7f09ec8a7c1b9120eb606e9058c1317b46adddb0b75825c2daf1ebdde309	23283603	01_module_ai_system_heterogeneous/课件-模块一：AI 系统软件基础与异构计算.pptx	archived	materials/courseware/module-01/official-editable/课件-模块一：AI 系统软件基础与异构计算.pptx
+a144339bfb19f4b73636543253cfb6dee57431c6ad720a3160b1bb106c115230	58	02_module_highperf_operator/lab_handout.md	archived	materials/official-opencourse/china-2026-summer-faculty/lab-handouts/module-02.md
+c2e7714bd176bb287e2363f933db5da5f58b75d5338551cc4eccbabb12825345	21939211	02_module_highperf_operator/课件-模块二：高性能AI算子与算子工程.pptx	archived	materials/courseware/module-02/official-editable/课件-模块二：高性能AI算子与算子工程.pptx
+e66aeee59aef37a394f1e2617ba6b1328777a23794f31fed8ca75eac52a8c756	47	03_module_ai_compiler/lab_handout.md	archived	materials/official-opencourse/china-2026-summer-faculty/lab-handouts/module-03.md
+690a5c71a7326fa6ff7365f8c2880fb7adf310d312a82c96b2713a95ec145730	7306711	03_module_ai_compiler/课件-模块三：AI 编译器原理与优化.pptx	archived	materials/courseware/module-03/official-editable/课件-模块三：AI 编译器原理与优化.pptx
+db552f1169e2d1ced3c24bbfad2918873ab0f51db78a02e563b6a4d88fde2c19	147	04_module_distributed_training/lab_handout.md	archived	materials/official-opencourse/china-2026-summer-faculty/lab-handouts/module-04.md
+0e1c50fdb739a4d5ef03b8b3f4eabfe92533258a6d3dd6ddd4386cf512a99b80	8016836	04_module_distributed_training/课件-模块四：分布式并行训练.pptx	archived-upstream-mislabeled	materials/courseware/module-03/official-editable/upstream-mislabeled/课件-模块四：分布式并行训练.pptx
+afe41d603dd35fb1abcc919807c8ab346e82bb1f119f652bdcdf8be28e7805b2	12525773	04_module_distributed_training/课件-模块四：分布式通信原语.pptx	archived	materials/courseware/module-04/official-editable/课件-模块四：分布式通信原语.pptx
+93f7852c0586afae86353a4a367e7f49b918ac05c23e65398a52476954c88b56	52	05_module_perf_kernel_generation/lab_handout.md	archived	materials/official-opencourse/china-2026-summer-faculty/lab-handouts/module-05.md
+5972ac2081b02847ccea46f5d0972a16122876f5e5b5b864492fd2c3c068f03b	11183815	05_module_perf_kernel_generation/课件-模块五：性能评测与下一代内核生成.pptx	archived	materials/courseware/module-05/official-editable/课件-模块五：性能评测与下一代内核生成.pptx
+fc2bf0d3f0d9160c67050935d3df1bc91c8162d0979fb2186067c5e5ef62cfd0	19851358	06_special_talks/0804-LearnBuddy产品介绍PPT_V2-谢彩连.pdf	exact-local	materials/seminars/0730LearnBuddy产品介绍PPT_V2.pdf
+9b42780f7825ea049569c2948a4be18b811947de763a479d1be584f8b2c83eca	2390380	06_special_talks/0805-智源交流-FlagOS开发者说明-王蕴博.pdf	exact-local	materials/seminars/0805-智源交流-FlagOS开发者说明-1.pdf
+6033a5320bad9e1404d2eb43215285f02e0aef9b803ae8ff4afddef570d3c2be	6072671	06_special_talks/0805-智源交流-FlagOS算子全球挑战赛-刘敏.pdf	exact-local	materials/seminars/0805-智源交流-FlagOS全球挑战赛.pdf
+6a4c48b0d5ad60c1241b3c798e2d4026ade0396dbe95e4f33db3c9f19695f240	4453470	06_special_talks/0805-智源交流-Flagtree-TLE优化实践-肖航.pdf	exact-local	materials/seminars/0805-智源交流-Flagtree-TLE优化实践.pdf
+d22639e8c168401a7b5676222f6bc4f531b2818daeed6ad6318f4450e914f76e	5214695	06_special_talks/0805-智源交流-Kernelgen专题_韩冬煦.pdf	exact-local	materials/seminars/0805-智源交流-Kernelgen专题_韩冬煦.pdf
+17fc5c02f3a67493dc49571f387d20b18f1853e71f8d2de749c62aae5400c6d0	1380810	06_special_talks/0805-智源交流-flagos推理框架-吕梦思.pdf	exact-local	materials/seminars/0805-智源交流-flagos推理框架.pdf
+3966568ca186e4835f4811cb4eaaa32f49db71cc2b0f3f3b94b61d61eb5fd948	7788956	06_special_talks/0807-国转中心介绍-许靖.pdf	exact-local	materials/seminars/0807——国转中心介绍.pdf
+7ac96f0508f4cf4cd4f1390b8a54bd1ab99202788d4a4341ee8e0a88c724d140	2008668	06_special_talks/0807-基于FlagTree 生态的 Profiler&Debugger初探 -周炽金 .pdf	exact-local	materials/courseware/module-05/基于 FlagTree 生态的 Profiler&Debugger 初探 - 周炽金 老师.pdf
+9a43c50de1dea2d98dd178d76fee004dd58f81e98e12bf358a98912d51d3ae49	14855946	07_panel/融入FlagOS的智能计算系统课程建设-王晶-20260808.pdf	exact-local	materials/seminars/融入FlagOS的智能计算系统课程建设-王晶-20260808.pdf

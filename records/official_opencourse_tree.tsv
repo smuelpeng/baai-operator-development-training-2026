@@ -1,0 +1,506 @@
+# upstream=https://github.com/flagos-ai/OpenCourse
+# commit=cb6b9e0a3c01d9cd31bc2187127a6f44f6626990
+# fields=mode	type	git_object	bytes	path
+100644	blob	c689da6e55d5159c16c73323f323a22e77d5a677	3179	.github/assets/Facebook.png
+100644	blob	12b9a2804f609ffa0e20cbbf490ff61d2a7e3c1c	3735	.github/assets/Linkedin.png
+100644	blob	5f0ef9ddd24dd9f363d4dfb51a389655de4d4e96	404580	.github/assets/banner-20260130.png
+100644	blob	bced3994d942da065006c793b508d7b228d3b493	8475	.github/assets/discord.png
+100644	blob	52a489eb2bd69cc74a70acead74c66304cd3bfd4	1519	.github/assets/x.png
+100644	blob	90daa5b7944cefe7892a70e6ca1f20c9acf8e4bb	3267	.github/assets/youtube.png
+100644	blob	fe463e0f7888bbf8b82e42d55f5743508ddafb7e	19347	LICENSE
+100644	blob	fe1549cd80d8716478ca46bf6f547df236e17494	5555	README.md
+100644	blob	5eecb14423724a96e30a5b51e7e75e9790480811	4954045	best-practices/FlagCX/FlagCX跨芯通信技术原理.pdf
+100644	blob	d4bbd88d2e017b2e54325ed1e68fa97ce1a90887	7339567	best-practices/FlagCX/FlagCX跨芯通信案例讲解.pdf
+100644	blob	542787e30eb6044c0747510e7076dd41a345f4f8	6084712	best-practices/FlagCX/原始：拓扑感知通信优化.pdf
+100644	blob	9c47eb378a128c27696f0bdfb7e2bde655588c67	1389996	best-practices/FlagCX/拓扑感知通信优化.pdf
+100644	blob	16584f999be9ddc95f8a12188435229f46c1fbe9	1338	best-practices/FlagCX/课程4 课程4 FlagCX：统⼀通信库 介绍.txt
+100644	blob	6acc2977355f3645e3c6517a0c15a55bba78a224	5948643	best-practices/FlagCX/集合通信库.pdf
+100644	blob	fc220c06c994eadf4917340b32071b5d1f13168d	6942516	best-practices/FlagGems/GPU架构与编程介绍.pdf
+100644	blob	7d08ef4f85a0e17d619cae38b9df2a9490c511d0	3456398	best-practices/FlagGems/Reduce Scan 和 Sort 算子的 Triton 实现.pdf
+100644	blob	8109b791c61894fe8186581d5595f08dbc3b49c8	854583	best-practices/FlagGems/算子编写实战.pdf
+100644	blob	ca85dc9b052740e3ceaf1b833bbf5fb18f16cec0	1128	best-practices/FlagGems/课程1 FlagGems：⾼性能通⽤AI算⼦库     介绍.txt
+100644	blob	57faf8c457f9cb80097da0151a2be70c384e3707	5844106	best-practices/FlagGems/高性能探索：从 Triton 算子到高性能通用算子 FlagGems.pdf
+100644	blob	230110637f1d4f8eda3b12382b1127ce9867566c	1381381	best-practices/FlagScale/FlagScale多后端管理与多硬件适配机制.pdf
+100644	blob	69fc787cb61cd952b5bbfe5fa5a3123298257598	2945257	best-practices/FlagScale/FlagScale大模型高效推理部署优化技术.pdf
+100644	blob	686f8884faa9db8f295605213b1ae146713fd3ac	6235507	best-practices/FlagScale/原始文件：大规模分布式训练优化技术.pdf
+100644	blob	7d28fe1428557dd5eba675c091e0375dc27d15a4	1117493	best-practices/FlagScale/基于 FlagRelease 实现模型到不同芯片上的推理部署.pdf
+100644	blob	2c987b83d6a97e776426f6509bb979970604fbd6	2262352	best-practices/FlagScale/大规模分布式训练优化技术.pdf
+100644	blob	44929ca42189e41fb812105e4ed4fca918e22a32	1190	best-practices/FlagScale/课程3 FlagScale：⾯向多元算⼒的并⾏训推 介绍.txt
+100644	blob	0cb9bdd09c0387ba80f8d658ac9a4aaccb0de2be	3913680	best-practices/FlagScale/跨芯片训练与推理自适应优化技术.pdf
+100644	blob	aaca8394fef0222b5c3ba8d1585bfb3c6435a9d0	3911953	best-practices/FlagTree/20250816-计算所-Flagtree设计理念.pdf
+100644	blob	cf1baf397d7c505169fc694d0018951dfb17479e	4854664	best-practices/FlagTree/FlagTree如何接入一种AI芯片后端.pdf
+100644	blob	8986931ad0a9ab71d4c1d0527bed1207dfece024	17546240	best-practices/FlagTree/Triton语言介绍.pptx
+100644	blob	47968140b73e403849e7e55fd70980f4571d945c	1639	best-practices/FlagTree/课程2 FlagTree：统⼀AI编译器 介绍.txt
+100644	blob	01e676087f9ffbceba1e7c4f43963fcfb88faf8a	3283	course/01-项目背景与意义/AI系统软件人才培养意义.md
+100644	blob	560324ba01fb230b5b372db2acbdd58a7196b18d	2924	course/01-项目背景与意义/FlagOS项目介绍.md
+100644	blob	d47b7aa2180f3dba04eeecd9d5b4e0c458c82c58	1178	course/01-项目背景与意义/README.md
+100644	blob	adabb021ed19dea44b88da364e3b692cae2b5dd8	4254	course/01-项目背景与意义/课程体系设计理念.md
+100644	blob	dd2a36d3d1fe3459b9f581d6ca546489aec48533	3034	course/02-课件资源/README.md
+100644	blob	a14db6e53b51d31df9976c83e28e4a5854a694b4	4193150	course/02-课件资源/中文版/AI大模型通识课（入门课程）/AI大模型通识课.pptx
+100644	blob	b30fe2bda41a36218ad34d4a6717bdff32082a78	1710	course/02-课件资源/中文版/AI大模型通识课（入门课程）/README.md
+100644	blob	25976a3a3af076506d635599f272b9ba4ac00fa3	1317168	course/02-课件资源/中文版/AI大模型通识课（入门课程）/实操手册.pdf
+100644	blob	5211814b0622c9047e022a2c28b2119164bd8287	20255	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业1-zh 概念理解.docx
+100644	blob	23a00eeb905190d38623201c5620548d0db0cb05	20474	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业10-zh 通信优化与显存管理.docx
+100644	blob	2d9da9d40c82f07f59fe05382ffff25a6a988821	20637	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业11-zh 性能分析方法论.docx
+100644	blob	54371ade98c4478f9df5ececcbf2ce0b1ee52ad1	20309	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业12-zh AI 辅助内核生成.docx
+100644	blob	79e783c2cfbaf7356e67962d4eee13f2c134ba0c	20290	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业13-zh 全栈优化综合.docx
+100644	blob	c773d0c3c1fc0d21fed317a94a3d69dee9f25975	20528	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业2-zh Triton入门上机.docx
+100644	blob	d7ea3640563f0f20f568cb277789f54ab234348a	20472	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业3-zh 内存优化.docx
+100644	blob	8668f787cc2e7723f6bdb14ac17e4f2eebd6cd5a	20772	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业4-zh 注意力机制与 Flash Attention.docx
+100644	blob	9687440996463e93e8f6811571130f472f3ad9f5	20878	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业5-zh 算子融合与 Profiling.docx
+100644	blob	61371a1be1816a724c5e4cb77f45e8f5687a320f	20267	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业6-zh 算子库设计.docx
+100644	blob	07410cecd22d727b9711adde234bf2fc893302dd	21127	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业7-zh IR 与编译器 Pass.docx
+100644	blob	4399f908d650e7b34cb8f36cb40bc718d7290875	20269	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业8-zh 后端代码生成.docx
+100644	blob	5f40885c4eb9445fe992ff659cf80388c2456adb	20653	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业9-zh 并行策略基础.docx
+100644	blob	ba31d5b9647551eb88964bdc16bf65e764c47ca3	19283	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/作业模板-zh.docx
+100644	blob	b9c8f21adf3bce181d3a117c07a9e420568b3089	21215	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/大纲_智能计算系统软硬件基础_Syllabus.docx
+100644	blob	326eff88f2b805c68678aaffb1e33eb0de158153	10389	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/大纲_智能计算系统软硬件基础_Syllabus.md
+100644	blob	f0952626a38754cf22f838721f88a40e2e55b0ef	32122054	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 01-zh：课程导论与 AI 硬件全景.pptx
+100644	blob	965e27308ee41022021c0845c51b7fc091645da2	11993394	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 02-zh：异构计算编程模型基础.pptx
+100644	blob	f5720630cebcdb4e555ea498188b60bca6562908	10989056	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 03-zh：深度学习框架调用链路分析.pptx
+100644	blob	40f81505bcec4eb6fc32b58b2a93510ae8377662	4160874	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 04-zh：Triton 语言入门.pptx
+100644	blob	3dc6a052b0116263b3144a9c70311432a21a6e33	4907121	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 05-zh：环境搭建与工具链.pptx
+100644	blob	3128d8d09af9861d98cdd14d7693e4063e8c9a45	4298317	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 06-zh：向量计算基础 (Vector Add).pptx
+100644	blob	05539e99cdbce469fd18114e9e383a4bd9a26d61	3929039	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 07-zh：矩阵乘法优化 I.pptx
+100644	blob	6a63d8e13bab746fc2c740caa52bb02aba6e7349	4824082	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 08-zh：内存层次结构优化.pptx
+100644	blob	2d0e08e51561e5899d11f3a59786f4716ca4487a	3836417	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 09-zh：Module I 期中项目.pptx
+100644	blob	bba3ddc9828f3751d93b7a85149c5883851a6502	16395891	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 10-zh：注意力机制 原理与算子需求.pptx
+100644	blob	894e0b00cd9a71d97fea234dacdfa0c8f3edf933	7793792	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 11-zh：Flash Attention 实现 I (IO感知).pptx
+100644	blob	36d03b30c57e64af0248c0e3e2302536062b52fd	6890080	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 12-zh：Flash Attention 实现 II (算法优化).pptx
+100644	blob	768cb9b532e0c6ceeb2bed371f1759f1f443acea	11031981	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 13-zh：卷积算子优化 (Convolution).pptx
+100644	blob	1dc02537dfc97b6551daa2deff1f51041f4d3895	6596387	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 14-zh：归一化与激活函数.pptx
+100644	blob	3155183fe8f8fb2ce32f60b373e8e024612d52d4	7464425	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 15-zh：算子融合.pptx
+100644	blob	7588ff04b88d0b988b2fea70d82cb70f5e5c753b	8777420	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 16-zh：复杂算子调试与 Profiling.pptx
+100644	blob	27c85f7fb04dbeba0789557b2c0c407a6a820f07	6647049	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 17-zh：算子库的架构设计.pptx
+100644	blob	56bbaa0e1786808072576e0b55f9c855c0dfc9e1	3832366	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 18-zh：Module II 期末项目.pptx
+100644	blob	bf74a558f7f7360347e05f070be6e00246642a57	8615362	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 19-zh：AI 编译器概述.pptx
+100644	blob	92c2a93a0e0fb7720fef878bca4062f1c50ff714	5926828	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 20-zh：中间表示 (IR) 基础.pptx
+100644	blob	9e6af5ada13a75c65c890e3f6a850cc15df1e93e	7084095	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 21-zh：MLIR 架构深度解析.pptx
+100644	blob	aa89c2683e6a74b6e55c066cb7b18d6a177ac137	5754415	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 22-zh：算符融合 Pass (Fusion Pass).pptx
+100644	blob	d2ea3cdba1de14345ad175856820fcd05b01f006	4971362	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 23-zh：循环不变代码外提.pptx
+100644	blob	ab8379919aaa5d7b5aea5362be4a6796015ad9f6	4681536	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 24-zh：布局与内存规划.pptx
+100644	blob	28e65360cdafef81e1261c36f40aee80b52eacc0	4741630	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 25-zh：多芯片后端支持 I (Codegen).pptx
+100644	blob	358d76e1e2bdbf054ed3b2e52f9992e1e3fc1e3c	7327461	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 26-zh：多芯片后端支持 II (Runtime 集成).pptx
+100644	blob	9ba1dd6ad870fc5179079583e7dbcbf949381ed9	3832507	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 27-zh：Module III 期末项目.pptx
+100644	blob	8398e8a2f1cad6ee75735b87a76adb742d4fee43	7593540	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 28-zh：数据并行.pptx
+100644	blob	fb454368aa9c51286900a79864451390f3ad4ca3	7159326	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 29-zh：模型并行 I (Tensor Parallel).pptx
+100644	blob	d42cf08091eb65de55933142600760a96e1b48eb	7992813	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 30-zh：模型并行 II (Pipeline Parallel).pptx
+100644	blob	7ea8c8a900b1c8c75101d3a3062abe1d71420bf3	10036563	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 31-zh：通信原语.pptx
+100644	blob	f47242443c36b1288159c7ba3f7dcbd131918084	7778140	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 32-zh：通信拓扑优化.pptx
+100644	blob	2556824fd06b18cd0a0f798584e8296c10b62bfe	4446561	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 33-zh：混合并行.pptx
+100644	blob	9477f06f66d01c26791ba64fd2c038093620e4c2	4573997	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 34-zh：容错与 Checkpointing.pptx
+100644	blob	e7e2b9a6c2542dc03d36b207a43d2371abb9de95	5807958	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 35-zh：显存优化技术.pptx
+100644	blob	dbeb0e739bab88750a7799cd988ad656a8760967	3835812	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 36-zh：Module IV 期末项目.pptx
+100644	blob	71da6e8987275749e7328906d522a9036ce359c9	5336614	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 37-zh：性能分析指标.pptx
+100644	blob	db6b862a8b2b3c0897935104c2981c1d1853d8b7	8490698	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 38-zh：自动调优.pptx
+100644	blob	324716b2796014aeebc01e2fe499ac17d19b9a0e	6162821	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 39-zh：算子性能 Profiling 深度实践.pptx
+100644	blob	a813e10d557c1524714a9a7cb103c59f731a1958	9061398	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 40-zh：LLM 辅助编程概述.pptx
+100644	blob	b4976f6c944367c5671089570c5b4efb0ed06bf7	6758725	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 41-zh：KernelGen 的架构与 Prompt 工程.pptx
+100644	blob	0134b2dcec774de4ca619a07a1ca62da13b9b870	6273473	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 42-zh：从生成到部署：生成代码的集成.pptx
+100644	blob	efaeb040ff99d9133b185818371cc6e5b29ac395	5072564	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 43-zh：异构系统的极致优化.pptx
+100644	blob	811851de061b4b7f52b895eb695f827592de810b	13447558	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 44-zh：端到端性能优化.pptx
+100644	blob	5447d6c5e388e06b2fe5d48ac4f80e294e1c3781	4517774	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 45-zh：开源贡献与社区协作.pptx
+100644	blob	8e5ce3f6afb65d77de17e7e4887d7487d5289016	3835526	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 46-47-zh：课程项目答辩.pptx
+100644	blob	e905b200c2c677382d912fa434623ef418ae6bfb	7754411	course/02-课件资源/中文版/完整课程汇总-48课时/2-1-slides_zh/课时 48-zh：前沿技术展望与总结.pptx
+100644	blob	72cf855f9f572cb30705d497caff073e97184e2d	21986	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Hardware and Software Foundations of Intelligent Computing Systems_Syllabus.docx
+100644	blob	76006dfd9236420a58b27d670ea83099041d4a44	13048	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Hardware_and_Software_Foundations_of_Intelligent_Computing_Systems_Syllabus.md
+100644	blob	ed6fc6905e89d8a2ff7ee76386211a892c106e61	20155	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 1-en Conceptual Understanding.docx
+100644	blob	da2501d247a402e8fa389e996992a971dab06fda	20569	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 10-en Communication Optimization & Memory Management.docx
+100644	blob	22a94bf73cd0728ac7998d0802fb573ef61f93b7	20514	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 11-en Performance Analysis Methodology.docx
+100644	blob	73f33e3a24e5ffadd66d67f36f148fe649806d8c	20196	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 12-en AI-Assisted Kernel Generation.docx
+100644	blob	66156c66e40af6bf4ef377def0096eb74fb9dd1e	20280	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 13-en Full-Stack Optimization.docx
+100644	blob	d179166c539edbf65ae27da96cb059f448f4c14b	20277	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 2-en Triton Basics + Hands-On.docx
+100644	blob	dbd549b6126ae28435534ed6e732881d3e43fccb	20304	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 3-en Memory Optimization.docx
+100644	blob	1666c71f72eb50d5321f4d160a311f6a5e747ed1	20543	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 4-en Attention Mechanism & Flash Attention.docx
+100644	blob	932c71b3f9c1308197de5446cfbac20c52d5e484	20600	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 5-en Operator Fusion & Profiling.docx
+100644	blob	89805479b64e327410030e6a873b3323661bdc06	20109	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 6-en Operator Library Design.docx
+100644	blob	96413d85dbf93bfa22fa0f8bf03e7183357dfd73	20620	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 7-en IR & Compiler Passes.docx
+100644	blob	2b900965b26a03420f9efb9ae2886fb825c2e9f0	20067	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 8-en Backend Code Generation.docx
+100644	blob	ee12b73275f8b85b7afeea57b8b844edc170295d	20576	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Homework 9-en Parallelism Strategy Basics.docx
+100644	blob	614f12000eb66627d3c56448004e2b0cc4de7748	33715583	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 01-en Course Introduction and AI Hardware Landscape.pptx
+100644	blob	fc5a8d4bdcd73ce5523ad863e908af8ca48db02b	13132848	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 02-en Fundamentals of Heterogeneous Computing Programming Models.pptx
+100644	blob	b3aebf0bcff92d5bbfcf5d0135092879f4cf34f3	11215628	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 03-en Deep Learning Framework Call Chain Analysis.pptx
+100644	blob	9bfdc586bcf5ef0be93b57c0edba9b28df495f3e	4651996	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 04-en Introduction to the Triton Language.pptx
+100644	blob	b15d4bad195e7c09ad28b4edb8887363aa498763	5420939	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 05-en Environment Setup and Toolchain Configuration.pptx
+100644	blob	76f6cf2d88c5d6746e6aca2888fd61e1b31ec8e8	4831460	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 06-en Vector Computation Basics.pptx
+100644	blob	da0956d53015769047bb4ed3126c0a80deef4cb2	4440263	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 07-en Matrix Multiplication Optimization.pptx
+100644	blob	9912344240b1895335d43bd0e6af8d6fc4def68c	5399479	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 08-en Memory Hierarchy Optimization.pptx
+100644	blob	294319ab760b816c9c425693f6101f046e0f1b1a	4341072	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 09-en Module I Midterm Project.pptx
+100644	blob	a2befd5faf8b8d29c66745740c2a30b1d0bed92a	17780309	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 10-en Attention Mechanism Principles and Operator Requirements.pptx
+100644	blob	0436ffb01ebf1fed064c086127397750944d2331	8482651	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 11-en Flash Attention Implementation I (IO-Aware).pptx
+100644	blob	c1b32aac7e52c04e10ce2b2b0c78d7c7bc2cb401	7486564	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 12-en Flash Attention Implementation II (Algorithmic Optimization).pptx
+100644	blob	09ffc8c6d6d4543df99134963d8f463e77d9b94f	11647374	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 13-en Convolution Operator Optimization.pptx
+100644	blob	1db79e2fde3d49799a2a616214ce9206495b9152	48593364	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 14-en Normalization and Activation Functions.pptx
+100644	blob	542fc54aa0e3463a396b3cbfc544ee59f028ffdb	49028676	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 15-en Operator Fusion.pptx
+100644	blob	87710f7af53ebda97926ad7da3d76de5bd4cc6e6	9549283	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 16-en Complex Operator Debugging and Profiling.pptx
+100644	blob	c3cf40c4d85c746eaf5b5758c94378257090310c	7189387	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 17-en Architectural Design of Operator Libraries.pptx
+100644	blob	2f46ba03d2b5fb6ecb78df47b6d940d429b1de76	4324312	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 18-en Module II Final Project.pptx
+100644	blob	ff800dfdea813d10d981eb530ce7b884d00ffe6c	9429858	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 19-en Overview of AI Compilers.pptx
+100644	blob	56fd1708856bbbc11ac11b1b74a2af31b316da5f	6514903	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 20-en Intermediate Representation (IR) Fundamentals.pptx
+100644	blob	84f290a3e44afa4d1625ebadad6b5c880c277538	7705945	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 21-en In-Depth Analysis of the MLIR Architecture.pptx
+100644	blob	55f9682a45656eabe5f0f2db58b4a9fb94074abe	6365382	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 22-en Operator Fusion Pass.pptx
+100644	blob	f341e9e65e54bb5515e858d38d7ab1485ed04ff5	5513989	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 23-en Loop-Invariant Code Motion.pptx
+100644	blob	75190802893caa247a315ca4ad46e29e996316d8	5368621	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 24-en Layout and Memory Planning.pptx
+100644	blob	830e47a212a29eb23c3ca5435ee9cecfa2522965	5395094	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 25-en Multi-Chip Backend Support I (Code Generation).pptx
+100644	blob	170dbadb6d4ff5bea61285ea5bb627a268f14bb4	7983771	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 26-en Multi-Chip Backend Support II (Runtime Integration).pptx
+100644	blob	5a9f5609768f13532123e8fb3a6db2e27517b95f	4338216	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 27-en Module III Final Project.pptx
+100644	blob	6c42d68a5858237b900b9ba7905a1cf3861b4492	8187781	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 28-en Data Parallelism.pptx
+100644	blob	0bb6dc131b5dd9b98499be1343ddcf18626a314f	7738565	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 29-en Model Parallelism I (Tensor Parallelism).pptx
+100644	blob	425ea3f21afa7819cf0f703b462dc490636970b7	8699631	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 30-en Model Parallelism II (Pipeline Parallelism).pptx
+100644	blob	708f37553eda83d1104393b11181ed74535d08b5	10776564	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 31-en Communication Primitives.pptx
+100644	blob	1f8bd32c034b2f1dad4b3956a04c5ebddbba0a51	8483250	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 32-en Communication Topology Optimization.pptx
+100644	blob	01c9bc36569d20dacfb7f6bbc21ab501fbcd823a	5171728	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 33-en Model Parallelism III Hybrid Parallelism.pptx
+100644	blob	88b284b275b954aef3a2775f594cf9f20bbe0bfa	5100645	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 34-en Fault Tolerance and Checkpointing.pptx
+100644	blob	cb7ca0fa40cf35175e95acfaf6d7dc8b21819e6b	6489286	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 35-en GPU Memory Optimization Techniques.pptx
+100644	blob	67d5ca948cc173309b0e576f66e94cd7f3146837	4339675	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 36-en Module IV Final Project.pptx
+100644	blob	c157f2d8e5db5e687174c002b811006b2e45157f	6196656	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 37-en Performance Analysis Metrics.pptx
+100644	blob	df7e1024ad2d52c9a29410b3050c8d02d1085711	9219094	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 38-en Auto-Tuning.pptx
+100644	blob	672cec098d81b518fc9cb9b9aa63b12937d7e0a4	6738922	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 39-en In-Depth Operator Performance Profiling Lab.pptx
+100644	blob	c998f625ac6764d61f133085a00b28944be13bf4	9849266	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 40-en Overview of LLM-Assisted Programming.pptx
+100644	blob	d3fb9078aaa4ba99a5c3a502b5af4daebdecb728	7403494	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 41-en KernelGen Architecture and Prompt Engineering.pptx
+100644	blob	f6e32f767a027ca7ecfd8e952477622fb5524e7a	6920672	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 42-en From Generation to Deployment Integration of Generated Code.pptx
+100644	blob	8b54dc392d43cc1e2c3580a56627d103e37354ca	5600994	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 43-en Extreme Optimization for Heterogeneous Systems.pptx
+100644	blob	454cf310697a664c4c530e267446e2e753e004c3	14113465	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 44-en End-to-End Performance Optimization.pptx
+100644	blob	9141f490003734e1a71c15e6675a74fabb9a973f	4979833	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 45-en Open-Source Contribution and Community Collaboration.pptx
+100644	blob	4ef0f8b62bd273831ab70031c4da26cb8112df93	4339411	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 46-47-en Course Project Presentation.pptx
+100644	blob	7380bdef78c7d3642b2e0235489d6aa723cfb0c7	7468312	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/Lecture 48-en Emerging Technology Outlook and Course Summary.pptx
+100644	blob	2f5838e7f7d8bd0a5ab3a69c0d8ca68e7b8f09f1	19132	course/02-课件资源/中文版/完整课程汇总-48课时/2-2-slides_en/作业模板-en.docx
+100644	blob	a1f2d648d00b677f66adbe872b1951ca02dc901a	5496	course/02-课件资源/中文版/完整课程汇总-48课时/2-3-videos_zh/video-list.md
+100644	blob	0d39a6a62ca8da98c12f516371ab2790d6d3a7d6	3278	course/02-课件资源/中文版/完整课程汇总-48课时/README.md
+100644	blob	5211814b0622c9047e022a2c28b2119164bd8287	20255	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/作业1-zh 概念理解.docx
+100644	blob	c773d0c3c1fc0d21fed317a94a3d69dee9f25975	20528	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/作业2-zh Triton入门上机.docx
+100644	blob	d7ea3640563f0f20f568cb277789f54ab234348a	20472	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/作业3-zh 内存优化.docx
+100644	blob	0737427a89bb8cb5da59a66a7a673f116df93e6c	9993	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/大纲_AI 系统软件基础与异构计算_Syllabus.docx
+100644	blob	145f033e26b375c4b11e1e69c22be35883db7e1a	6935	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/大纲_AI系统软件基础与异构计算_Syllabus.md
+100644	blob	f0952626a38754cf22f838721f88a40e2e55b0ef	32122054	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 01-zh：课程导论与 AI 硬件全景.pptx
+100644	blob	965e27308ee41022021c0845c51b7fc091645da2	11993394	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 02-zh：异构计算编程模型基础.pptx
+100644	blob	f5720630cebcdb4e555ea498188b60bca6562908	10989056	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 03-zh：深度学习框架调用链路分析.pptx
+100644	blob	40f81505bcec4eb6fc32b58b2a93510ae8377662	4160874	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 04-zh：Triton 语言入门.pptx
+100644	blob	3dc6a052b0116263b3144a9c70311432a21a6e33	4907121	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 05-zh：环境搭建与工具链.pptx
+100644	blob	3128d8d09af9861d98cdd14d7693e4063e8c9a45	4298317	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 06-zh：向量计算基础 (Vector Add).pptx
+100644	blob	05539e99cdbce469fd18114e9e383a4bd9a26d61	3929039	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 07-zh：矩阵乘法优化 I.pptx
+100644	blob	6a63d8e13bab746fc2c740caa52bb02aba6e7349	4824082	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 08-zh：内存层次结构优化.pptx
+100644	blob	2d0e08e51561e5899d11f3a59786f4716ca4487a	3836417	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-1-slides_zh/课时 09-zh：Module I 期中项目.pptx
+100644	blob	9f868f6fed90f5d2501b2159d60b612c50f68c17	9948	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/AI Systems Software Foundations & Heterogeneous Computing_Syllabus.docx
+100644	blob	145f033e26b375c4b11e1e69c22be35883db7e1a	6935	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/AI_Systems_Software_Foundations_Heterogeneous_Computing_Syllabus.md
+100644	blob	ed6fc6905e89d8a2ff7ee76386211a892c106e61	20155	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Homework 1-en Conceptual Understanding.docx
+100644	blob	d179166c539edbf65ae27da96cb059f448f4c14b	20277	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Homework 2-en Triton Basics + Hands-On.docx
+100644	blob	15e986c4e66ed524a68385f2cd056eb7a3c300c2	5312	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Homework 3-en Memory Optimization.docx
+100644	blob	614f12000eb66627d3c56448004e2b0cc4de7748	33715583	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 01-en Course Introduction and AI Hardware Landscape.pptx
+100644	blob	fc5a8d4bdcd73ce5523ad863e908af8ca48db02b	13132848	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 02-en Fundamentals of Heterogeneous Computing Programming Models.pptx
+100644	blob	b3aebf0bcff92d5bbfcf5d0135092879f4cf34f3	11215628	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 03-en Deep Learning Framework Call Chain Analysis.pptx
+100644	blob	9bfdc586bcf5ef0be93b57c0edba9b28df495f3e	4651996	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 04-en Introduction to the Triton Language.pptx
+100644	blob	b15d4bad195e7c09ad28b4edb8887363aa498763	5420939	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 05-en Environment Setup and Toolchain Configuration.pptx
+100644	blob	76f6cf2d88c5d6746e6aca2888fd61e1b31ec8e8	4831460	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 06-en Vector Computation Basics.pptx
+100644	blob	da0956d53015769047bb4ed3126c0a80deef4cb2	4440263	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 07-en Matrix Multiplication Optimization.pptx
+100644	blob	9912344240b1895335d43bd0e6af8d6fc4def68c	5399479	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 08-en Memory Hierarchy Optimization.pptx
+100644	blob	294319ab760b816c9c425693f6101f046e0f1b1a	4341072	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-2-slides_en/Lecture 09-en Module I Midterm Project.pptx
+100644	blob	7d853e25a57ae3742ccb1df12db1547a3effa740	1040	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/3-3-videos_zh/video-list.md
+100644	blob	da0f25d962d29e8f005b7cc083ef7e676e7e50e4	2388	course/02-课件资源/中文版/模块1-AI系统软件基础与异构计算/README.md
+100644	blob	8668f787cc2e7723f6bdb14ac17e4f2eebd6cd5a	20772	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/作业4-zh 注意力机制与 Flash Attention.docx
+100644	blob	9687440996463e93e8f6811571130f472f3ad9f5	20878	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/作业5-zh 算子融合与 Profiling.docx
+100644	blob	61371a1be1816a724c5e4cb77f45e8f5687a320f	20267	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/作业6-zh 算子库设计.docx
+100644	blob	ad1ac6f46f8d9077209efb20354952f3489f67a9	9976	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/大纲_高性能 AI 算子与算子工程_Syllabus.docx
+100644	blob	ab4b19c4ff4aa72b1292d9695afe010e9a64fbb9	6910	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/大纲_高性能 AI 算子与算子工程_Syllabus.md
+100644	blob	bba3ddc9828f3751d93b7a85149c5883851a6502	16395891	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 10-zh：注意力机制 原理与算子需求.pptx
+100644	blob	894e0b00cd9a71d97fea234dacdfa0c8f3edf933	7793792	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 11-zh：Flash Attention 实现 I (IO感知).pptx
+100644	blob	36d03b30c57e64af0248c0e3e2302536062b52fd	6890080	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 12-zh：Flash Attention 实现 II (算法优化).pptx
+100644	blob	768cb9b532e0c6ceeb2bed371f1759f1f443acea	11031981	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 13-zh：卷积算子优化 (Convolution).pptx
+100644	blob	1dc02537dfc97b6551daa2deff1f51041f4d3895	6596387	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 14-zh：归一化与激活函数.pptx
+100644	blob	3155183fe8f8fb2ce32f60b373e8e024612d52d4	7464425	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 15-zh：算子融合.pptx
+100644	blob	7588ff04b88d0b988b2fea70d82cb70f5e5c753b	8777420	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 16-zh：复杂算子调试与 Profiling.pptx
+100644	blob	27c85f7fb04dbeba0789557b2c0c407a6a820f07	6647049	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 17-zh：算子库的架构设计.pptx
+100644	blob	56bbaa0e1786808072576e0b55f9c855c0dfc9e1	3832366	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-1-slides_zh/课时 18-zh：Module II 期末项目.pptx
+100644	blob	4127069a2bd0c90b6231d0cb7cc635a99a24a908	10050	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/High-Performance AI Operators & Operator Engineering_Syllabus.docx
+100644	blob	337449cb5aac47effcb2fcb86b42024e00d2d6dd	8456	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/High-Performance_AI_Operators_Operator_Engineering_Syllabus.md
+100644	blob	1666c71f72eb50d5321f4d160a311f6a5e747ed1	20543	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Homework 4-en Attention Mechanism & Flash Attention.docx
+100644	blob	932c71b3f9c1308197de5446cfbac20c52d5e484	20600	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Homework 5-en Operator Fusion & Profiling.docx
+100644	blob	89805479b64e327410030e6a873b3323661bdc06	20109	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Homework 6-en Operator Library Design.docx
+100644	blob	a2befd5faf8b8d29c66745740c2a30b1d0bed92a	17780309	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 10-en Attention Mechanism Principles and Operator Requirements.pptx
+100644	blob	0436ffb01ebf1fed064c086127397750944d2331	8482651	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 11-en Flash Attention Implementation I (IO-Aware).pptx
+100644	blob	c1b32aac7e52c04e10ce2b2b0c78d7c7bc2cb401	7486564	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 12-en Flash Attention Implementation II (Algorithmic Optimization).pptx
+100644	blob	09ffc8c6d6d4543df99134963d8f463e77d9b94f	11647374	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 13-en Convolution Operator Optimization.pptx
+100644	blob	1db79e2fde3d49799a2a616214ce9206495b9152	48593364	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 14-en Normalization and Activation Functions.pptx
+100644	blob	542fc54aa0e3463a396b3cbfc544ee59f028ffdb	49028676	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 15-en Operator Fusion.pptx
+100644	blob	87710f7af53ebda97926ad7da3d76de5bd4cc6e6	9549283	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 16-en Complex Operator Debugging and Profiling.pptx
+100644	blob	c3cf40c4d85c746eaf5b5758c94378257090310c	7189387	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 17-en Architectural Design of Operator Libraries.pptx
+100644	blob	2f46ba03d2b5fb6ecb78df47b6d940d429b1de76	4324312	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-2-slides_en/Lecture 18-en Module II Final Project.pptx
+100644	blob	90df0a6b7fc969c0623970403a6ec9feb498b64c	1066	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/4-3-videos_zh/video-list.md
+100644	blob	86276c8fe8db33e900449c902529e5cc1604f8ac	2414	course/02-课件资源/中文版/模块2-高性能AI算子与算子工程/README.md
+100644	blob	07410cecd22d727b9711adde234bf2fc893302dd	21127	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/作业7-zh IR 与编译器 Pass.docx
+100644	blob	4399f908d650e7b34cb8f36cb40bc718d7290875	20269	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/作业8-zh 后端代码生成.docx
+100644	blob	7254a839a78df5aeef764e8485eba207f93a449f	9983	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/大纲_AI 编译器原理与优化_Syllabus.docx
+100644	blob	f4861163b209e5731dacff9a15fa91809e7776b6	7061	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/大纲_AI 编译器原理与优化_Syllabus.md
+100644	blob	bf74a558f7f7360347e05f070be6e00246642a57	8615362	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 19-zh：AI 编译器概述.pptx
+100644	blob	92c2a93a0e0fb7720fef878bca4062f1c50ff714	5926828	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 20-zh：中间表示 (IR) 基础.pptx
+100644	blob	9e6af5ada13a75c65c890e3f6a850cc15df1e93e	7084095	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 21-zh：MLIR 架构深度解析.pptx
+100644	blob	aa89c2683e6a74b6e55c066cb7b18d6a177ac137	5754415	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 22-zh：算符融合 Pass (Fusion Pass).pptx
+100644	blob	d2ea3cdba1de14345ad175856820fcd05b01f006	4971362	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 23-zh：循环不变代码外提.pptx
+100644	blob	ab8379919aaa5d7b5aea5362be4a6796015ad9f6	4681536	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 24-zh：布局与内存规划.pptx
+100644	blob	28e65360cdafef81e1261c36f40aee80b52eacc0	4741630	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 25-zh：多芯片后端支持 I (Codegen).pptx
+100644	blob	358d76e1e2bdbf054ed3b2e52f9992e1e3fc1e3c	7327461	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 26-zh：多芯片后端支持 II (Runtime 集成).pptx
+100644	blob	9ba1dd6ad870fc5179079583e7dbcbf949381ed9	3832507	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-1-slides_zh/课时 27-zh：Module III 期末项目.pptx
+100644	blob	2631d2a6e8fefa91df64effe0b070528348e7f36	9978	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/AI Compiler Principles & Optimization_Syllabus.docx
+100644	blob	216a293960110ec46bf54da11d8259312101e2f8	8320	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/AI_Compiler_Principles_Optimization_Syllabus.md
+100644	blob	96413d85dbf93bfa22fa0f8bf03e7183357dfd73	20620	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Homework 7-en IR & Compiler Passes.docx
+100644	blob	2b900965b26a03420f9efb9ae2886fb825c2e9f0	20067	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Homework 8-en Backend Code Generation.docx
+100644	blob	ff800dfdea813d10d981eb530ce7b884d00ffe6c	9429858	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 19-en Overview of AI Compilers.pptx
+100644	blob	56fd1708856bbbc11ac11b1b74a2af31b316da5f	6514903	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 20-en Intermediate Representation (IR) Fundamentals.pptx
+100644	blob	84f290a3e44afa4d1625ebadad6b5c880c277538	7705945	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 21-en In-Depth Analysis of the MLIR Architecture.pptx
+100644	blob	55f9682a45656eabe5f0f2db58b4a9fb94074abe	6365382	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 22-en Operator Fusion Pass.pptx
+100644	blob	f341e9e65e54bb5515e858d38d7ab1485ed04ff5	5513989	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 23-en Loop-Invariant Code Motion.pptx
+100644	blob	75190802893caa247a315ca4ad46e29e996316d8	5368621	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 24-en Layout and Memory Planning.pptx
+100644	blob	830e47a212a29eb23c3ca5435ee9cecfa2522965	5395094	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 25-en Multi-Chip Backend Support I (Code Generation).pptx
+100644	blob	170dbadb6d4ff5bea61285ea5bb627a268f14bb4	7983771	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 26-en Multi-Chip Backend Support II (Runtime Integration).pptx
+100644	blob	5a9f5609768f13532123e8fb3a6db2e27517b95f	4338216	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-2-slides_en/Lecture 27-en Module III Final Project.pptx
+100644	blob	47f8e54b2abae79cb821422d51c767ad0132f141	1034	course/02-课件资源/中文版/模块3-AI编译器原理与优化/5-3-videos_zh/video-list.md
+100644	blob	604dd11331e03be0060e67e1df6018abdbae900b	2539	course/02-课件资源/中文版/模块3-AI编译器原理与优化/README.md
+100644	blob	23a00eeb905190d38623201c5620548d0db0cb05	20474	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/作业10-zh 通信优化与显存管理.docx
+100644	blob	5f40885c4eb9445fe992ff659cf80388c2456adb	20653	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/作业9-zh 并行策略基础.docx
+100644	blob	05533c06d4fcd3f85e4cdf86dbd8bfca05728eba	10044	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/大纲_分布式并行训练与通信_Syllabus.docx
+100644	blob	12f639e1e78bda168bc5d498d8952310847a957f	7157	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/大纲_分布式并行训练与通信_Syllabus.md
+100644	blob	8398e8a2f1cad6ee75735b87a76adb742d4fee43	7593540	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 28-zh：数据并行.pptx
+100644	blob	fb454368aa9c51286900a79864451390f3ad4ca3	7159326	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 29-zh：模型并行 I (Tensor Parallel).pptx
+100644	blob	d42cf08091eb65de55933142600760a96e1b48eb	7992813	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 30-zh：模型并行 II (Pipeline Parallel).pptx
+100644	blob	7ea8c8a900b1c8c75101d3a3062abe1d71420bf3	10036563	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 31-zh：通信原语.pptx
+100644	blob	f47242443c36b1288159c7ba3f7dcbd131918084	7778140	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 32-zh：通信拓扑优化.pptx
+100644	blob	2556824fd06b18cd0a0f798584e8296c10b62bfe	4446561	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 33-zh：混合并行.pptx
+100644	blob	9477f06f66d01c26791ba64fd2c038093620e4c2	4573997	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 34-zh：容错与 Checkpointing.pptx
+100644	blob	e7e2b9a6c2542dc03d36b207a43d2371abb9de95	5807958	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 35-zh：显存优化技术.pptx
+100644	blob	dbeb0e739bab88750a7799cd988ad656a8760967	3835812	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-1-slides_zh/课时 36-zh：Module IV 期末项目.pptx
+100644	blob	4ab3dc68b4892cc1bc9a8bb2812c48352b1cc621	9969	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Distributed Parallel Training & Communication_Syllabus.docx
+100644	blob	aa77e86c5727dc9f7f5422063e5cef3f5f85dfa5	8512	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Distributed_Parallel_Training_Communication_Syllabus.md
+100644	blob	da2501d247a402e8fa389e996992a971dab06fda	20569	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Homework 10-en Communication Optimization & Memory Management.docx
+100644	blob	ee12b73275f8b85b7afeea57b8b844edc170295d	20576	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Homework 9-en Parallelism Strategy Basics.docx
+100644	blob	6c42d68a5858237b900b9ba7905a1cf3861b4492	8187781	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 28-en Data Parallelism.pptx
+100644	blob	0bb6dc131b5dd9b98499be1343ddcf18626a314f	7738565	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 29-en Model Parallelism I (Tensor Parallelism).pptx
+100644	blob	425ea3f21afa7819cf0f703b462dc490636970b7	8699631	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 30-en Model Parallelism II (Pipeline Parallelism).pptx
+100644	blob	708f37553eda83d1104393b11181ed74535d08b5	10776564	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 31-en Communication Primitives.pptx
+100644	blob	1f8bd32c034b2f1dad4b3956a04c5ebddbba0a51	8483250	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 32-en Communication Topology Optimization.pptx
+100644	blob	01c9bc36569d20dacfb7f6bbc21ab501fbcd823a	5171728	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 33-en Model Parallelism III Hybrid Parallelism.pptx
+100644	blob	88b284b275b954aef3a2775f594cf9f20bbe0bfa	5100645	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 34-en Fault Tolerance and Checkpointing.pptx
+100644	blob	cb7ca0fa40cf35175e95acfaf6d7dc8b21819e6b	6489286	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 35-en GPU Memory Optimization Techniques.pptx
+100644	blob	67d5ca948cc173309b0e576f66e94cd7f3146837	4339675	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-2-slides_en/Lecture 36-en Module IV Final Project.pptx
+100644	blob	4f5897937d691610a0e9497d0ce3f78dd1cdc21c	983	course/02-课件资源/中文版/模块4-分布式并行训练与通信/6-3-videos_zh/video-list.md
+100644	blob	28ea5404a1eb00b78b168a03b014495409713000	2538	course/02-课件资源/中文版/模块4-分布式并行训练与通信/README.md
+100644	blob	2d9da9d40c82f07f59fe05382ffff25a6a988821	20637	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/作业11-zh 性能分析方法论.docx
+100644	blob	54371ade98c4478f9df5ececcbf2ce0b1ee52ad1	20309	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/作业12-zh AI 辅助内核生成.docx
+100644	blob	79e783c2cfbaf7356e67962d4eee13f2c134ba0c	20290	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/作业13-zh 全栈优化综合.docx
+100644	blob	9e3ea43f3814b4185d367f0cb647ff42bc8ed056	10177	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/大纲_性能评测与下一代内核生成_Syllabus.docx
+100644	blob	718d0c7d43979af2bd7c009e474bc9464f0aac1e	7387	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/大纲_性能评测与下一代内核生成_Syllabus.md
+100644	blob	71da6e8987275749e7328906d522a9036ce359c9	5336614	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 37-zh：性能分析指标.pptx
+100644	blob	db6b862a8b2b3c0897935104c2981c1d1853d8b7	8490698	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 38-zh：自动调优.pptx
+100644	blob	324716b2796014aeebc01e2fe499ac17d19b9a0e	6162821	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 39-zh：算子性能 Profiling 深度实践.pptx
+100644	blob	a813e10d557c1524714a9a7cb103c59f731a1958	9061398	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 40-zh：LLM 辅助编程概述.pptx
+100644	blob	b4976f6c944367c5671089570c5b4efb0ed06bf7	6758725	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 41-zh：KernelGen 的架构与 Prompt 工程.pptx
+100644	blob	0134b2dcec774de4ca619a07a1ca62da13b9b870	6273473	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 42-zh：从生成到部署：生成代码的集成.pptx
+100644	blob	efaeb040ff99d9133b185818371cc6e5b29ac395	5072564	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 43-zh：异构系统的极致优化.pptx
+100644	blob	811851de061b4b7f52b895eb695f827592de810b	13447558	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 44-zh：端到端性能优化.pptx
+100644	blob	5447d6c5e388e06b2fe5d48ac4f80e294e1c3781	4517774	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 45-zh：开源贡献与社区协作.pptx
+100644	blob	8e5ce3f6afb65d77de17e7e4887d7487d5289016	3835526	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 46-47-zh：课程项目答辩.pptx
+100644	blob	e905b200c2c677382d912fa434623ef418ae6bfb	7754411	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-1-slides_zh/课时 48-zh：前沿技术展望与总结.pptx
+100644	blob	22a94bf73cd0728ac7998d0802fb573ef61f93b7	20514	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Homework 11-en Performance Analysis Methodology.docx
+100644	blob	73f33e3a24e5ffadd66d67f36f148fe649806d8c	20196	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Homework 12-en AI-Assisted Kernel Generation.docx
+100644	blob	66156c66e40af6bf4ef377def0096eb74fb9dd1e	20280	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Homework 13-en Full-Stack Optimization.docx
+100644	blob	c157f2d8e5db5e687174c002b811006b2e45157f	6196656	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 37-en Performance Analysis Metrics.pptx
+100644	blob	df7e1024ad2d52c9a29410b3050c8d02d1085711	9219094	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 38-en Auto-Tuning.pptx
+100644	blob	672cec098d81b518fc9cb9b9aa63b12937d7e0a4	6738922	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 39-en In-Depth Operator Performance Profiling Lab.pptx
+100644	blob	c998f625ac6764d61f133085a00b28944be13bf4	9849266	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 40-en Overview of LLM-Assisted Programming.pptx
+100644	blob	d3fb9078aaa4ba99a5c3a502b5af4daebdecb728	7403494	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 41-en KernelGen Architecture and Prompt Engineering.pptx
+100644	blob	f6e32f767a027ca7ecfd8e952477622fb5524e7a	6920672	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 42-en From Generation to Deployment Integration of Generated Code.pptx
+100644	blob	8b54dc392d43cc1e2c3580a56627d103e37354ca	5600994	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 43-en Extreme Optimization for Heterogeneous Systems.pptx
+100644	blob	454cf310697a664c4c530e267446e2e753e004c3	14113465	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 44-en End-to-End Performance Optimization.pptx
+100644	blob	9141f490003734e1a71c15e6675a74fabb9a973f	4979833	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 45-en Open-Source Contribution and Community Collaboration.pptx
+100644	blob	4ef0f8b62bd273831ab70031c4da26cb8112df93	4339411	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 46-47-en Course Project Presentation.pptx
+100644	blob	7380bdef78c7d3642b2e0235489d6aa723cfb0c7	7468312	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Lecture 48-en Emerging Technology Outlook and Course Summary.pptx
+100644	blob	b401984b77e96507da3edcccbeadc4a9f522beec	10254	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Performance Benchmarking & Next-Generation Kernel Generation_Syllabus.docx
+100644	blob	b7c7a0ab90bce0e4f273dffcdc4fd0d9330e9c43	8840	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-2-slides_en/Performance_Benchmarking_Next-Generation_Kernel_Generation_Syllabus.md
+100644	blob	c8df93439e39d14670e16442e349563a59783fa0	1257	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/7-3-videos_zh/video-list.md
+100644	blob	c376bc12a2a3ffa06a9d86a066ece3d02f04b4d1	2542	course/02-课件资源/中文版/模块5-性能评测与下一代内核生成/README.md
+100644	blob	34ecd7f006ed9514f05d0fcc454f614bd9e20851	1404	course/02-课件资源/英文版/README.md
+100644	blob	14415395ec47f36f69840204d2a226cec394dd03	26302343	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 01 - Course Introduction and AI Hardware Landscape_en.pptx
+100644	blob	9fdd9faf5302ec05947946acf0c0596ace5695f9	14428913	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 02 - Fundamentals of Heterogeneous Computing Programming Models_en.pptx
+100644	blob	ed0c6f3c00082aa6695751ccffe7b29c891f5ab4	11219527	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 03 - Deep Learning Framework Call Chain Analysis_en.pptx
+100644	blob	6d6306cd669b0976580b08842a03dbf382bc85cb	4664728	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 04 - Introduction to the Triton Language_en.pptx
+100644	blob	b21381235e8321b9b07bcf3c00d748b15dea472e	5428778	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 05 - Environment Setup and Toolchain Configuration_en.pptx
+100644	blob	6f59102e975f2744f1f4aee7c03d7b5211687128	4858763	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 06 - Vector Computation Basics - Vector Add in Triton_en.pptx
+100644	blob	ceae2addefc192332104e25de8c750d0ab394a70	4462790	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 07 - Matrix Multiplication Optimization_en.pptx
+100644	blob	053853cc463cfe47e508547d0b3609bbc5f2a8b2	5444961	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 08 - Memory Hierarchy Optimization_en.pptx
+100644	blob	20ba202ee7d306d71ac83d8330f044a194d0ac6a	4347550	course/02-课件资源/英文版/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 09 - Module I Midterm Project - Softmax Kernel Implementation_en.pptx
+100644	blob	3643a5a9ab19555a867a7fed84faf82633303531	18087080	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 10 - Attention Mechanism Principles and Operator Requirements_en.pptx
+100644	blob	e0ada1933cdbc25bd9315bc2119dab7b802f14ca	8486911	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 11 - Flash Attention Implementation I (IO-Aware)_en.pptx
+100644	blob	35c240739881dd6492c2c26aba11e424e590f618	7496984	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 12 - Flash Attention Implementation II (Algorithmic Optimization)_en.pptx
+100644	blob	3dedcc0b2db8f882759cfb2375c40ed253d3b99c	11646641	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 13 - Convolution Operator Optimization_en.pptx
+100644	blob	8e254f73dfa31796eaf064deb7cee89d5f5b88c2	7254681	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 14 - Normalization and Activation Functions_en.pptx
+100644	blob	d11249d1f42944733792fc6a34f94690e26901d6	8196601	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 15 - Operator Fusion_en.pptx
+100644	blob	343e40646f6ae145021bb4fd38afb90ac60ee7a4	9560325	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 16 - Complex Operator Debugging and Profiling_en.pptx
+100644	blob	ec18d2e78397ecbff6b1ce84743f0cdfa18738f5	7207853	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 17 - Architectural Design of Operator Libraries_en.pptx
+100644	blob	12390883f25813b274ed355ef5b5216fdcbdf1ea	4347380	course/02-课件资源/英文版/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 18 - Module II Final Project (RMSNorm + Residual  Fused Operator)_en.pptx
+100644	blob	86bff3892be9caa66dffdaf420ce74793d92fc06	9319227	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 19 - Overview of AI Compilers_en.pptx
+100644	blob	57c0af871217bfaf3ee77c04fb705d3934e3ec7b	6515929	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 20 - Intermediate Representation (IR) Fundamentals_en.pptx
+100644	blob	b764f99449051409c9f74043dc7912897c972fa5	7708391	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 21 - In-Depth Analysis of the MLIR Architecture_en.pptx
+100644	blob	7f0cdaf3ae2b6689343b5c8dcdb9ebf91582b7bd	6364100	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 22 - Operator Fusion Pass_en.pptx
+100644	blob	3d65944f0181504d8cda708168f8f29bae4ed7c0	5504670	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 23 - Loop-Invariant Code Motion (LICM)_en.pptx
+100644	blob	1b870747754766a57217e4af53ebecf6bf697b51	5362076	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 24 - Layout and Memory Planning_en.pptx
+100644	blob	542acaa853da3a846b2c9217e3882b54187bcfbc	5387827	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 25 - Multi-end Support I (Codegen)_en.pptx
+100644	blob	e81451fc6180bfc1f10512e4b02365a560f69794	7987073	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 26 - Multi-Chip Backend Support II (Runtime Integration)_en.pptx
+100644	blob	e9375c4f24d77f75adb135d99bbcbfaaea716d50	4338455	course/02-课件资源/英文版/module-3-ai-compiler-principles-and-optimization/Lecture 27 - Module III Final Project (FlagTree Pass Contribution)_en.pptx
+100644	blob	88e8e8aab96a94df9b22c16064bdba0018872558	9897114	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 28 - Data Parallelism_en.pptx
+100644	blob	34b3c27613e2843a96049687b80859961c1bbbb9	9452464	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 29 - Model Parallelism I (Tensor Parallelism)_en.pptx
+100644	blob	50a78221daa499b06e22d37bf625eb4cdbc04772	10409607	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 30 - Model Parallelism II (Pipeline Parallelism)_en.pptx
+100644	blob	fca09591f60c1c581e89eebc153171f212e9d409	12480386	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 31 - Communication Primitives_en.pptx
+100644	blob	6ca8020c8f98ffda9161775a187a3b1f6b63597d	10193257	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 32 - Communication Topology Optimization_en.pptx
+100644	blob	c9d474a4ff62469a59a6e9b60131f6974ef72f0e	6761777	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 33 - Model Parallelism III (Hybrid Parallelism)_en.pptx
+100644	blob	ef11cb95eb246191be1347a45f284e44d4308590	6795570	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 34 - Fault Tolerance and Checkpointing_en.pptx
+100644	blob	48956487b691fff298c9d54144337460b85406e3	8086848	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 35 - GPU Memory Optimization Techniques_en.pptx
+100644	blob	4b78cd1fd9027997298ea7397bd443456f90b2e7	6042786	course/02-课件资源/英文版/module-4-distributed-parallel-training-and-communication/Lecture 36 - Module IV Final Project (7B Model Multi-Node Distributed Training)_en.pptx
+100644	blob	93d64877c6957c9a9c0fdf9940fb044e1c4ce85e	6203555	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 37 - Performances Metrics_en.pptx
+100644	blob	b2890ea9b4fb6abd529ebf3952098ff9133256d9	8977679	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 38 - Auto-Tuning_en.pptx
+100644	blob	f075bc77b1581765afae7c3f7f7b80411576340d	6738053	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 39 - In-Depth Operator Performance Profiling Lab_en.pptx
+100644	blob	e3c766643f031269e4b67f35d154f445b5ab738a	9795613	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 40 - Overview of LLM-Assisted Programming_en.pptx
+100644	blob	23995266ec96662671603ef743ac4f9364531c53	7402894	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 41 - KernelGen Architecture and Prompt Engineering_en.pptx
+100644	blob	d1e1f7169e718a2ec113cc53d92a07907b90d7c1	6918738	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 42 - From Generation to Deployment Integration of Generated Code_en.pptx
+100644	blob	8c4d301bea19d4aaa4a1f663468cd3cd06177bc2	5601053	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 43 - Extreme Optimization of Heterogeneous Systems_en.pptx
+100644	blob	b3b2fa644a0542c880795e7d08770bc2e1ab4f15	14122286	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 44 - End-to-End Performance Optimization_en.pptx
+100644	blob	1a4bf3dc821fe01cd4afe5a5ecc40b6eb01ac2d7	4993692	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 45 - Open-Source Contribution and Community Collaboration_en.pptx
+100644	blob	302308cb91c5845a1a139fe8441e2a655ce5a8f2	4336699	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 46-47 - Course Project Presentation_en.pptx
+100644	blob	478c31dd171d9759289c54686f9d59726d0b7f40	7456095	course/02-课件资源/英文版/module-5-performance-analysis-methodology/Lecture 48 - Emerging Technology Outlook and Course Summary_en.pptx
+100644	blob	f0b562aa304ec93399fb6aedb461e3c1d9f14d85	1153	course/03-课程大纲示例/README.md
+100644	blob	244a0e1d8d07a2383d394e19b6f1d41d7e4b7f1c	232960	course/03-课程大纲示例/《智能计算系统软硬件基础》课程教学大纲-v1.doc
+100644	blob	0fc5db935a629fc61ca1dd4565720175a5d6d68c	1831	course/04-实验材料包/README.md
+100644	blob	2e448fd12ea22deeb5df46164c72ec77be6b18df	2349	course/04-实验材料包/实验环境说明.md
+100644	blob	97305f35c526632dc9c86c45b71e98f87361f5a5	2074	course/04-实验材料包/现有实验列表.md
+100644	blob	821462b778832d0fa6ccf29f6ee770c78d5b66c1	1188	course/04-实验材料包/自定义实验支持.md
+100644	blob	742a56f09647e71549666a5da4f7c95bd2fcf985	2152	course/05-教师培训指南/README.md
+100644	blob	2bbf60b6a816759b38c2c7e3c7fdecdee28c957c	4743	course/05-教师培训指南/教学资源索引.md
+100644	blob	38be8f1762ca9a1459e0477f481e2e5ac0ae7163	1732	course/05-教师培训指南/线下培训说明.md
+100644	blob	3a50599d2f71b2fef0db66482c140728da38f97d	2986	course/05-教师培训指南/课程融入指南.md
+100644	blob	b99941a0768197d9da66f431b255d045e3f668b2	2033	course/06-学生学习成就/FlagOS算子大赛.md
+100644	blob	4eb8d818d94fe4902b3e133bd5d0fb3b123dac38	1719	course/06-学生学习成就/README.md
+100644	blob	dfe675f29bcd1ac6dbde1e08b14112001c9bf188	1155	course/07-在线实验室指南/README.md
+100644	blob	d4d68030299d41eb319f4b71d64b2e0d79d65145	3028	course/07-在线实验室指南/平台使用手册.md
+100644	blob	328c2ac799eb1c1fcf0e45ec8e11273ff6d703c5	2180	course/07-在线实验室指南/快速开始.md
+100644	blob	94c790c1a2a6350d010210b4d3c216bc7071468e	2321	course/07-在线实验室指南/资源配额说明.md
+100644	blob	79f57550022805fec4fc321266d8210b91362f68	2223	course/08-高校合作流程/README.md
+100644	blob	db333d806f9bb6d6d61678e3f2223580e7006998	2636	course/08-高校合作流程/合作模式说明.md
+100644	blob	8c75908f048011cb9b770edc26fd8b62f0de4bba	1299	course/08-高校合作流程/资源申请表.md
+100644	blob	6109cbd68882bb910e3b1013a60fb771ba0461db	13837	course/08-高校合作流程/附录3+学生实验资源申请表v2.docx
+100644	blob	962212a0c76853ca08723324b66457f5d0d86773	2620	course/README.md
+100644	blob	0b9b1879496ed77c873b9030c4f52e7f644842e0	5009689	editions/china-2026-summer-faculty/00-overview/01-开场介绍-朱其罡.pdf
+100644	blob	5cb0e04b6ec6ec28c092e2bd7a31fe9301c60a42	8221704	editions/china-2026-summer-faculty/00-overview/02-FlagOS_AI开放计算_教师培训-林咏华.pdf
+100644	blob	88f0fb7c3eaf12d1520df70bbd6f883590c9b6ee	17537532	editions/china-2026-summer-faculty/00-overview/03-面向国产算力生态的智能计算系统课程-罗国杰.pdf
+100644	blob	5d645129d06bbf1fe5d1ec58b2959b2c1a5807f9	1853644	editions/china-2026-summer-faculty/00-overview/04-众智FlagOS线上实验室平台介绍-董娜.pdf
+100644	blob	e303e309f9ce1910bdbeb96f36c3184e3b300b7e	47	editions/china-2026-summer-faculty/01_module_ai_system_heterogeneous/lab_handout.md
+100644	blob	d3fbc5528c8019e0e5fb41ee0c71d322616ed421	23283603	editions/china-2026-summer-faculty/01_module_ai_system_heterogeneous/课件-模块一：AI 系统软件基础与异构计算.pptx
+100644	blob	e894f600d17891a394516f57265eaf8d094e4e8c	58	editions/china-2026-summer-faculty/02_module_highperf_operator/lab_handout.md
+100644	blob	fac5e544a19e794a46e0bb10890b1d85ca4656ba	21939211	editions/china-2026-summer-faculty/02_module_highperf_operator/课件-模块二：高性能AI算子与算子工程.pptx
+100644	blob	49975e56ce474a2a2cdcea5c5d4088d75dd0b657	47	editions/china-2026-summer-faculty/03_module_ai_compiler/lab_handout.md
+100644	blob	43a2b326481ea12b84af467c3db4e5b3d53060f7	7306711	editions/china-2026-summer-faculty/03_module_ai_compiler/课件-模块三：AI 编译器原理与优化.pptx
+100644	blob	a499ff84660815fd552f4fde773b9de9e51eb7c1	147	editions/china-2026-summer-faculty/04_module_distributed_training/lab_handout.md
+100644	blob	d7e7167cfc87d6be77f7e46e912b6785bce16eb4	8016836	editions/china-2026-summer-faculty/04_module_distributed_training/课件-模块四：分布式并行训练.pptx
+100644	blob	7cc50ac73fa5356d4d3697004447016282b27c8c	12525773	editions/china-2026-summer-faculty/04_module_distributed_training/课件-模块四：分布式通信原语.pptx
+100644	blob	0ecacdf0ad39535720848dda3643cf7f87559733	52	editions/china-2026-summer-faculty/05_module_perf_kernel_generation/lab_handout.md
+100644	blob	f1466bbc9118a7e27ae46b4263da6e5800f04487	11183815	editions/china-2026-summer-faculty/05_module_perf_kernel_generation/课件-模块五：性能评测与下一代内核生成.pptx
+100644	blob	4e299033fb4d819440c35c660cfd2467add78533	19851358	editions/china-2026-summer-faculty/06_special_talks/0804-LearnBuddy产品介绍PPT_V2-谢彩连.pdf
+100644	blob	28e24cd5da9113f678bfeeea8e57e25a54c57b6c	2390380	editions/china-2026-summer-faculty/06_special_talks/0805-智源交流-FlagOS开发者说明-王蕴博.pdf
+100644	blob	6440eafaa75d0b1e779b6490311199e4b2c879a3	6072671	editions/china-2026-summer-faculty/06_special_talks/0805-智源交流-FlagOS算子全球挑战赛-刘敏.pdf
+100644	blob	49275ff50705c8bf7c9d99ab2ea9f3b509541efc	4453470	editions/china-2026-summer-faculty/06_special_talks/0805-智源交流-Flagtree-TLE优化实践-肖航.pdf
+100644	blob	b3c2e66e60490869d20adc25185005cb30e093eb	5214695	editions/china-2026-summer-faculty/06_special_talks/0805-智源交流-Kernelgen专题_韩冬煦.pdf
+100644	blob	5acd050af36f31610bfb1430783615e75658b926	1380810	editions/china-2026-summer-faculty/06_special_talks/0805-智源交流-flagos推理框架-吕梦思.pdf
+100644	blob	45ab7ec92344922bd1172bb29a9772c22f22687c	7788956	editions/china-2026-summer-faculty/06_special_talks/0807-国转中心介绍-许靖.pdf
+100644	blob	c99e79c18d4c0f602cad6e2f936e8c6595a723bd	2008668	editions/china-2026-summer-faculty/06_special_talks/0807-基于FlagTree 生态的 Profiler&Debugger初探 -周炽金 .pdf
+100644	blob	b798a69779a1fb2c53693229637aace8c0373100	14855946	editions/china-2026-summer-faculty/07_panel/融入FlagOS的智能计算系统课程建设-王晶-20260808.pdf
+100644	blob	87bdedd15bf53f3598ce6ff37cda3e8f395ea72c	4149	editions/china-africa-faculty/phase-1/README.md
+100644	blob	9afcccfe48f8b7db06d5f9dec13fb078ebe7d760	4174446	editions/china-africa-faculty/phase-1/general-education-course/ai-large-language-model-general-course.pptx
+100644	blob	6579c895c8252c4c3f8c762677490478f87af1aa	2683	editions/china-africa-faculty/phase-1/labs/lab-day1/00_check_env.py
+100644	blob	9fb15e1d33335a92626e180352ad81d2c6a44e84	3404	editions/china-africa-faculty/phase-1/labs/lab-day1/01_torch_npu_hello.py
+100644	blob	f778dc83894fdb9ee9e8696f33c84dc37bf6ac8f	4146	editions/china-africa-faculty/phase-1/labs/lab-day1/02_vector_add_triton.py
+100644	blob	e0622e0ce8e4f9027f4578b79bd87981697f75be	5162	editions/china-africa-faculty/phase-1/labs/lab-day1/03_softmax_compare.py
+100644	blob	3919e98742f8a54864e0042780d0c7cbae47750f	6264	editions/china-africa-faculty/phase-1/labs/lab-day1/04_matmul_compare.py
+100644	blob	62f1899e34637e3debeba780defc8bc97de7af31	7237	editions/china-africa-faculty/phase-1/labs/lab-day1/README.md
+100644	blob	2d9737f2e9812941b4fdeff0d8296c005056ab3b	14086	editions/china-africa-faculty/phase-1/labs/lab-day1/handout.md
+100644	blob	4ff0fd19e62dd662efe233ca9123cc75ee7d0592	1024	editions/china-africa-faculty/phase-1/labs/lab-day1/setup.sh
+100644	blob	9ae87be50f72056cc2224c20688de0aa8e9088f8	3552	editions/china-africa-faculty/phase-1/labs/lab-day1/softmax_kernel.ttadapter
+100644	blob	e34f8099e55741d93495924d99e31be01bb99006	4304	editions/china-africa-faculty/phase-1/labs/lab-day1/softmax_kernel.ttir
+100644	blob	d3c49937955e783435d6409d151a35b8f20b8a6e	2495	editions/china-africa-faculty/phase-1/labs/lab-day2/00_baseline.py
+100644	blob	31fe2ed53010438177534da6a02b4f42cecf58e0	11827	editions/china-africa-faculty/phase-1/labs/lab-day2/01_buffer_model.py
+100644	blob	c7280254a207d67eb246bd94e3430b3e5ca76743	14267	editions/china-africa-faculty/phase-1/labs/lab-day2/02_autotune_roofline.py
+100644	blob	2d6450eab5c08eeda7b082321d96cabf7ee92670	4959	editions/china-africa-faculty/phase-1/labs/lab-day2/03_summary.py
+100644	blob	ffe028e4f2a2d4a1b821a948819b0d162f987b1b	4155	editions/china-africa-faculty/phase-1/labs/lab-day2/README.md
+100644	blob	8bdd16b9349bb9dd39a14eefc253df2c673289d6	19783	editions/china-africa-faculty/phase-1/labs/lab-day2/__pycache__/02_autotune_roofline.cpython-311.pyc
+100644	blob	3bde91b49a34e54ae5f2b7f21a4398e720d70921	8395	editions/china-africa-faculty/phase-1/labs/lab-day2/__pycache__/common.cpython-311.pyc
+100644	blob	57b1a5f9fa3315524d8d8640934a7def7896745d	6354	editions/china-africa-faculty/phase-1/labs/lab-day2/common.py
+100644	blob	91eab88f2e1cc428ae767e56ecb2dd6d7b978840	14797	editions/china-africa-faculty/phase-1/labs/lab-day2/handout.md
+100644	blob	e1a89b4e9933cbb0eddcb4d7bc7e001af28cba4a	1162	editions/china-africa-faculty/phase-1/labs/lab-day2/setup.sh
+100644	blob	3d17f829c2bdc3b4caf0d49b7fd6fdbe73d7eae0	579701	editions/china-africa-faculty/phase-1/labs/lab-day3/Practical_Handbook.pdf
+100644	blob	d20be0c4046a03ad064d6778713fb043e84fcf3e	3556	editions/china-africa-faculty/phase-1/labs/lab-day3/README.md
+100644	blob	c4a9298a30805be5581e33894a0bd5cc3c6aea29	5414	editions/china-africa-faculty/phase-1/labs/lab-day3/client.py
+100644	blob	faf271ddf0501290a51b9a19788ecb955425d0e4	321	editions/china-africa-faculty/phase-1/labs/lab-day3/test.py
+100644	blob	56bd45ec7399ff3ad138f2dcde9a74f92103007d	176720	editions/china-africa-faculty/phase-1/syllabus/syllabus-hardware-and-software-foundations-of-intelligent-computing-systems.pdf
+100644	blob	f3ea103428990d70b031d922f94b29e3b28470ca	48349035	editions/china-africa-faculty/phase-1/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/lectures-1-to-9.pptx
+100644	blob	0b08ef495ae0601cc0c4c665b2ae62b763b45fc5	50366890	editions/china-africa-faculty/phase-1/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/lectures-10-to-18.pptx
+100644	blob	3150dd3825bb461684673a9b10d71403de21c2ad	24723740	editions/china-africa-faculty/phase-1/textbooks/en/module-3-ai-compiler-principles-and-optimization/lectures-19-to-27.pptx
+100644	blob	e47ea7d8044ff5190aee831eeb5e351b46112697	32358612	editions/china-africa-faculty/phase-1/textbooks/en/module-4-distributed-parallel-training-and-communication/lectures-28-to-36.pptx
+100644	blob	41f0776d6257fb19a24a465e6793c3795c147bc9	42030231	editions/china-africa-faculty/phase-1/textbooks/en/module-5-performance-analysis-methodology/lectures-37-to-48.pptx
+100644	blob	4e6e37dfc39d932b878c5f022f085e5dbffb7696	48205285	editions/china-africa-faculty/phase-1/textbooks/fr/module-1-fondements-logiciels-des-systemes-d-ia-et-calcul-heterogene/lecons-1-a-9.pptx
+100644	blob	302c239d593aa8d944f20b733291c34cc91ab2fb	49499090	editions/china-africa-faculty/phase-1/textbooks/fr/module-2-operateurs-ia-haute-performance-et-ingenierie-des-operateurs/lecons-10-a-18.pptx
+100644	blob	652232029caa407d05c3dbd1a10c116cd713bd0d	24392854	editions/china-africa-faculty/phase-1/textbooks/fr/module-3-principes-des-compilateurs-ia-et-optimisation/lecons-19-a-27.pptx
+100644	blob	335c1864a8201a3a5be4dfaf5bc09b332444fc0e	33184507	editions/china-africa-faculty/phase-1/textbooks/fr/module-4-entrainement-parallele-distribue-et-communication/lecons-28-a-36.pptx
+100644	blob	4e25c8c0898cc1f628fe807d79bc18c1e40a93c2	40990778	editions/china-africa-faculty/phase-1/textbooks/fr/module-5-methodologie-d-analyse-des-performances/lecons-37-a-48.pptx
+100644	blob	696f714b75317b790ad18539a8bb3ae7b767d6c2	3370	editions/tencent-edu/README.md
+100644	blob	9afcccfe48f8b7db06d5f9dec13fb078ebe7d760	4174446	editions/tencent-edu/general-education-course/ai-large-language-model-general-course.pptx
+100644	blob	8f06eabccb920e3b788772cd0f71942e57f80ca1	223	editions/tencent-edu/labs/README.md
+100644	blob	56bd45ec7399ff3ad138f2dcde9a74f92103007d	176720	editions/tencent-edu/syllabus/syllabus-hardware-and-software-foundations-of-intelligent-computing-systems.pdf
+100644	blob	14415395ec47f36f69840204d2a226cec394dd03	26302343	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 01 - Course Introduction and AI Hardware Landscape_en.pptx
+100644	blob	9fdd9faf5302ec05947946acf0c0596ace5695f9	14428913	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 02 - Fundamentals of Heterogeneous Computing Programming Models_en.pptx
+100644	blob	ed0c6f3c00082aa6695751ccffe7b29c891f5ab4	11219527	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 03 - Deep Learning Framework Call Chain Analysis_en.pptx
+100644	blob	6d6306cd669b0976580b08842a03dbf382bc85cb	4664728	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 04 - Introduction to the Triton Language_en.pptx
+100644	blob	b21381235e8321b9b07bcf3c00d748b15dea472e	5428778	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 05 - Environment Setup and Toolchain Configuration_en.pptx
+100644	blob	6f59102e975f2744f1f4aee7c03d7b5211687128	4858763	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 06 - Vector Computation Basics - Vector Add in Triton_en.pptx
+100644	blob	ceae2addefc192332104e25de8c750d0ab394a70	4462790	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 07 - Matrix Multiplication Optimization_en.pptx
+100644	blob	053853cc463cfe47e508547d0b3609bbc5f2a8b2	5444961	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 08 - Memory Hierarchy Optimization_en.pptx
+100644	blob	20ba202ee7d306d71ac83d8330f044a194d0ac6a	4347550	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/Lecture 09 - Module I Midterm Project - Softmax Kernel Implementation_en.pptx
+100644	blob	a026a72e58373037c206e53bf17c83abb7abb212	46533165	editions/tencent-edu/textbooks/en/module-1-ai-systems-software-foundations-and-heterogeneous-computing/lectures-1-to-9.pptx
+100644	blob	3643a5a9ab19555a867a7fed84faf82633303531	18087080	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 10 - Attention Mechanism Principles and Operator Requirements_en.pptx
+100644	blob	e0ada1933cdbc25bd9315bc2119dab7b802f14ca	8486911	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 11 - Flash Attention Implementation I (IO-Aware)_en.pptx
+100644	blob	35c240739881dd6492c2c26aba11e424e590f618	7496984	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 12 - Flash Attention Implementation II (Algorithmic Optimization)_en.pptx
+100644	blob	3dedcc0b2db8f882759cfb2375c40ed253d3b99c	11646641	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 13 - Convolution Operator Optimization_en.pptx
+100644	blob	8e254f73dfa31796eaf064deb7cee89d5f5b88c2	7254681	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 14 - Normalization and Activation Functions_en.pptx
+100644	blob	d11249d1f42944733792fc6a34f94690e26901d6	8196601	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 15 - Operator Fusion_en.pptx
+100644	blob	343e40646f6ae145021bb4fd38afb90ac60ee7a4	9560325	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 16 - Complex Operator Debugging and Profiling_en.pptx
+100644	blob	ec18d2e78397ecbff6b1ce84743f0cdfa18738f5	7207853	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 17 - Architectural Design of Operator Libraries_en.pptx
+100644	blob	12390883f25813b274ed355ef5b5216fdcbdf1ea	4347380	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/Lecture 18 - Module II Final Project (RMSNorm + Residual  Fused Operator)_en.pptx
+100644	blob	eda037aa31fb0e16851fb11bf325a8c92c4f5939	47652369	editions/tencent-edu/textbooks/en/module-2-high-performance-ai-operators-and-operator-engineering/lectures-10-to-18.pptx
+100644	blob	86bff3892be9caa66dffdaf420ce74793d92fc06	9319227	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 19 - Overview of AI Compilers_en.pptx
+100644	blob	57c0af871217bfaf3ee77c04fb705d3934e3ec7b	6515929	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 20 - Intermediate Representation (IR) Fundamentals_en.pptx
+100644	blob	b764f99449051409c9f74043dc7912897c972fa5	7708391	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 21 - In-Depth Analysis of the MLIR Architecture_en.pptx
+100644	blob	7f0cdaf3ae2b6689343b5c8dcdb9ebf91582b7bd	6364100	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 22 - Operator Fusion Pass_en.pptx
+100644	blob	3d65944f0181504d8cda708168f8f29bae4ed7c0	5504670	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 23 - Loop-Invariant Code Motion (LICM)_en.pptx
+100644	blob	1b870747754766a57217e4af53ebecf6bf697b51	5362076	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 24 - Layout and Memory Planning_en.pptx
+100644	blob	542acaa853da3a846b2c9217e3882b54187bcfbc	5387827	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 25 - Multi-end Support I (Codegen)_en.pptx
+100644	blob	e81451fc6180bfc1f10512e4b02365a560f69794	7987073	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 26 - Multi-Chip Backend Support II (Runtime Integration)_en.pptx
+100644	blob	e9375c4f24d77f75adb135d99bbcbfaaea716d50	4338455	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/Lecture 27 - Module III Final Project (FlagTree Pass Contribution)_en.pptx
+100644	blob	113e639c87f85be58120b8e35b7cbc017074875d	23727812	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/backup/lectures-19-to-27_backup.pptx
+100644	blob	113e639c87f85be58120b8e35b7cbc017074875d	23727812	editions/tencent-edu/textbooks/en/module-3-ai-compiler-principles-and-optimization/lectures-19-to-27.pptx
+100644	blob	88e8e8aab96a94df9b22c16064bdba0018872558	9897114	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 28 - Data Parallelism_en.pptx
+100644	blob	34b3c27613e2843a96049687b80859961c1bbbb9	9452464	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 29 - Model Parallelism I (Tensor Parallelism)_en.pptx
+100644	blob	50a78221daa499b06e22d37bf625eb4cdbc04772	10409607	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 30 - Model Parallelism II (Pipeline Parallelism)_en.pptx
+100644	blob	fca09591f60c1c581e89eebc153171f212e9d409	12480386	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 31 - Communication Primitives_en.pptx
+100644	blob	6ca8020c8f98ffda9161775a187a3b1f6b63597d	10193257	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 32 - Communication Topology Optimization_en.pptx
+100644	blob	c9d474a4ff62469a59a6e9b60131f6974ef72f0e	6761777	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 33 - Model Parallelism III (Hybrid Parallelism)_en.pptx
+100644	blob	ef11cb95eb246191be1347a45f284e44d4308590	6795570	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 34 - Fault Tolerance and Checkpointing_en.pptx
+100644	blob	48956487b691fff298c9d54144337460b85406e3	8086848	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 35 - GPU Memory Optimization Techniques_en.pptx
+100644	blob	4b78cd1fd9027997298ea7397bd443456f90b2e7	6042786	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/Lecture 36 - Module IV Final Project (7B Model Multi-Node Distributed Training)_en.pptx
+100644	blob	6bcac7245b70819f5ec31a7895d53665adde1cb4	31324787	editions/tencent-edu/textbooks/en/module-4-distributed-parallel-training-and-communication/lectures-28-to-36.pptx
+100644	blob	93d64877c6957c9a9c0fdf9940fb044e1c4ce85e	6203555	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 37 - Performances Metrics_en.pptx
+100644	blob	b2890ea9b4fb6abd529ebf3952098ff9133256d9	8977679	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 38 - Auto-Tuning_en.pptx
+100644	blob	f075bc77b1581765afae7c3f7f7b80411576340d	6738053	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 39 - In-Depth Operator Performance Profiling Lab_en.pptx
+100644	blob	e3c766643f031269e4b67f35d154f445b5ab738a	9795613	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 40 - Overview of LLM-Assisted Programming_en.pptx
+100644	blob	23995266ec96662671603ef743ac4f9364531c53	7402894	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 41 - KernelGen Architecture and Prompt Engineering_en.pptx
+100644	blob	d1e1f7169e718a2ec113cc53d92a07907b90d7c1	6918738	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 42 - From Generation to Deployment Integration of Generated Code_en.pptx
+100644	blob	8c4d301bea19d4aaa4a1f663468cd3cd06177bc2	5601053	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 43 - Extreme Optimization of Heterogeneous Systems_en.pptx
+100644	blob	b3b2fa644a0542c880795e7d08770bc2e1ab4f15	14122286	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 44 - End-to-End Performance Optimization_en.pptx
+100644	blob	1a4bf3dc821fe01cd4afe5a5ecc40b6eb01ac2d7	4993692	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 45 - Open-Source Contribution and Community Collaboration_en.pptx
+100644	blob	302308cb91c5845a1a139fe8441e2a655ce5a8f2	4336699	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 46-47 - Course Project Presentation_en.pptx
+100644	blob	478c31dd171d9759289c54686f9d59726d0b7f40	7456095	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/Lecture 48 - Emerging Technology Outlook and Course Summary_en.pptx
+100644	blob	c348717d460b9c9ec27bb23bb7c6a1d67f9a2fc7	39315681	editions/tencent-edu/textbooks/en/module-5-performance-analysis-methodology/lectures-37-to-48.pptx

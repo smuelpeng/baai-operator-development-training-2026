@@ -8,6 +8,7 @@
 |---|---|---|
 | 如何建立从 AI 芯片到 FlagOS 的全栈认识？ | [课程地图](COURSE_MAP.md) 的王晶课件页段表 | 按表进入模块 1–5 |
 | 如何把实验组织成竞赛式课程项目？ | [教师授课指南](TEACHING_GUIDE.md) 的“全景导入与赛教融合” | 再读 [作业与验收](ASSESSMENT.md) |
+| 官方 48 学时课程和本仓 5 天研修路径如何对应？ | [官方 OpenCourse 对照指南](OFFICIAL_OPENCOURSE.md) | 按模块进入课件、作业和实验状态表 |
 
 ## 写 kernel
 
@@ -44,6 +45,7 @@
 | 问题 | 入口 |
 |---|---|
 | Python → TTIR → TTGIR → LLVM/目标代码 | `modules/03-ai-compiler/README.md` |
+| 官方 Triton IR 实验源码与上游证据冲突 | `modules/03-ai-compiler/labs/official-triton-ir/README.md` |
 | 如何做 lowering 对照 | `modules/03-ai-compiler/exercises/01-trace-a-kernel.md` |
 | 数值摘要、地址、完整值、时间线插桩 | `FlagPrism/Debugger/` |
 | timeline、Hatchet、vendor 数据 | `FlagPrism/Profiler/` |
@@ -55,7 +57,8 @@
 | DP/TP/PP/ZeRO/FSDP 的选择 | `modules/04-distributed-training-and-communication/README.md` |
 | Ring/Tree/halving-doubling | 同模块课件与练习 |
 | α-β 成本和拓扑假设 | `exercises/01-allreduce-and-parallelism.md` |
+| Qwen3-4B + vLLM + FlagGems 部署扩展 | `labs/official-inference-deployment/README.md`；不作为通信实验通过项 |
 
 ## 原始课件
 
-需要引用教师原始定义、公式或架构图时，从 `materials/README.md` 进入课件。代码任务优先引用模块 README 和源码路径，避免让 AI 一次加载全部 PDF。
+需要引用教师原始定义、公式或架构图时，从 `materials/README.md` 进入课件。需要追溯官方长期课程、发布版和 best-practices 时，从 `docs/OFFICIAL_OPENCOURSE.md` 进入。代码任务优先引用模块 README 和源码路径，避免让 AI 一次加载全部 PDF/PPTX。

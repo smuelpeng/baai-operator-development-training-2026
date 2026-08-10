@@ -26,6 +26,7 @@ Host launch → Grid → Program instance → Tile
 ## 课件
 
 - [模块一主课件](../../materials/courseware/module-01/模块一：AI%20系统软件基础与异构计算.pdf)
+- [官方可编辑 PPTX](../../materials/courseware/module-01/official-editable/课件-模块一：AI%20系统软件基础与异构计算.pptx)
 - [实验平台说明](../../materials/platform/线上实验室平台介绍0804.pdf)
 - 相关背景材料见 [课件索引](../../materials/README.md)。
 

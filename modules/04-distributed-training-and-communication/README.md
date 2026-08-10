@@ -35,9 +35,11 @@ Ring AllReduce 的课件口径为：
 - [分布式并行训练](../../materials/courseware/module-04/0806-课件-预习版本-模块四：分布式并行训练.pdf)
 - [分布式通信原语授课版](../../materials/courseware/module-04/0807-课件-授课版本-模块四：分布式通信原语.pdf)
 - [通信原语预习版](../../materials/courseware/module-04/0807-课件-预习版本-模块四：分布式通信原语.pdf)
+- [通信原语官方可编辑 PPTX](../../materials/courseware/module-04/official-editable/课件-模块四：分布式通信原语.pptx)
 - [练习：AllReduce 与并行策略](exercises/01-allreduce-and-parallelism.md)
+- [官方推理部署扩展](labs/official-inference-deployment/)：Qwen3-4B、vLLM、FlagGems；不替代通信实验
 
-授课版通信课件比预习版多 10 页，新增 Broadcast 下界、树形广播、分块流水化和 simultaneous trees。
+授课版通信课件比预习版多 10 页，新增 Broadcast 下界、树形广播、分块流水化和 simultaneous trees。官方发布版中名为“分布式并行训练”的 34 页 PPTX 实际全部是 AI 编译器内容，已隔离到模块三；当前没有 61 页分布式训练 PDF 的官方可编辑原件。
 
 ## 验收
 

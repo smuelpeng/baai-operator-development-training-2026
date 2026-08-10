@@ -25,6 +25,7 @@ out = z * rrms * weight
 ## 课件与实验
 
 - [模块二主课件](../../materials/courseware/module-02/0805-课件-模块二：高性能AI算子与算子工程.pdf)
+- [官方可编辑 PPTX](../../materials/courseware/module-02/official-editable/课件-模块二：高性能AI算子与算子工程.pptx)
 - [学生版实验](labs/fused-rmsnorm-student/)
 - [参考实现](labs/fused-rmsnorm-reference/)
 

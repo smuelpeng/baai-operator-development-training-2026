@@ -4,6 +4,8 @@
 
 课程原始资料来自“2026 年暑期全国高校人工智能自主软硬件技术课程公益研修班（第一期）”。本仓库在保留课件和代码快照的基础上，补充了教学顺序、学习目标、实验任务、产出要求和验收标准。
 
+2026-08-10 已与 FlagOS 官方 OpenCourse 固定提交 `cb6b9e0a3c01d9cd31bc2187127a6f44f6626990` 完成逐项对账：本期发布版 24 项均可定位，缺失的可编辑 PPTX、官方平台版本和模块 3/4 实验来源已补档或登记。官方 48 学时主线与本仓 5 天研修路径的关系见 [官方 OpenCourse 对照指南](docs/OFFICIAL_OPENCOURSE.md)。
+
 > 使用范围：仓库包含内部课件、通知和邀请函，必须保持 Private。转发、授课和二次使用前请遵守主办方及原作者的授权要求。
 
 ## 用 AI Coding 开始第一个算子任务
@@ -57,7 +59,7 @@ AI 编译器
 | [01 AI 系统软件与 Triton](modules/01-ai-system-and-triton/) | kernel 如何映射到异构硬件？ | Vector Add、Softmax、LayerNorm、GEMM、Autotune | 正确性记录与 GEMM 调优报告 |
 | [02 高性能 AI 算子](modules/02-high-performance-operators/) | 融合为什么会快，什么时候会变慢？ | Fused Add + RMSNorm 前向、反向、Dispatcher | 学生实现、测试结果、性能对照 |
 | [03 AI 编译器](modules/03-ai-compiler/) | 一段 Triton 代码如何变成设备指令？ | 编译链追踪、IR 对照阅读 | 一份算子 lowering 地图 |
-| [04 分布式训练与通信](modules/04-distributed-training-and-communication/) | 多卡训练的显存、通信与流水如何权衡？ | ZeRO/并行策略分析、AllReduce 推演 | 通信成本表与策略说明 |
+| [04 分布式训练与通信](modules/04-distributed-training-and-communication/) | 多卡训练的显存、通信与流水如何权衡？ | ZeRO/并行策略分析、AllReduce 推演；推理部署扩展 | 通信成本表与策略说明 |
 | [05 性能工程](modules/05-performance-engineering/) | 如何证明优化有效并定位瓶颈？ | Benchmark、Roofline、Profiling、FlagPrism | 可复核的性能诊断报告 |
 
 ## 建议用法
@@ -79,6 +81,7 @@ cd baai-operator-development-training-2026
 - [AI Coding 任务配方](docs/AI_TASK_RECIPES.md)：可复制的新 kernel、融合、调优和诊断请求。
 - [算子开发任务目录](docs/TASK_CATALOG.md)：从 T01 到 T10 的可直接分配任务与最快学习路线。
 - [课程地图](docs/COURSE_MAP.md)：先修知识、模块关系、学习节奏，以及王晶老师 165 页课程建设总览与五模块映射。
+- [官方 OpenCourse 对照指南](docs/OFFICIAL_OPENCOURSE.md)：官方 48 学时主线、本期发布版、组件专题、固定提交和已知上游异常。
 - [教师授课指南](docs/TEACHING_GUIDE.md)：讲授重点、课堂问题、实验组织和易错点。
 - [原班日程与复用课表](docs/SCHEDULE.md)：研修班原日程和可复用的 5 天安排。
 - [环境说明](docs/ENVIRONMENT.md)：BI-V150、CoreX、FlagOS 和实验边界。
@@ -111,7 +114,7 @@ cd baai-operator-development-training-2026
 └── ai_open_source_components_research_report.md
 ```
 
-五个 Gitee 教学仓库和 FlagPrism 均已转为普通目录。GitHub 页面可以直接浏览源码，不需要初始化 submodule。每份源码的上游地址和固定提交见 [代码来源清单](records/code_repository_inventory.md)。
+五个原研修班 Gitee 教学仓库和 FlagPrism 均已转为普通目录；本次另补模块三 IR 实验和模块四推理部署手册的精选固定快照。GitHub 页面可以直接浏览源码，不需要初始化 submodule。每份源码的上游地址、固定提交和验收状态见 [代码来源清单](records/code_repository_inventory.md)。
 
 ## 学习记录的最低要求
 

@@ -1,0 +1,6 @@
+# Preserve byte-identical upstream snapshots even when their original text has
+# trailing spaces or an extra blank line at EOF. Local authored files keep the
+# default whitespace checks.
+materials/official-opencourse/LICENSE -whitespace
+modules/03-ai-compiler/labs/official-triton-ir/upstream/** -whitespace
+modules/04-distributed-training-and-communication/labs/official-inference-deployment/upstream/** -whitespace

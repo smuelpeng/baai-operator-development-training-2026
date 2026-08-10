@@ -31,6 +31,7 @@ Profiler：哪类设备事件支持或推翻这个判断？
 ## 课件、实验与工具
 
 - [模块五主课件](../../materials/courseware/module-05/0807-课件-预习版本-模块五：性能评测与下一代内核生成.pdf)
+- [官方可编辑 PPTX](../../materials/courseware/module-05/official-editable/课件-模块五：性能评测与下一代内核生成.pptx)
 - [Profiler & Debugger 专题](../../materials/courseware/module-05/基于%20FlagTree%20生态的%20Profiler&Debugger%20初探%20-%20周炽金%20老师.pdf)
 - [性能分析实验](labs/performance-analysis/)
 - [FlagPrism 固定快照](tools/FlagPrism/)

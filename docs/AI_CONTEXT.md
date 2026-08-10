@@ -40,7 +40,9 @@ FlagOS 实例配额、CoreX 环境指纹和低风险上机顺序见
 | 融合算子参考 | `modules/02-high-performance-operators/labs/fused-rmsnorm-reference/` |
 | Dispatcher / Meta / Autograd | 学生任务中的 `custom_op.py`、`grad_kernel.py` |
 | 编译链练习 | `modules/03-ai-compiler/exercises/01-trace-a-kernel.md` |
+| 官方 Triton IR 候选源码 | `modules/03-ai-compiler/labs/official-triton-ir/`；不采用上游冲突的生成结果 |
 | AllReduce 推演 | `modules/04-distributed-training-and-communication/exercises/01-allreduce-and-parallelism.md` |
+| vLLM + FlagGems 推理部署扩展 | `modules/04-distributed-training-and-communication/labs/official-inference-deployment/` |
 | Benchmark/Roofline/Profiler | `modules/05-performance-engineering/labs/performance-analysis/` |
 | 插桩、Debugger、Profiler | `modules/05-performance-engineering/tools/FlagPrism/` |
 
@@ -60,6 +62,7 @@ FlagOS 实例配额、CoreX 环境指纹和低风险上机顺序见
 - 本仓库所在 Mac 不具备已确认的 BI-V150/CoreX 环境；
 - 2026-08-08 已在 FlagOS 一卡 BI-V150 实例动态验证模块 1、2、5 的代表性链路，命令、固定提交和结果见 [`records/experiments/2026-08-08-flagos-bi-v150-validation.md`](../records/experiments/2026-08-08-flagos-bi-v150-validation.md)；
 - 模块 3、4 和双卡路径仍未动态验收，课件中的性能目标不能当作现有复现结果；
+- 官方 OpenCourse 已固定到 `cb6b9e0…` 并完成本期 24 项对账；长期 48 学时主线只做索引，使用边界见 `docs/OFFICIAL_OPENCOURSE.md`；
 - 新任务应在 `workspaces/` 开发，避免覆盖固定上游快照。
 
 ## 给 AI 的最小请求格式

@@ -2,16 +2,16 @@
 
 归档时间：2026-08-10
 
-来源：微信群“2026智源智算课程研修班1期”的微信本地文件缓存。
+来源：微信群“2026智源智算课程研修班1期”的微信本地文件缓存；FlagOS 官方 OpenCourse 固定提交 `cb6b9e0a3c01d9cd31bc2187127a6f44f6626990`。
 
-本地位置：五个主模块位于 `materials/courseware/`，专题材料位于 `materials/seminars/`，平台说明位于 `materials/platform/`，通知与表格位于 `materials/administration/`。带个人姓名的邀请函单独放在 `materials/administration/private/`。
+本地位置：五个主模块位于 `materials/courseware/`，专题材料位于 `materials/seminars/`，平台说明位于 `materials/platform/`，通知与表格位于 `materials/administration/`，官方许可证与实验入口位于 `materials/official-opencourse/`。带个人姓名的邀请函单独放在 `materials/administration/private/`。
 
 ## 归档结果
 
-- 共保存 27 份唯一 PDF，合计 157,507,571 字节（150.21 MiB），另有 1 份 DOCX 申请表（50,242 字节）。
-- 27 份 PDF 均可由 `pdfinfo` 正常解析并取得页数；DOCX 已完成结构提取和渲染检查。
+- 共保存 28 份 PDF、6 份 PPTX 和 1 份 DOCX。PDF 合计 159,361,215 字节（151.98 MiB），PPTX 合计 84,255,949 字节（80.35 MiB），DOCX 为 50,242 字节；课程文件总计 243,667,406 字节（232.38 MiB）。
+- 28 份 PDF 均可由 `pdfinfo` 正常解析；6 份 PPTX 均通过 OOXML 压缩包完整性检查并取得幻灯片数；DOCX 已完成结构提取和渲染检查。
 - 已生成 `records/courseware.sha256`，每份文件的 SHA-256 均已记录。
-- 微信缓存中没有发现与本研修班对应的 `.ppt` 或 `.pptx` 原件。部分课件由演示文稿导出为 PDF，例如 `0730LearnBuddy产品介绍PPT_V2.pdf`。
+- 微信缓存中没有发现与本研修班对应的 `.ppt` 或 `.pptx` 原件。本次 6 份 PPTX 均来自官方 OpenCourse，不写成微信群已下载文件。部分群内课件由演示文稿导出为 PDF，例如 `0730LearnBuddy产品介绍PPT_V2.pdf`。
 - `面向国产算力生态的智能计算系统课程-罗国杰.pdf` 与 `(1).pdf` 均为 44 页，但 SHA-256 不同，故作为两个版本保留。
 - 模块四预习版共 61 页；封面沿用了模块一标题，第二页开始的内容为数据并行、张量并行、流水线并行和混合并行。该封面异常保留原样并在此记录。
 - 微信缓存中的 `0806-课件-授课版本-模块四：分布式并行训练.pdf` 与已归档预习版大小和 SHA-256 完全相同（`f65dd5...`），因此只登记文件名别名，不重复保存。
@@ -86,6 +86,22 @@
 该课件封面题名为《融合 FlagOS 的智能计算课程建设》，文件名写作“融入 FlagOS 的智能计算系统课程建设”，PDF 内部 `Title` 元数据仍是“第七章 人工智能处理器架构基础”，`Author` 元数据为 `Zidong`。这些元数据与文件名、封面署名不一致，原件未改名、未改元数据；检索与引用时同时保留文件名和封面题名。大量正文页脚仍标注“2020年春季”，应视为沿用模板或混合来源标记，不能据此把整份课件日期改写为 2020 年。
 
 已抽查封面、课程体系、AI 辅助算子优化、FlagOS 实验、FlagScale 架构和结尾页，版面完整；全文文本抽取与页码证据保存在 `records/text_extracts/` 和 `knowledge/course-construction/`。
+
+## 07 官方 OpenCourse 补档
+
+| 文件 | 幻灯片/页数 | 大小（字节） | 说明 |
+|---|---:|---:|---|
+| 模块一 `课件-模块一：AI 系统软件基础与异构计算.pptx` | 39 | 23,283,603 | 与本地 39 页 PDF 高度同源的可编辑原件 |
+| 模块二 `课件-模块二：高性能AI算子与算子工程.pptx` | 63 | 21,939,211 | 与本地 63 页 PDF 高度同源的可编辑原件 |
+| 模块三 `课件-模块三：AI 编译器原理与优化.pptx` | 32 | 7,306,711 | 对应本地 32 页预习版 |
+| 上游名 `课件-模块四：分布式并行训练.pptx` | 34 | 8,016,836 | **官方错标**；逐页为 AI Compiler，与本地模块三 34 页授课版对应，隔离在模块三目录 |
+| 模块四 `课件-模块四：分布式通信原语.pptx` | 49 | 12,525,773 | 对应本地 49 页授课版 |
+| 模块五 `课件-模块五：性能评测与下一代内核生成.pptx` | 38 | 11,183,815 | 对应本地 38 页 PDF |
+| `04-众智FlagOS线上实验室平台介绍-董娜.pdf` | 16 | 1,853,644 | 官方 WPS 重导出版本；与群内 16 页 PDF 正文高度一致但哈希不同 |
+
+官方 2026 教师版共有 24 项。12 份 PDF 与本地文件 SHA-256 完全相同，因此不重复保存；上表 7 份课程文件与 5 份 `lab_handout.md` 构成其余 12 项。逐项映射见 `records/official_opencourse_2026_edition.tsv`。
+
+错标 PPTX 已完整渲染 34 张幻灯片并逐页抽检：封面为 “AI Compiler: Basics and Optimizations”，后续内容依次是计算图、TorchDynamo、TorchInductor、Triton、TileLang、MLIR 和 TTIR/TTGIR/LLVM Pass，没有分布式并行训练内容。它不替换模块四 61 页群内 PDF。
 
 资源申请表要求填写学校、课程及实验、与 FlagOS 的关系、共享存储、实验窗口、加速卡或学生人数、学生名单及教师信息。LibreOffice 渲染时本机缺少其中文字体，预览出现方框；原始 DOCX 的文字和表格结构完整，文件保持原样。
 

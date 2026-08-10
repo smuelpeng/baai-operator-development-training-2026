@@ -29,9 +29,12 @@ PyTorch program
 
 - [模块三授课版](../../materials/courseware/module-03/0806-课件-授课版本-模块三：AI%20编译器原理与优化.pdf)
 - [模块三预习版](../../materials/courseware/module-03/0806-课件-预习版本-模块三：AI%20编译器原理与优化.pdf)
+- [官方 32 页可编辑 PPTX](../../materials/courseware/module-03/official-editable/课件-模块三：AI%20编译器原理与优化.pptx)
+- [官方上游错标的 34 页可编辑版本](../../materials/courseware/module-03/official-editable/upstream-mislabeled/课件-模块四：分布式并行训练.pptx)：文件名写模块四，逐页内容实际为 AI 编译器
 - [练习：追踪一个 Triton kernel](exercises/01-trace-a-kernel.md)
+- [官方 Triton IR 实验候选快照](labs/official-triton-ir/)
 
-授课版比预习版多 2 页，增加 FlagGems 与 SGLang Triton kernel 等源码入口。
+授课版比预习版多 2 页，增加 FlagGems 与 SGLang Triton kernel 等源码入口。官方 IR 实验只完成源码归档和静态检查；上游 BI-V150 文字与随仓 H200 结果冲突，必须重新生成本机结果后才能用于验收。
 
 ## 验收
 
