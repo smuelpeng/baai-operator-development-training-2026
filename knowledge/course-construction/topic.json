@@ -1,0 +1,33 @@
+{
+  "active_question_limit": 8,
+  "as_of": "2026-08-10",
+  "closed_corpus": true,
+  "corpus_mode": "closed",
+  "created_at": "2026-08-10T04:22:42+00:00",
+  "description": "封闭语料主题库；manifest r1 仅登记王晶老师 2026-08-08 课件。",
+  "external_discovery": false,
+  "fixed_slots": [
+    "positioning",
+    "curriculum_structure",
+    "module_mapping",
+    "teaching_pipeline",
+    "ai_coding_role",
+    "assessment_protocol",
+    "limitations",
+    "versions"
+  ],
+  "goal": "从新增课件中提取可用于课程设计的目标、模块、实践方式、证据和边界，支持教师把算子开发、AI 编译、分布式训练与 FlagOS 实验组织成可授课路径。",
+  "graph_version": "v0.45.0",
+  "index_revision": "idx-8a7986963cf4b979-2",
+  "index_schema_version": 2,
+  "manifest_id": "baai-course-construction-manifest",
+  "manifest_revision": 1,
+  "schema_version": 1,
+  "stage": "S6",
+  "status": "active",
+  "status_note": "manifest r1 已完成 1/1 来源登记和词法索引，23 条原文证据、17 条结论（15 accepted、2 qualified）、1 条 numeric hold、20 个主线节点、25 条关系及 4 个 active 问题；S6 表示当前封闭语料内部审计可用，仓库可移植性由 scripts/validate_repository.py 另行检查。",
+  "title": "智能计算课程建设与 FlagOS 教学融合",
+  "topic_id": "baai-course-construction",
+  "topic_revision": 53,
+  "updated_at": "2026-08-10T04:52:22+00:00"
+}

@@ -78,7 +78,7 @@ cd baai-operator-development-training-2026
 - [AI 辅助算子开发手册](docs/OPERATOR_DEVELOPMENT_PLAYBOOK.md)：从任务合同到正确性、调优和交付。
 - [AI Coding 任务配方](docs/AI_TASK_RECIPES.md)：可复制的新 kernel、融合、调优和诊断请求。
 - [算子开发任务目录](docs/TASK_CATALOG.md)：从 T01 到 T10 的可直接分配任务与最快学习路线。
-- [课程地图](docs/COURSE_MAP.md)：先修知识、模块关系和学习节奏。
+- [课程地图](docs/COURSE_MAP.md)：先修知识、模块关系、学习节奏，以及王晶老师 165 页课程建设总览与五模块映射。
 - [教师授课指南](docs/TEACHING_GUIDE.md)：讲授重点、课堂问题、实验组织和易错点。
 - [原班日程与复用课表](docs/SCHEDULE.md)：研修班原日程和可复用的 5 天安排。
 - [环境说明](docs/ENVIRONMENT.md)：BI-V150、CoreX、FlagOS 和实验边界。
@@ -87,6 +87,7 @@ cd baai-operator-development-training-2026
 - [作业与验收](docs/ASSESSMENT.md)：每个模块的提交物和评分口径。
 - [课件索引](materials/README.md)：主课件、专题材料、平台资料与行政文件。
 - [课程内容总结](records/course_summary.md)：对全部材料的内容级总结。
+- [课程建设知识主题](knowledge/course-construction/README.md)：新增王晶课件的原文证据、主线图、词法索引和待回答问题。
 
 ## 仓库结构
 
@@ -101,6 +102,7 @@ cd baai-operator-development-training-2026
 │   ├── 04-distributed-training-and-communication/
 │   └── 05-performance-engineering/
 ├── materials/               # 原始课件、专题材料、平台与行政文件
+├── knowledge/               # 独立的可审计课程知识主题
 ├── docs/                    # 课程地图、授课指南、课表、环境和验收
 ├── templates/               # 可复制的 Triton 算子任务脚手架
 ├── workspaces/              # 新算子与调优任务的独立工作区

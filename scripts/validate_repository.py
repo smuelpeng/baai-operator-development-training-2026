@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import re
+import sqlite3
 import subprocess
 import sys
 from pathlib import Path
@@ -28,10 +30,12 @@ LINK_ROOTS = [
     ROOT / "README.md",
     ROOT / "AGENTS.md",
     ROOT / "docs",
+    ROOT / "knowledge",
     ROOT / "materials" / "README.md",
     ROOT / "workspaces" / "README.md",
 ]
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+COURSEWARE_SUFFIXES = {".pdf", ".docx", ".ppt", ".pptx"}
 
 
 def teaching_markdown() -> list[Path]:
@@ -93,12 +97,77 @@ def check_nested_metadata(errors: list[str]) -> None:
                 errors.append(f"gitlink/submodule remains: {line.rsplit(chr(9), 1)[-1]}")
 
 
-def verify_manifest(relative: str, errors: list[str]) -> int:
+def check_knowledge_portability(errors: list[str]) -> None:
+    root = ROOT / "knowledge"
+    if not root.is_dir():
+        return
+
+    forbidden = (b"/Users/", b"/private/var/", b"xwechat_files", b"wxid_")
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        data = path.read_bytes()
+        for marker in forbidden:
+            if marker in data:
+                errors.append(
+                    f"non-portable local marker in {path.relative_to(ROOT)}: "
+                    f"{marker.decode('ascii')}"
+                )
+
+    for registry in root.rglob("sources.jsonl"):
+        for number, line in enumerate(
+            registry.read_text(encoding="utf-8").splitlines(), 1
+        ):
+            if not line.strip():
+                continue
+            try:
+                source = json.loads(line)
+                source_path = Path(source["path"])
+            except (json.JSONDecodeError, KeyError, TypeError) as exc:
+                errors.append(
+                    f"malformed knowledge source {registry.relative_to(ROOT)}:{number}: {exc}"
+                )
+                continue
+            if source_path.is_absolute():
+                errors.append(
+                    f"absolute knowledge source path in {registry.relative_to(ROOT)}:{number}"
+                )
+            elif not (ROOT / source_path).is_file():
+                errors.append(f"knowledge source missing: {source_path.as_posix()}")
+
+    for index in root.rglob("rag.sqlite3"):
+        try:
+            connection = sqlite3.connect(f"file:{index}?mode=ro", uri=True)
+            integrity = connection.execute("PRAGMA integrity_check").fetchone()[0]
+            if integrity != "ok":
+                errors.append(
+                    f"knowledge index integrity failure in {index.relative_to(ROOT)}: "
+                    f"{integrity}"
+                )
+            for (raw_path,) in connection.execute("SELECT DISTINCT path FROM documents"):
+                source_path = Path(raw_path)
+                if source_path.is_absolute():
+                    errors.append(
+                        f"absolute source path in knowledge index {index.relative_to(ROOT)}"
+                    )
+                elif not (ROOT / source_path).is_file():
+                    errors.append(
+                        f"knowledge index source missing: {source_path.as_posix()}"
+                    )
+            connection.close()
+        except (sqlite3.Error, OSError) as exc:
+            errors.append(f"cannot inspect knowledge index {index.relative_to(ROOT)}: {exc}")
+
+
+def verify_manifest(
+    relative: str, errors: list[str], coverage_root: str | None = None
+) -> int:
     manifest = ROOT / relative
     if not manifest.is_file():
         errors.append(f"missing manifest: {relative}")
         return 0
     count = 0
+    listed: list[str] = []
     for number, line in enumerate(manifest.read_text(encoding="utf-8").splitlines(), 1):
         if not line.strip():
             continue
@@ -107,6 +176,10 @@ def verify_manifest(relative: str, errors: list[str]) -> int:
         except ValueError:
             errors.append(f"malformed manifest line {relative}:{number}")
             continue
+        if filename in listed:
+            errors.append(f"duplicate manifest target: {filename}")
+            continue
+        listed.append(filename)
         path = ROOT / filename
         if not path.is_file():
             errors.append(f"manifest target missing: {filename}")
@@ -115,6 +188,19 @@ def verify_manifest(relative: str, errors: list[str]) -> int:
         if actual != expected:
             errors.append(f"checksum mismatch: {filename}")
         count += 1
+
+    if coverage_root is not None:
+        asset_root = ROOT / coverage_root
+        assets = {
+            path.relative_to(ROOT).as_posix()
+            for path in asset_root.rglob("*")
+            if path.is_file() and path.suffix.lower() in COURSEWARE_SUFFIXES
+        }
+        listed_set = set(listed)
+        for filename in sorted(assets - listed_set):
+            errors.append(f"course file missing from manifest: {filename}")
+        for filename in sorted(listed_set - assets):
+            errors.append(f"manifest target outside course file set: {filename}")
     return count
 
 
@@ -146,8 +232,11 @@ def main() -> int:
     check_links(errors)
     check_python_syntax(errors)
     check_nested_metadata(errors)
+    check_knowledge_portability(errors)
     check_workspaces(errors)
-    course_count = verify_manifest("records/courseware.sha256", errors)
+    course_count = verify_manifest(
+        "records/courseware.sha256", errors, coverage_root="materials"
+    )
     source_count = 0
     if args.strict:
         source_count = verify_manifest("records/source_manifest.sha256", errors)

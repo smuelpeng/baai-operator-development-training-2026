@@ -1,0 +1,116 @@
+{
+  "action": "query",
+  "closed_corpus": true,
+  "command": "query",
+  "corpus_digest": "8a7986963cf4b97963601abf203bff1386e1e601c5f7dbd7115228b51ccaa497",
+  "created_at": "2026-08-10T04:36:07+00:00",
+  "external_source_count": 0,
+  "hash_scheme": "canonical_without_receipt_sha256_v1",
+  "index_built_at": "2026-08-10T04:35:54+00:00",
+  "index_revision": "idx-8a7986963cf4b979-2",
+  "index_schema_version": 2,
+  "indexed_chunk_count": 44,
+  "indexed_source_count": 1,
+  "limit": 8,
+  "manifest_revision": 1,
+  "manifest_source_count": 1,
+  "match_expression": "\"大 模 型\" AND \"算 子 优 化\"",
+  "mode": "all",
+  "next_offset": null,
+  "offset": 0,
+  "ok": true,
+  "queried_at": "2026-08-10T04:36:07+00:00",
+  "query": "大模型 算子优化",
+  "receipt_id": "query-20260810T043607Z-0b2eeed6",
+  "receipt_result_detail": "locator_only",
+  "receipt_sha256": "73ac45f0217531c5777b660eb42b8539d8556a9a4e915ae2d589d16c5cddc03f",
+  "result_count": 4,
+  "result_source_count": 1,
+  "results": [
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00037",
+      "counter_signals": [],
+      "locator": {
+        "canonical": "char:55257-55261",
+        "chunk_end": 56865,
+        "chunk_id": "src-wang-jing-20260808:chunk:00037",
+        "chunk_start": 55066,
+        "end": 55261,
+        "end_line": 1959,
+        "kind": "char",
+        "matched_text": "算子优化",
+        "start": 55257,
+        "start_line": 1874
+      },
+      "score": -3.6975182886922164,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    },
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00032",
+      "counter_signals": [],
+      "locator": {
+        "canonical": "char:48309-48313",
+        "chunk_end": 49084,
+        "chunk_id": "src-wang-jing-20260808:chunk:00032",
+        "chunk_start": 47295,
+        "end": 48313,
+        "end_line": 1679,
+        "kind": "char",
+        "matched_text": "算子优化",
+        "start": 48309,
+        "start_line": 1577
+      },
+      "score": -3.118488128879673,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    },
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00043",
+      "counter_signals": [],
+      "locator": {
+        "canonical": "char:65648-65652",
+        "chunk_end": 66140,
+        "chunk_id": "src-wang-jing-20260808:chunk:00043",
+        "chunk_start": 64368,
+        "end": 65652,
+        "end_line": 2353,
+        "kind": "char",
+        "matched_text": "算子优化",
+        "start": 65648,
+        "start_line": 2224
+      },
+      "score": -2.5530889968971775,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    },
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00038",
+      "counter_signals": [
+        "成本"
+      ],
+      "locator": {
+        "canonical": "char:57876-57880",
+        "chunk_end": 58424,
+        "chunk_id": "src-wang-jing-20260808:chunk:00038",
+        "chunk_start": 56625,
+        "end": 57880,
+        "end_line": 2043,
+        "kind": "char",
+        "matched_text": "算子优化",
+        "start": 57876,
+        "start_line": 1951
+      },
+      "score": -2.406269077564894,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    }
+  ],
+  "schema_version": 1,
+  "summary_only": false,
+  "topic_id": "baai-course-construction",
+  "topic_revision": 26,
+  "total_match_count": 4,
+  "total_matching_source_count": 1,
+  "truncated": false
+}

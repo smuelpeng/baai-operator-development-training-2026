@@ -1,0 +1,97 @@
+{
+  "action": "query",
+  "closed_corpus": true,
+  "command": "query",
+  "corpus_digest": "8a7986963cf4b97963601abf203bff1386e1e601c5f7dbd7115228b51ccaa497",
+  "created_at": "2026-08-10T04:36:07+00:00",
+  "external_source_count": 0,
+  "hash_scheme": "canonical_without_receipt_sha256_v1",
+  "index_built_at": "2026-08-10T04:35:54+00:00",
+  "index_revision": "idx-8a7986963cf4b979-2",
+  "index_schema_version": 2,
+  "indexed_chunk_count": 44,
+  "indexed_source_count": 1,
+  "limit": 8,
+  "manifest_revision": 1,
+  "manifest_source_count": 1,
+  "match_expression": "\"flagos\" AND \"实 验\" AND \"竞 赛\"",
+  "mode": "all",
+  "next_offset": null,
+  "offset": 0,
+  "ok": true,
+  "queried_at": "2026-08-10T04:36:07+00:00",
+  "query": "FlagOS 实验 竞赛",
+  "receipt_id": "query-20260810T043607Z-77e3e669",
+  "receipt_result_detail": "locator_only",
+  "receipt_sha256": "f77e857c69fe5e12f6fd786dac73c7ff61f6d58dd50fb2dd370557fa6397e399",
+  "result_count": 3,
+  "result_source_count": 1,
+  "results": [
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00037",
+      "counter_signals": [],
+      "locator": {
+        "canonical": "char:56395-56397",
+        "chunk_end": 56865,
+        "chunk_id": "src-wang-jing-20260808:chunk:00037",
+        "chunk_start": 55066,
+        "end": 56397,
+        "end_line": 1959,
+        "kind": "char",
+        "matched_text": "实验",
+        "start": 56395,
+        "start_line": 1874
+      },
+      "score": -4.50007415003938,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    },
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00038",
+      "counter_signals": [
+        "成本"
+      ],
+      "locator": {
+        "canonical": "char:57293-57299",
+        "chunk_end": 58424,
+        "chunk_id": "src-wang-jing-20260808:chunk:00038",
+        "chunk_start": 56625,
+        "end": 57299,
+        "end_line": 2043,
+        "kind": "char",
+        "matched_text": "FlagOS",
+        "start": 57293,
+        "start_line": 1951
+      },
+      "score": -4.205823150688718,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    },
+    {
+      "chunk_id": "src-wang-jing-20260808:chunk:00001",
+      "counter_signals": [],
+      "locator": {
+        "canonical": "char:2-8",
+        "chunk_end": 1755,
+        "chunk_id": "src-wang-jing-20260808:chunk:00001",
+        "chunk_start": 0,
+        "end": 8,
+        "end_line": 84,
+        "kind": "char",
+        "matched_text": "FlagOS",
+        "start": 2,
+        "start_line": 1
+      },
+      "score": -2.508915466222254,
+      "source_id": "src-wang-jing-20260808",
+      "source_sha256": "111174b55165b30ebc9fecc4a708beef415c28ca252e1703451580dbbe3dd5eb"
+    }
+  ],
+  "schema_version": 1,
+  "summary_only": false,
+  "topic_id": "baai-course-construction",
+  "topic_revision": 26,
+  "total_match_count": 3,
+  "total_matching_source_count": 1,
+  "truncated": false
+}

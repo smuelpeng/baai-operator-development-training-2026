@@ -1,0 +1,89 @@
+{
+  "action": "audit",
+  "audit_status": "pass",
+  "audited_at": "2026-08-10T04:52:22+00:00",
+  "command": "audit",
+  "counts": {
+    "claims": 17,
+    "conflicts": 0,
+    "edges": 25,
+    "evidence": 23,
+    "measurements": 1,
+    "nodes": 20,
+    "parking": 0,
+    "questions": 4,
+    "sources": 1
+  },
+  "coverage": {
+    "graph": {
+      "canonical_active_edges": 25,
+      "canonical_active_nodes": 20,
+      "parking_or_local_edges": 0
+    },
+    "measurements": {
+      "accepted": {
+        "denominator": 1,
+        "numerator": 0,
+        "rate": 0.0
+      },
+      "full_ledger_record_count": 1,
+      "mainline_selected": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null
+      }
+    },
+    "sources": {
+      "evidence_class_carrier_coverage": {
+        "primary_formal": {
+          "denominator": 1,
+          "numerator": 1,
+          "rate": 1.0
+        }
+      },
+      "indexed_object_coverage": {
+        "denominator": 1,
+        "numerator": 1,
+        "rate": 1.0
+      },
+      "note": "Carrier coverage verifies spans against the registered local carrier. A curated excerpt carrier is not the same as independently reopening its upstream formal page.",
+      "original_text_eligible_carrier_coverage": {
+        "denominator": 1,
+        "numerator": 1,
+        "rate": 1.0
+      },
+      "verified_span_registered_object_coverage": {
+        "denominator": 1,
+        "numerator": 1,
+        "rate": 1.0
+      }
+    }
+  },
+  "created_at": "2026-08-10T04:52:22+00:00",
+  "hash_scheme": "canonical_without_receipt_sha256_v1",
+  "index_meta": {
+    "built_at": "2026-08-10T04:35:54+00:00",
+    "chunk_chars": "1800",
+    "chunk_count": "44",
+    "chunk_overlap": "240",
+    "corpus_digest": "8a7986963cf4b97963601abf203bff1386e1e601c5f7dbd7115228b51ccaa497",
+    "index_revision": "idx-8a7986963cf4b979-2",
+    "index_schema_version": "2",
+    "indexed_source_count": "1",
+    "manifest_source_count": "1",
+    "storage_mode": "contentless_fts5"
+  },
+  "index_revision": "idx-8a7986963cf4b979-2",
+  "index_schema_version_expected": 2,
+  "issue_count": 0,
+  "issues": [],
+  "manifest_revision": 1,
+  "ok": true,
+  "receipt_id": "audit-20260810T045222Z-eb0e9ff8",
+  "receipt_sha256": "cb7bbc1031683b980e646ed4adae5d7cef4cd68083dc9c8f572efdcf55786a3b",
+  "schema_version": 1,
+  "stage": "S6",
+  "status": "active",
+  "topic_id": "baai-course-construction",
+  "topic_revision": 53
+}

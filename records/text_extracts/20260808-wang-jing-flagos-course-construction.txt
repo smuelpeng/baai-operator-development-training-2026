@@ -1,0 +1,2382 @@
+融合FlagOS的智能计算课程建设
+
+
+     中国人民大学       王晶
+     jwang@ruc.edu.cn
+       2026年8月8日
+           我做过什么
+  • 关于国产生态
+  • 华为
+      • 教育部-华为智能基座优秀教师（每年全国20人）
+      • 教育部-华为智能基座虚拟教研室学科协作组秘书处核心
+        成员，联合工作组教研与教学方法组副组长
+  • 曙光
+      • 全国大学生系统能力大赛先导杯技术委员会委员
+  • 寒武纪
+      • 《智能计算系统》课程合作单位
+  • 智源
+      • 2025年科研的交流，碰撞了教学的火花
+      • 2026年3月FlagOS引入本科生必修课
+      • 2026年5月学生参加算子赏金赛天津站第一名
+陈云霁 & 李玲 & 李威 et al   2020年春季    2
+           我遇到的问题
+ • 2023年第一次开课
+     • 2020年计划开课，加入培养方案
+     • 大三下选修课                    GPT横空出世
+     • 2023年选课学生个位数
+ • 2024年
+     • 上课人数大于选课人数（负担重）           SORA横空出世
+     • 增加苏州校区研究生课
+ • 2025年
+     • 人工智能学院必修课
+                                DeepSeek横空出世
+     • 赛教融合教改，学生竞赛全国一等奖
+     • 选课人数80
+ • 2026年
+     • 加入计算机必修课
+     • 选课人数达到三位数                 Agent席卷全球
+     • 北京市优秀本科教学资源，实验案例一等奖
+陈云霁 & 李玲 & 李威 et al   2020年春季                3
+           我要讲什么
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   4
+           应该培养什么样的人才？
+
+ 两个参考问题
+ • 汽车专业应该培养什么样的人才？
+      • 同济大学汽车专业培养目标：具有从事汽车、发动机和汽
+        车电子的研究、设计、制造及汽车营销和物流、车身与空
+        气动力学、汽车试验学等方面工作的基本能力
+
+ • 计算机专业应该培养什么样的人才？
+      • 计算机专业当培养计算机整机或子系统的设计者和研究者
+
+      人工智能方向应该培养人工智能
+         （子）系统的设计者和研究者
+陈云霁 & 李玲 & 李威 et al   2020年春季       5
+           一些思考
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   6
+           课程目标和目的
+ • 中国需要一大批智能基础设施的开发者和设计者
+ • 专业普及课程
+     • 应用驱动，全栈贯通
+ • 智能计算系统
+     • 建立智能计算系统设计及应用的知识体系
+     • 掌握智能应用开发的基本技能
+     • 培养开展智能计算系统基础研究的兴趣和能力
+
+                                能用智能计算系统，能开发智能应用
+             技能
+                                实现对智能计算软硬件技术栈的贯通理解
+             融合
+                                创造未来智能计算系统的科研基础
+             创造
+陈云霁 & 李玲 & 李威 et al   2020年春季                      7
+           计算机专业培养计划的启示
+
+
+
+
+                  研究生入学考试统考科目408
+陈云霁 & 李玲 & 李威 et al
+                           四门考研课程
+                      2020年春季       8
+           计算机专业培养计划的启示
+
+
+
+
+     计算机系统课程核心（全国系统能力大赛赛道）
+陈云霁 & 李玲 & 李威 et al   2020年春季   9
+    计算机专业培养计划的启示
+
+
+
+
+课程条块分割，学生不能融会贯通做出一个完整系统，导
+致我国信息产业全栈式人才缺乏，核心硬科技竞争力缺失
+陈云霁 & 李玲 & 李威 et al 2020年春季 10
+           计算机专业培养计划的启示
+
+
+
+
+                        计算机系统基础 ICS
+陈云霁 & 李玲 & 李威 et al   2020年春季         11
+           智能计算能力图谱
+➢从注重“程序设计”转变为注重“系统设计”
+➢从培养“程序性能开发能力”转变为“系统性设计能力”
+
+
+
+
+             智能时代计算机专业系统能力培养纲要—计算机教指委，2021
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                12
+           智能计算核心课知识图谱
+ ➢数理为基，系统为主，算法为核，开放为策
+
+
+
+
+               智能时代计算机专业系统能力培养纲要—计算机教指委，2021
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                  13
+           智能计算方向课程体系
+               101计划课程体系                      长周期系统方向课程                研究实践教学
+
+ 大四下
+
+ 大四上
+
+                                              操作系统内核           人工智能      智能计算赛训课
+ 大三下                                            实现
+                                                       计算机网络
+                                                               计算系统      具身智能赛训课
+
+                                                               数据库系统     程序设计赛训课
+ 大三上                                          现代处理器设             概论
+                                                       并行计算              数据库系统赛训
+                                                 计
+                                                               具身智能      信息安全攻防
+                      数据结构与算法II               计算机系统基
+ 大二下                                                   编译原理              数据科学实践
+                        荣誉课程                    础II
+                                                                         开源系统实践
+                      数据结构与算法I                计算机系统    数字逻辑
+ 大二上                               深度学习                                   科研早培
+                        荣誉课程                   基础I     数字电路
+
+           概率论与         离散数学      高级Python程                              从零构建计算机
+ 大一下       数理统计         荣誉课程       序设计
+
+          高等   高等       程序设计                                              新生引导课
+ 大一上      数学   代数       荣誉课程                                             智算大家讲坛
+
+          数理基础            算法与软件                   计算平台         智能系统       创新实践
+
+
+陈云霁 & 李玲 & 李威 et al     2020年春季                                                  14
+          跨课程跨层次的课程改革方案
+   横向        ➢ 汇编语言程序设计和计算机组成指令集层面贯通教学              重实践
+  跨课程        ➢ 建立指令流驱动的软硬件协同观念                      强关联
+   纵向        ➢ 从高级语言贯通到机器代码                         广综合
+  跨层次        ➢ 建立从智能应用到功能部件的系统观念                    强系统
+
+             应用                                     专用架构
+             算法
+  软件                                                 智能
+          编程语言                                       计算
+                                           CISC架构    系统
+          操作系统
+                                           计算机
+                                                     应用
+        指令体系结构                              系统
+                         RISC架构      计算机             系统
+                          汇编语言       系统设
+                                            基础       综合
+       CPU   MM   I/O                计综合             设计
+                          程序设计
+  硬件                                 实验课             实验
+                        计算机组成原理
+          功能部件
+             电路
+
+
+ 能力递进 基础系统能力                      核心技术能力       综合应用能力
+ 内容递进 概念系统学习
+陈云霁 & 李玲 & 李威 et al 2020年春季
+                                  真实系统实现       系统综合应用      15
+                  贯通式课程建设
+                           面向计算机系统能力培养的课程改革实践
+       二上                         通用计算机                          专用智能系统          三下
+
+      从高级语言贯通到机器代码                                               从智能应用贯通到体系结构
+      ➢ 本科生必修课《计算机系统基础》                                         ➢ 赛教融合：系统层优化打榜
+
+      ➢ 加深存储部分/编译链接部分                                           ➢ 基于人大定制,全栈式，应用驱动
+
+                  helloworld.c
+        高级语言
+        源程序
+                                                   编译过程
+                                 Pre-processor
+         helloworld.i            预处理器(#开头）
+        高级语言
+         程序
+
+                                 Compiler 编译器
+         helloworld.s
+        汇编语言
+        中间代码
+                                 Assembler 汇编器       printf.o
+         helloworld.o
+
+反汇编
+        目标文件                                       库文件
+       （机器语言）                                     （机器语言）
+
+                                  Linker 链接器
+         helloworld.exe
+       可执行文件
+       （机器语言）                              汇编过程
+
+                                                                                      16
+           自底向上全栈贯通的教学方案
+❖ 2026年入选北京高校优质本科基本教学资源
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   17
+           改革初步成果
+➢ 全国大学生系统能力大赛
+  • 2025教师获得“先导智算”专项项目资助
+  • 2025年学生获全国第一
+  • 2026年3支队进决赛，进入决赛队伍最多高校之一
+➢ 2026年FlagOS算子赏金赛天津站第一，全球第二
+➢ 第七届中国计算机教育大会计算机类教学和实验案例
+  一等奖1项，二等奖1项
+➢ 科研项目、招生质量
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   18
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   19
+           国内外相关课程
+ ➢美国计算机方向Top4高校Stanford、CMU、UC Berkley和MIT以
+  及多个国际单位联合发布了白皮书——“SysML: The New
+  Frontier of Machine Learning Systems”
+    • 包括Yann LeCun、Michael I. Jordan、Bill Dally和Jeff Dean等
+ ➢中科院《智能计算系统》（https://novel.ict.ac.cn/aics/）
+ ➢微软亚洲研究院《人工智能系统》
+  （https://github.com/microsoft/AI-System ）
+ ➢MIT6.5940《TinyML and Efficient Deep Learning Computing》
+  （https://hanlab.mit.edu/courses/2023-fall-65940 ）
+ ➢CMU 《Deep Learning Systems》（https://dlsyscourse.org/）
+ ➢UC Berkeley《Machine Learning Systems》
+  （https://ucbsky.github.io/aisys-fa2024/schedule/ ）
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                               20
+           智能计算系统课程提纲
+    • 第一章             概述
+    • 第二章             深度学习基础
+    • 第三章             深度学习应用
+    • 第四章             编程框架使用
+    • 第五章             编程框架机理
+    • 第六章             面向深度学习的处理器原理
+    • 第七章             深度学习处理器架构
+    • 第八章             智能编程语言
+    • 第九章             大模型
+
+陈云霁 & 李玲 & 李威 et al   2020年春季        21
+           智能计算系统实验内容
+   软硬件技术栈                       分阶段实验   综合实验
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                  22
+              微软课程大纲 – 基础知识
+课程 讲义名称                                备注
+1  课程介绍                                Overview and system/AI basics
+   人工智能系统概述                            System for AI: a historic view; Fundamentals of
+2
+   System perspective of System for AI neural networks; Fundamentals of System for AI
+   深度神经网络计算框架基础                        Backprop and AD, Tensor, DAG, Execution graph
+3
+   Computation frameworks for DNN Papers and systems: PyTorch, TensorFlow
+   矩阵运算与计算机体系结构                        Matrix computation, CPU/SIMD, GPGPU,
+4  Computer architecture for Matrix    ASIC/TPU
+   computation                         Papers and systems: Blas, TPU
+   分布式训练算法                             Data parallelism, model parallelism, distributed SGD
+5
+   Distributed training algorithms     Papers and systems:
+   分布式训练系统                             MPI, parameter servers, all-reduce, RDMA
+6
+   Distributed training systems        Papers and systems: Horovod
+                                       Running DNN job on cluster: container, resource
+   异构计算集群调度与资源管理系统
+                                       allocation, scheduling
+7  Scheduling and resource management
+                                       Papers and systems: KubeFlow, OpenPAI, Gandiva,
+   system
+                                       HiveD
+   深度学习推导系统
+8                                      Efficiency, latency, throughput, and deployment
+   Inference systems
+             微软课程大纲 （2）- 高级技术
+课程 讲义名称                              备注
+   计算图编译优化                           IR, sub-graph pattern match, Matrix multiplication
+9  Computation graph compilation and and memory optimization
+   optimization                      Papers and systems: XLA, MLIR, TVM, NNFusion
+   模型压缩和稀疏化处理
+                                     Model compression, Sparsity
+10 Efficiency via compression and
+                                     Pruning
+   sparsity
+                                     Hyper parameter tuning, NAS
+   自动机器学习系统
+11                                   Papers and systems: Hyperband, SMAC, ENAS,
+   AutoML systems
+                                      AutoKeras, NNI
+   强化学习系统                            Theory of RL, systems for RL
+12
+   Reinforcement learning systems    Papers and systems: AC3, RLlib, AlphaZero
+   模型安全与隐私保护                         Federated learning, security, privacy
+13
+   Security and Privacy              Papers and systems: DeepFake
+                                     AI for traditional systems problems, for system
+   用AI技术优化计算机系统                      algorithms
+14
+   AI for systems                    Papers and systems: Learned Indexes, Learned query
+                                     path
+               微软课程大纲 （3）- 实验
+课程                 讲义名称                                            备注
+Lab 1 (for week    框架及工具入门示例                                       Understand the systems from debugger info
+1,2)               A simple throughout end-to-end AI example, from and system logs
+                   a system perspective
+Lab 2 (for week 3) 定制一个新的张量运算                                      Design and implement a customized operator
+                   Customize operators                             (both forward and backward): in python
+Lab 3 (for week 4) CUDA实现和优化                                          Add a CUDA implementation for the
+                   CUDA implementation                                customized operator
+Lab 4 (for week     AllReduce实现和优化                                    Improve one of AllReduce operators’
+5,6)                AllReduce                                         implementation on Horovod
+Lab 5 (for week 7, 配置Container来进行云上训练或推理准备                            Configure containers
+8)                 Configure containers for customized training and
+                   inference
+Lab 6              学习使用调度管理系统                                         Get familiar with OpenPAI or KubeFlow
+                   Scheduling and resource management system
+Lab 7              分布式训练任务练习                                          Try different kinds of all reduce
+                   Distributed training                               implementations
+
+Lab 8               自动机器学习系统练习                                        Search for a new neural networkNN
+                    AutoML                                            structuree for Image/NLP tasks
+Lab 9               强化学习系统练习                                          Configure and get familiar with one of the
+                    RL Systems                                        following RL Systems: RLlib, …
+           MIT
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   26
+           UC Berkeley
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   27
+           哈工大
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   28
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   29
+AI 系统架构
+   应用层
+➢为不同应用场景提供已经建模好和优化好的不同AI算法
+➢计算机视觉、语音语义、机器学习、自然语言处理
+   开发层
+➢提供用户前端的编程语言，接口和工具链。
+➢尽可能让用户表达 AI 任务与算法，尽量少让用户关注
+ 底层实现（如声明式编程、命令式编程）是提升开发
+ 体验的较好的手段。
+    框架层
+➢ 负责静态程序分析与计算图构建，编译优化等。
+  ➢ 提供用户编程的 API
+  ➢ 获取用户表达 AI 模型，数据读取等意图
+  ➢ 在静态程序分析阶段完成尽可能的自动前向计算图构建
+  ➢ 自动求导补全反向传播计算图
+  ➢ 计算图整体编译优化
+  ➢ 算子内循环编译优化
+AI 开发框架
+AI 推理引擎&推理系统
+AI 编译&计算架构
+     编译编程-功能
+
+➢ 编译编程：
+ ➢ 提供硬件编程模型
+ ➢ 框架 IR 编译优化
+
+
+➢ 编程模型
+ ➢ 通过层次结构来组
+   织软件执行线程
+ ➢ 通过层次结构来组
+   织硬件内存的访问
+ ➢ 如 CUDA 编程模型
+     编译编程-性能
+➢ 循环优化等传统编译器的
+  优化策略
+➢ 运行时动态调度与优化。
+ ➢ 计算图部署于单卡，多卡
+   或分布式环境
+ ➢ 计算图按照执行顺序调度
+   算子与任务的执行
+ ➢ 多路复用资源，硬件驱动，
+   内存等资源的分配与释放。
+
+➢ 编译优化
+ ➢ 编译器或框架
+ ➢ 根据计算语义优化算子执
+   行方式
+ ➢ 降低内核启动与访存代价。
+AI 硬件&结构体系
+     硬件体系结构
+➢ 芯片和网络加速器
+➢ 硬件接口抽象：
+ ➢ GPU\TPU\NPU和各种
+   DSA。
+ ➢ 统一硬件接口抽象复
+   用编译优化策略
+ ➢ 让优化与底层设备和
+   体系结构解耦。
+➢ 可扩展网络
+ ➢ RDMA ， InifiBand ，
+   NVLink 等 提 供 高 效
+   NPU到NPU 互联，
+ ➢ 高带宽，更灵活通信
+   原语与高效的通信聚
+   合算法
+    硬件体系结构
+➢ 存储、组网和资源管理
+➢ 集群硬件体系结构
+  ➢ 存储、网络和程序执行
+  ➢ 互联与加速
+➢ 作业调度
+  ➢ 结合任务特点和异构硬
+    件拓扑进行高效调度
+➢ 资源管理
+  ➢ 将服务器资源池化
+  ➢ 运行期资源分配与环境
+    隔离
+  ➢ 异构资源集群管理
+       广泛的 AI 系统生态
+
+                       核心 AI 系统软硬件
+
+强化学习、联邦学                AI 算法和框架
+   习
+                         AI 框架、AI 推
+            新 AI 算法                   AI 编译架构
+                         理引擎支持与演
+           新 AI 范式支持                   及优化
+ 可解释性AI                      进
+
+
+
+                       核心 AI 系统软硬件
+AI 安全与隐私
+
+              AI 任务       AI 集群资源     AI 加速器
+           执行和编程模型        管理和调度       及高性能网络
+
+模型压缩、小型化
+              AI系统技术栈
+应用算法                  视觉、自然语言处理、语音语义：CNN、RNN、LSTM、GAN、Transformer、
+              领域算法
+（Algorithm）                    Stable Diffusion、Reinforce Learning
+             集成开发环境            编程环境：VS Code, Jupyter Notebook, PyCharm
+开发编程
+（Development）编程语言          与主流语言集成： PyTorch and Tensorflow etc. inside Python
+                      中间表达（IR）、前       编译优化          图优化与图执行
+                                                                      推理优化
+                      端 API            （Compilation） 调度
+框架
+                  AI系统技术栈
+             AI框架、推
+（Frameworks） 理引擎
+                      基本数据结构：张量
+                      （Tensor）
+                      基本计算单元：有向
+                                       词法、语法、语
+                                       义分析
+                                                      计算图动静统一
+                                                                      常量折叠&冗余
+                                                                      节点消除等
+                                                                      模型压缩：蒸馏
+                                       自动微分           计算图控制流
+                      无环图（DAG）                                        剪枝与量化
+                                       数据格式布局转
+                      前端优化                            内存分配            公共表达式消除
+                                       换
+                                       代码优化、代码
+                      后端优化                            算子循环优化          令和内存优化
+              编程编译                     生成
+异构与编译
+（Compiler）             编程模型：CUDA/Ascend C/Band C      AI编译器：TVM、XLA、TC
+
+                                              LLVM/GCC
+
+              底层通信                HCCL/NCCL、通信原语、集合通信算法
+体系结构
+               底层硬件               I芯片：CPU/GPU/AISC/FPGA/TPU/NPU
+（Architecture）
+           自底向上全栈贯通的教学方案
+❖ 2026年入选北京高校优质本科基本教学资源
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   44
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   45
+           人工智能的运行环境
+
+
+
+           输入          建模       实现     运行   输出
+
+
+
+
+     架构基础                       架构设计         标准与评测
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                    46
+            芯片分类
+  •   强大的调度、管理、          •   并行架构
+                                         •   针对AI定制架构
+      协调能力               •   计算单元多
+                                         •   成本低、能耗低
+  •   应用范围广              •   合适大量逻辑确定的
+  •   开发方便灵活                 重复计算
+
+
+
+      CPU
+
+
+                                GPU
+
+
+
+
+                                                XPU
+
+
+
+
+       灵活性                                            能效性
+陈云霁 & 李玲 & 李威 et al   2020年春季                               47
+           从专用到通用
+        通用：高速，低吞吐               专用：中速，高吞吐
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季               48
+           架构设计
+
+          计算
+
+
+
+
+          访存
+
+
+
+
+          通信
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   49
+           计算机系统基础（CSAPP）
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   50
+           硬件体系结构
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   51
+           课程安排
+教学周 章节名称                         讲授内容及掌握程度
+
+第1周     智能计算机系统漫游         课程概述，智能计算机系统概述
+
+                          数字逻辑基础（寄存器、门电路）、指令系统
+第2周     处理器体系结构
+                          体系结构，CISC和RISC
+
+                          单周期CPU的数据通路，控制信号和控制器设
+第3周     处理器体系结构
+                          计
+                          流水线CPU基本原理，相关和冒险，超标量流
+第4周     处理器体系结构
+                          水线
+                          深度学习处理器架构概况：并行思想与弗林架
+第5周     深度学习处理器
+                          构，英伟达架构发展
+                              深度学习处理器设计：脉动阵列、便笺存储器，
+第6周     深度学习处理器
+                              多核互联
+陈云霁 & 李玲 & 李威 et al   2020年春季                    52
+           计算机专业培养计划
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   53
+           国内课程
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   54
+           冯∙诺依曼结构的要点
+
+       存放数据                     运算器      算术运算
+        和程序                              逻辑运算
+
+
+        输入设备                    存储器     输出设备
+
+
+
+                                控制器
+
+  将信息转换成机                               将结果转换成
+  器能识别的形式                       指挥程序   人们熟悉的形式
+陈云霁 & 李玲 & 李威 et al   2020年春季
+                                 运行            55
+           计算机的硬件
+   下一任务单位置
+                            餐馆—计算机                  任务
+   当前任务单                                           （指令）
+                 IR       PC
+                           1                             主存
+   CPU                              1    2    3     4
+
+
+                                    5    6    7     8
+                                控
+                                制
+                                器   9    10   11    12
+       运算器
+                                    13   14   15    16
+
+      A                         B               食材
+                寄存器                            （数据）
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                                 56
+           主机完成一个程序的过程
+                                                              主存
+
+         取数指令                                          000   LOAD 005
+                                                       001   ADD 006
+                                                       002   SUB 007
+               CPU                                     003   STORE 008
+                                                       004
+               …      5               存储体              005     a
+                                                               a
+    a
+   ACC                                                 006     b
+                                 6                     007     c
+               CU
+               控制
+                          LOAD
+                          IR
+                           005
+                                     27     3 8        008
+   ALU
+
+              单元          PC
+                          000
+                                 1   MAR
+                                      005
+                                      000    MDR
+                                               a 005
+                                            LOAD
+     X
+                                 4
+  运算器              控制器
+                                      主存储器
+陈云霁 & 李玲 & 李威 et al   2020年春季
+                                 9                                 57
+           指令系统体系结构
+
+
+ 如何对机
+ 器编程使
+ 处理器按
+ 顺序执行
+  指令
+
+
+
+
+需要构建什
+么使用各种
+技巧使其快
+速运行
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   58
+         指令系统体系结构
+➢ CPU 于上世纪 60 年代问世，已发展几十年，有几十种不同的指令系统架
+  构相继诞生或消亡。
+➢ 依据硬件系统构成的复杂程度、指令执行的效率和并行性划分，指令系统
+  设计实现有两种思路：
+
+
+                     x86                   ARM
+                              POWER
+                    IA-64                PowerPC
+                              SPARC
+                     VAX                   MIPS
+                              Alpha
+复 杂 指 令 计 算 机 CISC:           精 简 指 令 计 算 机 RISC:
+Complex Instruction Set       Reduced Instruction Set
+Computer
+陈云霁 & 李玲 & 李威 et al 2020年春季   Computer               59
+             CSAPP教材：Y86-64
+Byte               0       1      2   3   4   5   6   7   8   9
+
+halt               0   0
+
+nop                1   0
+                                      ➢ 从内存中读取1到10字节的信息
+                                      ➢ 从第一个字节确定指令长度
+cmovXX rA, rB      2   fn rA rB
+
+irmovq V, rB       3   0   F   rB V
+
+rmmovq rA, D(rB)   4   0   rA rB D
+
+mrmovq D(rB), rA   5   0   rA rB D
+
+OPq rA, rB         6   fn rA rB
+
+jXX Dest           7   fn Dest
+
+call Dest          8   0   Dest
+
+ret                9   0
+
+pushq rA           A   0   rA F
+
+popq rA            B   0   rA F
+           RISC架构
+
+
+
+
+斯坦福大学前校长,现              加州大学伯克利分校
+任Alphabet 董事会主          教授，RISC-V RIOS Lab
+席、深度参与 AI 治理            主任与 Google
+与产业战略。                  DeepMind 杰出工程师
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                61
+           处理器的设计步骤
+
+    ①分析指令系统，得出对数据通路的需求
+
+    ②为数据通路选择合适的组件
+
+    ③连接组件建立数据通路
+
+    ④分析每条指令的实现，以确定控制信号
+
+    ⑤集成控制信号，形成完整的控制逻辑
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   62
+           MIPS指令系统的简化版本
+ • 无符号加法和减法
+     • addu rd,rs,rt
+     • subu rd,rs,rt                     6-bit         5-bit          5-bit      5-bit          5-bit           6-bit
+
+ • 立即数的逻辑或                      R opcode               rs             rt             rd        shamt        funct
+
+     • ori rt,rs,imm16
+                                    31       26   25        21   20        16   15        11   10       6   5           0
+
+
+
+ • 装载和存储一个字（32位）
+     • lw rt,imm16(rs)
+     • sw rt,imm16(rs)
+ • 条件分支
+     • beq rs,rt,imm16
+                                     6-bit         5-bit          5-bit                        16-bit
+
+                                I   opcode             rs             rt                   immediate
+                                    31      26    25        21   20        16   15                                 0
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                                                                                     63
+          实验：大模型辅助的图形化异构处理器设计
+• 图形编码与开发板实践双轮驱动
+• 图形化设计
+  •解决硬件描述语言学习难度大的问题
+  •解决大模型直接生成代码缺乏思考的问题
+• 开发板实践
+ •嵌入式开发板创新智能应用：养老、教育、医疗等领域
+ •基于华为昇腾310，熟悉国产硬件和生态
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   64
+                   数据通路初步完成
+
+                                                                                 Instruction        nPC_sel
+                                                                                 Fetch Unit
+                                                                                                    32
+           rd rt
+                                                                         clk        (IFU)          Instruction
+          5        5                                                                                  Word
+RegDst     1           0   rs rt                                                        MemtoReg
+                                                                ALUCtr
+RegWr          5           5    5
+                                                                         MemWr
+               Rw          Ra Rb busA
+  busW                                           32
+
+                                                                  ALU
+    32
+           RegFile                                                                           0
+               32-bit×32                       busB
+                                               32      0
+                                                           32
+         clk                                                                      Adr
+
+
+                                    Extender
+                                                                          WrEn
+                                                           Data In32
+                                                       1                   Data              1
+         imm16                                                                          32
+                           16                   32
+                                                                clk       Memory
+                   ExtOp                              ALUSrc
+
+
+
+陈云霁 & 李玲 & 李威 et al                             2020年春季                                                          65
+                 控制信号的汇总 （以add指令为例）
+  add: R[rd]  R[rs] + R[rt]; PC  PC + 4
+
+
+
+                                                      nPC_sel=“+4”                        Instruction<31:0>
+             rd rt                                                         IFU
+                                                                                                                     <15:11>
+                                                                clk
+
+                                                                                                 <25:21>   <20:16>
+            5        5
+RegDst=1     1           0   rs rt                                           MemtoReg=0
+                                                      ALUCtr=“ADD”
+RegWr=1          5           5     5                            MemWr=0
+                                                                     zer                        rs rt rd
+                 Rw          Ra Rb busA
+                                             32               =       o
+    busW
+             RegFile
+                                                              ALU
+                                                                                      0
+      32
+             32-bit×32                  busB
+                                            32    0
+                                                       32
+           clk                                                      WrEn   Adr
+                                  Extende               Data 32
+                                                                     Data
+                                                  1         In                        1
+           imm16
+                                     r
+                                                                                 32
+                             16              32
+                                                             clk    Memory
+                ExtOp=x                      ALUSrc=0
+
+
+
+ 陈云霁 & 李玲 & 李威 et al                        2020年春季                                                                            66
+           控制逻辑与数据通路
+      Address                 Instruction Word
+   Instruction        32
+
+
+
+                                                                      <15:11>   <15: 0 >
+    Memory
+                              <31:26>   < 5:0 >   <25:21>   <20:16>
+                           opcode func rs                   rt        rd        imm16
+
+
+                                  控 制 逻 辑
+
+                nPC_sel RegWr RegDst ExtOp ALUSrc ALUctr MemWr MemtoReg
+
+
+
+
+                                        数 据 通 路
+陈云霁 & 李玲 & 李威 et al    2020年春季                                                             67
+           控制信号的逻辑表达式
+
+                 func   100000   100010                       /
+        opcode(op)      000000   000000    001101   100011        101011    000100
+                         add       sub      ori       lw            sw        beq
+       RegDst             1         1        0         0             x         x
+       ALUSrc             0         0        1         1             1         0
+       MemtoReg           0         0        0         1             x         x
+       RegWr              1         1        1         1             0         0
+       MemWr              0         0        0         0             1         0
+       nPC_sel            0         0        0         0             0         1
+       ExtOp              x         x        0         1             1         x
+       ALUctr<1:0> 00(ADD)       01(SUB)   10(OR)   00(ADD)       00(ADD)   01(SUB)
+
+
+
+
+陈云霁 & 李玲 & 李威 et al      2020年春季                                                      68
+           硬件体系结构
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   69
+      计算机的本质是逻辑
+
+
+
+
+语义符号化➔ 符号计算化➔计算0(和)1化 ➔0(和) 1自动化➔分层构造化➔构
+造集成化
+陈云霁 & 李玲 & 李威 et al 2020年春季            70
+           计算机的本质是逻辑
+                            0和1的计算：基本逻辑运
+                            算
+                                     注: 1表示 真，0表示
+                                     假
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                       71
+           加法运算是这样实现的
+一位加法器的示例
+
+
+
+
+                                          Ai
+                                          Bi
+                                   +      Ci
+
+                                   Ci+1   Si
+                                疑问2：为什么
+                                前面1个非门后
+                                面又有一个非门，
+                                 有意义吗？
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                  72
+       位级多路选择器
+
+s          Bit MUX
+                                 HCL Expression
+
+                            bool out = (s&&a)||(!s&&b)
+b
+                      out
+
+a
+
+
+
+
+    • 控制信号s
+    • 数据信号a and b
+    • 当s = 1时输出a，当s = 0时输出b
+            算术逻辑单元Arithmetic Logic Unit
+
+        0                   1                  2                      3
+
+Y   A               Y   A              Y   A                  Y   A
+        A                   A                  A                      A
+        L     X+Y           L    X-Y           L        X&Y           L        X^Y
+        U                   U                  U                      U
+X   B        OF     X   B       OF     X   B       OF         X   B       OF
+             ZF                 ZF                 ZF                     ZF
+             CF                 CF                 CF                     CF
+
+
+
+    ➢组合逻辑
+            ✓ 持续响应输入
+    ➢控制信号选择要计算的函数
+            ✓ 对应于4种算术/逻辑运算
+    ➢也计算条件码的值
+            完整的寄存器组
+
+
+
+
+      Clk
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   75
+           什么是译码器
+组合逻辑电路，主要用于将输入的二进制代码“翻译”为特定的输出信号。
+•多对多转换：通常具有 n 个输入端和 2n 个输出端。
+•唯一性激活：在任何时刻，输入的二进制组合，只有一个对应的输出端会被激活。
+•关键应用：广泛用于指令译码（指令操作码）、存储器寻址（片选信号生成）。
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季     76
+           集成电路是这样复杂起来的
+                          集成电路是这样的…
+
+                                摩尔定律：芯片可容纳的晶体管数目大约每
+                                经过18个月便会增加一倍：2021年达到的
+                                规模一块芯片4.6万亿颗晶体管
+
+
+
+ 疑问：为什
+ 么需要这么
+ 多晶体管？
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季     从沙子到芯片-中芯国际       77
+           硬件体系结构
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   78
+            添加流水线寄存器
+        取指                    译码                                   执行             访存        写回
+
+
+
+
+                    Instruction Word
+  Instruction       32
+   Memory                 5
+                           rd rt
+                                  5
+      Address
+                           1          0   rs rt
+                              5           5     5
+
+                               Rw         Ra Rb busA
+                   busW                                   32
+ PC
+                           RegFile
+                                                                         ALU
+       32                                                                                   0
+                     32
+                           32-bit×32                 busB
+                                                         32    0
+                                                                    32
+                                                                               WrEn   Adr
+                                               Extende
+                                                                         32
+       PC update                                                    Data In      Data 32 1
+                                                               1
+                          imm16           16      r       32
+                                                                                Memory
+
+
+➢ 这不同阶段所用到的硬件资源基本上是相互独立的
+➢ 拆分并增加级间寄存器，保存前一个阶段要向后一个阶段传送的所有的信息
+➢ 从“输入变输出就变”的组合逻辑，变为时钟驱动的时序逻辑
+陈云霁 & 李玲 & 李威 et al 2020年春季                                                                     79
+                LW 指令的执行过程
+   取指周期：IR←MEM[PC]                              译码周期：A ←RF[rs] B ←RF [rt]
+        PC ←PC+4                                     C←PC +SignExt( imm)<<2
+   执行周期：C
+     写入PC的指令地址
+               ←A+SE( imm) 访存周期：DR←MEM[C]
+                       WritePC
+
+                                                                                                                      PCsrc
+
+   写回周期：RF[rt]←DR
+                       IODR
+
+                       WriteMEM         控制部件                                          ALUsrcB
+
+                       WriteIR                                                                          ALUop   确定分支指令
+                                       MEMtoREG    SE                                                            是否转移的
+                                                                      WriteREG        ALUsrcA
+                                                                                                                 条件信号Z
+                                  op                          REGds
+                                        func                                                                                  2
+                                                                       左移2位
+                                        target                                                                                0
+                                                                             PC[31..28]
+                                                                                                0
+                                                                                                                              1
+                                  指                                               A
+                                  令      rs                                       寄
+                                                                                                1   A       Z
+
+                                  内                               N1 寄 Q1         存
+                                                                                                        A
+                                         rt                                       器
+                                  容                                  存                                  L         结
+                         IR                                       N2 器                                  U
+                                                                                                                  果
+                                                          0
+                                         rd                          堆 Q2         B       4         B       R
+                                                                                                                  寄
+                                                          1       ND              寄             1                 存
+                 存                                                 DI             存                               器
+                                                                                                0
+     PC     0
+                                               1                                  器                               C
+                A储 D     DR                                                                     2
+            1
+                                               0                                                3
+                 器
+                                                               扩展           左移2位
+                                              Immediate
+    Clock
+
+
+陈云霁 & 李玲 & 李威 et al        2020年春季                                                                                            80
+           流水线处理器性能分析
+
+      时间（ps） 0        200        400        600        800        1000        1200        1400        1600   1800        2000        2200        2400
+
+
+
+
+                                             单周期处理器（时钟周期1000ps）
+lw $1,100($0)    IF         ID         EX     MEM            WB
+
+lw $2,100($0)                     1000ps                                 IF          ID          EX      MEM        WB
+
+lw $3,100($0)                                                                               1000ps                              IF          ID
+
+                                                                                                                                        1000ps
+
+
+
+                                             流水线处理器（时钟周期200ps）
+lw $1,100($0)    IF         ID         EX     MEM            WB
+
+lw $2,100($0) 200ps         IF         ID         EX     MEM             WB
+
+lw $3,100($0)          200ps           IF         ID         EX      MEM             WB
+
+
+                                  200ps 200ps 200ps 200ps 200ps
+
+
+陈云霁 & 李玲 & 李威 et al              2020年春季                                                                                                                81
+           硬件体系结构
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   82
+           什么是AI芯片
+ ➢ DSA：特定领域的体系结构，通常被称为加速器，因为与在通用 CPU 上执
+   行整个应用程序相比，它们可以加速某些应用程序。
+
+ ➢ 好处：DSA 可以实现更好的性能，因为它们更贴近应用的实际需求；DSA
+   例子，包括图形加速单元（即GPU），用于深度学习的神经网络处理器
+   （NPU/TPU），以及软件定义处理器（SDN）。
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季         83
+           芯片场景
+从2017年开始，苹果、华为海思、高通、联发科等主要芯片厂商相继发布支持
+AI加速功能的新一代芯片，AI芯片逐渐向中端产品渗透。
+AI 应用和 AI 部署也将会呈现更多的结合性态。
+
+
+  AI 计算中心               自动驾驶    安防应用   IOT AI应用
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                 84
+           芯片场景
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   85
+           异构系统
+
+
+
+
+• 计算从单核的串行走向多核的并
+  行；又进一步从同构并行走向异
+  构并行。
+• 计算需要进一步从异构并行走向
+  超异构并行。异构计算是 CPU +
+  XPU 的两个层次的处理器类型，
+  而超异构计算则是 CPU + GPU
+  + DSA 三个层次的处理器类型。
+陈云霁 & 李玲 & 李威 et al   2020年春季   86
+           提纲
+
+    • 从通用处理器到智能加速器的演变
+    • 从向量到GPU的发展
+    • AI芯片设计
+        • 计算
+        • 存储
+        • 互联
+
+    • 性能指标
+    • 未来展望
+陈云霁 & 李玲 & 李威 et al   2020年春季   87
+            真实的处理器例子
+                                2.4%
+
+                 5% × 8 = 39%
+
+
+
+
+ 用于运算的芯片面积不到1%！
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季          8888
+           AI芯片样例
+ • TPU（Google，2016）
+ • DOJO （特斯拉, 2019)
+ • Volta GPU（NVIDIA，2017）
+ • 昇腾 NPU （华为, 2018）
+ • DianNao (寒武纪，2016)
+ • 天数
+ • 曙光
+ • 摩尔线程
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   8989
+            SIMD
+ • 来源于Flynn分类法（1972）
+      单指令流、单数据流（SISD）             多指令流、单数据流（MISD）
+             数据                          数据
+
+                                    指令      PE
+            指令        PE
+                                    指令      PE
+
+      单指令流、多数据流（SIMD）             多指令流、多数据流（MIMD）
+                                             数据
+                      数据
+                                指令       PE PE PE PE
+
+       指令    PE PE PE PE
+                                指令       PE PE PE PE
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                          9090
+           向量化执行
+
+
+
+
+                        Source: http://dlsys.cs.washington.edu/
+陈云霁 & 李玲 & 李威 et al   2020年春季                                     9191
+           通用处理器结构
+ 分支预测：未确定跳转方向时，按猜测方向投机执行
+     • 预测正确时：减少等待时间，提高了流水线效率
+     • 预测错误时：不予提交，撤销错误执行的指令
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   9292
+           向量处理器结构
+可以增加向量/标量数据交换通路，方便控制
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   9393
+           智能加速结构
+
+    添加矩阵指令的控制单元
+    • 矩阵指令在提交队列中，与标量/访存指令同步
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   9494
+           深度学习处理器（DLP）
+ • 基本运算单元从向量运算扩展到矩阵运算
+                 运算单元：1                         运算单元：n2
+          标量通用处理器数据通路：2                  深度学习处理器数据通路：3n
+                 运算                       片内存储
+ 控               单元             控
+ 制                              制
+ 单                              单   运算   运算   运算   运算
+ 元                              元
+               片内存储                 单元   单元   单元   单元
+                                    运算   运算   运算   运算   片
+                 运算单元：n             单元   单元   单元   单元   内
+           向量处理器 数据通路：2n            运算   运算   运算   运算   存
+                                    单元   单元   单元   单元   储
+        运算    运算      运算   运算
+ 控      单元    单元      单元   单元       运算   运算   运算   运算
+ 制                                  单元   单元   单元   单元
+ 单
+ 元
+               片内存储
+                                          片内存储
+
+
+      深度学习处理器在相同带宽下，提供更高运算能力
+陈云霁 & 李玲 & 李威 et al   2020年春季                           9595
+           总体架构
+
+
+        • 计算
+
+
+
+        • 访存
+
+
+
+        • 通信
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   96 96
+           矩阵运算单元
+ • 扩大规模
+                            矩阵乘矩阵单元
+
+                      激活值
+
+           内积          内积       内积    内积
+
+
+           内积          内积       内积    内积
+                                           输
+                                           出
+  权        内积          内积       内积    内积
+  值
+
+           内积          内积       内积    内积
+
+                                      计算-I/O比例 = 112:48 = 1:0.4
+陈云霁 & 李玲 & 李威 et al   2020年春季                             97 97
+           脉动阵列机
+              𝑎 𝑏   𝑣           𝑦   𝑎𝑣 + 𝑏𝑥   𝑎𝑦 + 𝑏𝑧
+                  ×               =
+    如何完成矩阵运算？𝑐 𝑑 𝑥              𝑧   𝑐𝑣 + 𝑑𝑥   𝑐𝑦 + 𝑑𝑧
+             𝑣 𝑦
+             𝑥 𝑧
+            输入（权值）
+
+
+
+                输
+                入
+          𝑎   𝑏 （                    输 𝑎𝑣 + 𝑏𝑥    𝑎𝑦 + 𝑏𝑧
+                激                    出 𝑐𝑣 + 𝑑𝑥
+          𝑐   𝑑 活                                 𝑐𝑦 + 𝑑𝑧
+                值
+                ）
+
+
+
+                                         计算-I/O比例 = 1:0.7
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                           98 98
+           池化/均一化
+   • 支持AvgPool、MaxPool 、BatchNorm
+                 𝛾𝑥0 + 𝛽            𝛾𝑥1 + 𝛽        𝛾𝑥2 + 𝛽         𝛾𝑥3 + 𝛽
+
+
+            𝛾          ×        𝛾         ×    𝛾      ×        𝛾     ×
+
+
+                      +/max           +/max          +/max           +/max
+
+                𝛽ൗ                  𝛽ൗ             𝛽ൗ              𝛽ൗ
+                  𝛾                   𝛾              𝛾               𝛾
+
+                A A
+                MUX                 A A
+                                    MUX            A A
+                                                   MUX             A A
+                                                                   MUX
+
+
+                      0               0              0               0
+                           𝑥0             𝑥1              𝑥2             𝑥3
+陈云霁 & 李玲 & 李威 et al       2020年春季                                             99 99
+           前缀计算
+    • 实现很简单。有高效的方式吗？
+                  𝑦0    𝑦1   𝑦2   𝑦3   𝑦4   𝑦5   𝑦6   𝑦7
+                                                           首、尾线直通，
+                             ⊙         ⊙         ⊙
+                                                           中间每两线接入𝑃2
+
+
+        𝑃8                                            𝑃4    偶数线直通，
+                                                            奇数线接入
+                                                            𝑃𝑛/2
+
+
+                        ⊙         ⊙         ⊙         ⊙
+                                                            每两线接入𝑃2
+
+                  𝑥0    𝑥1   𝑥2   𝑥3   𝑥4   𝑥5   𝑥6   𝑥7
+
+
+陈云霁 & 李玲 & 李威 et al    2020年春季                                       100
+                                                                   100
+           访存
+ • 容量失效：循环访问数据超过缓存容量，LRU缓存失效
+                                 缓存容量32字
+       4×4方阵      5×5方阵         6×6方阵  7×7方阵   8×8方阵
+
+
+
+
+         高效           高效        失效      失效      失效
+
+  访问放大：逐字访问不命中时，缓存以行为单位替换
+
+                           8×8方阵               9×9方阵
+  缓存行4字
+  缓存容量32字                  缓存访问量 64字           缓存访问量 81字
+                           内存访问量 64字           内存访问量 324字
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                          101101
+           访存优化
+ • 分块（tiling）：将运算分解至固定尺寸的区块处理
+                           C = AB                   C = AB
+        不分块：                        分为3×3区块：
+                      A                        A
+       三重循环                         六重循环：
+                                    • 三重循环遍历
+   B 矩阵发生容量失效B                        各个分块   B
+                                    • 分块内正常运
+                                      算仍需三重
+                      C             避免了前述各项 C
+                                    缓存问题
+                                    程序更复杂
+                          命中率56%                   命中率78%
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                                  102
+                                                             102
+           直接内存访问（DMA）
+    如何实现“1条load指令装载一整块图像”？
+    • 处理器控制：
+       load r                   load g         load b
+
+
+
+
+    • DMA控制：
+
+                                    load r          load g
+  load r~b
+               DMA         计算..      DMA     计算..    DMA
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                           103 103
+           DMAC的基本工作步骤
+                  1、CPU设置DMAC内部配置寄存器
+   以使用独立DMAC进行
+   外设到内存的传送为例     2、DMAC处于空闲等待状态
+                  3、I/O接口向DMAC发出DMA传送申请
+                  4、DMAC响应I/O接口的申请
+       CPU    M   5、DMAC向I/O接口发起总线读传输
+                  6、DMAC向存储器发起总线写传输
+                  7、重复5~6直到本次DMA传送完成
+                  8、返回2，等待下一次DMA传送申请
+              M
+       DMAC
+              S   S   存储器
+                                注 ： 通 常 ， DMA 传 输
+                                完成后，DMAC会通过
+M: 主模块接口
+                  S I/O接口       中断信号通知CPU
+S: 从模块接口
+
+
+  • CPU设置DMAC内部配置寄存器，一般包括：
+      ① 源地址的初始值及传送时的地址增减方式
+      ② 目的地址的初始值及传送时的地址增减方式
+      ③ 待传送数据的长度
+陈云霁 & 李玲 & 李威 et al 2020年春季                         104
+           分离式便笺存储器
+• 按数据划分                                        输出
+                                               神经元
+   • 神经元/权值
+                                                权重        DMA
+   • 输入神经元/输出神经元/权值
+                                               输入
+                                               神经元
+
+• 按功能单元划分
+   • 向量/标量
+                                     矩阵
+   • 矩阵/向量/标量                             向量         标量
+                                                          DMA
+
+• 按处理阶段划分
+   • 输入数据/累加器                   输入         累加             DMA
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                                   105
+           AI 芯片部署方式：云、边、端
+
+ 1                              2
+
+
+
+
+                      3
+
+
+
+
+                                    5
+     4
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季           106
+          实验：大模型辅助的图形化异构处理器设计
+• 图形编码与开发板实践双轮驱动
+• 图形化设计
+  •解决硬件描述语言学习难度大的问题
+  •解决大模型直接生成代码缺乏思考的问题
+• 开发板实践
+ •嵌入式开发板创新智能应用：养老、教育、医疗等领域
+ •基于华为昇腾310，熟悉国产硬件和生态
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   107
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   108
+           为什么需要编程框架？
+
+
+
+
+有必要将算法中的常用操作封装成组件提供给程序员，以提高深度学习算法开
+               发效率
+
+
+
+
+       算法理论复杂                   代码实现工作量大
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季              109
+           编程框架
+ • 将算法中的基本操作封装成一系列组件，帮助研究人
+   员更简单的实现已有算法，或设计新的算法。这一系
+   列深度学习组件，即构成一套深度学习框架
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   110110
+           编程框架
+ • 将深度学习算法中的基本操作封装成一系列组件，帮
+   助研究人员更简单的实现已有算法，或设计新的算法。
+   这一系列深度学习组件，即构成一套深度学习框架
+
+  以TensorFlow为例
+
+      1、构建数据流图，描述计算过程
+
+      2、执行数据流图，获得计算结果
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   111
+              AI系统技术栈
+应用算法                  视觉、自然语言处理、语音语义：CNN、RNN、LSTM、GAN、Transformer、
+              领域算法
+（Algorithm）                    Stable Diffusion、Reinforce Learning
+             集成开发环境            编程环境：VS Code, Jupyter Notebook, PyCharm
+开发编程
+（Development）编程语言          与主流语言集成： PyTorch and Tensorflow etc. inside Python
+                      中间表达（IR）、前       编译优化          图优化与图执行
+                                                                      推理优化
+                      端 API            （Compilation） 调度
+框架
+                  AI系统技术栈
+             AI框架、推
+（Frameworks） 理引擎
+                      基本数据结构：张量
+                      （Tensor）
+                      基本计算单元：有向
+                                       词法、语法、语
+                                       义分析
+                                                      计算图动静统一
+                                                                      常量折叠&冗余
+                                                                      节点消除等
+                                                                      模型压缩：蒸馏
+                                       自动微分           计算图控制流
+                      无环图（DAG）                                        剪枝与量化
+                                       数据格式布局转
+                      前端优化                            内存分配            公共表达式消除
+                                       换
+                                       代码优化、代码
+                      后端优化                            算子循环优化          令和内存优化
+              编程编译                     生成
+异构与编译
+（Compiler）             编程模型：CUDA/Ascend C/Band C      AI编译器：TVM、XLA、TC
+
+                                              LLVM/GCC
+
+              底层通信                HCCL/NCCL、通信原语、集合通信算法
+体系结构
+               底层硬件               I芯片：CPU/GPU/AISC/FPGA/TPU/NPU
+（Architecture）
+           编译流程
+  典型的编译程序具有7个逻辑部分
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   113
+            编译器与解释器
+          Interpreter 解释器          Compiler 编译器
+          1、创建代码                   1、创建代码
+                                   2、将解析或分析所有语言语句的正确性
+程序步骤          没有文件链接或机器代码生成        3、将把源代码转换为机器码
+                                   4、链接到可运行程序
+          2、源语句在执行过程中逐行执行          5、运行程序
+Input     每次读取一行                   整个程序
+Output    不产生任何的中间代码               生成中间目标代码
+工作机制      编译和执行同时进行                编译在执行之前完成
+存储        不保存任何机器代码                存储编译后的机器代码在机器上
+          程序执行是解释过程的一部分，因此         程序执行与编译是分开的，它只在整个输出
+执行
+          是逐行执行的                   程序编译后执行
+          不生成输出程序，所以他们在每次执         生成可以独立于原始程序运行的输出程序(以
+生成程序
+          行过程中都要评估源程序              exe的形式)
+修改        直接修改就可运行                 需要修改源代码，重新编译
+运行速度      慢                        快
+内存        较少内存，不创建中间对象代码           内存需求更多的是由于目标代码的创建
+          解释器读取一条语句并显示错误。你         编译器在编译时显示所有错误和警告。因此，
+错误
+          必须纠正错误才能解释下一行            不修正错误就不能运行程序
+陈云霁 & 李玲PHP,
+编程语言     & 李威 et al Python,
+             Perl,    2020年春季
+                            Ruby   C, C++, C#, Scala,   Java
+                                                               114
+           从高级语言源代码到可执行程序文件
+          高级语言 helloworld.c
+           源程序
+                                Pre-processor   编译过程
+           helloworld.i         预处理器(#开头）
+          高级语言
+           程序
+                                Compiler 编译器
+           helloworld.s
+          汇编语言
+          中间代码
+                                Assembler 汇编器     printf.o
+反汇编
+         helloworld.o
+        目标文件                                     库文件
+       （机器语言）                                   （机器语言）
+                                 Linker 链接器
+         helloworld.exe
+        可执行文件
+                                        汇编过程
+       （机器语言）
+陈云霁 & 李玲 & 李威 et al   2020年春季                          115
+           GCC vs LLVM
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   116
+           LLVM 整体架构
+
+
+
+
+                                ARM
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   117
+   中间表示IR
+• 中间表示(IR)，是编译器用于表示源代码的数据结构或代码，
+  是程序编译过程中介于源语言和目标语言之间的程序表示
+• 中间表示既能面向多个前端，表达多种源程序语言，又能
+  对接多个后端，连接不同目标机器
+• 一种平台无关的低级编程语言，用于连接前端和后端
+           LLVM中间优化层
+ • Pass(遍）
+     • LLVM支持全生命周期包括编译时（compile-time）、
+       链接时（link-time）、运行时（run-time）及离线
+       （offline）优化
+     • 优化器（opt）是一个模块化的LLVM IR分析器和优
+       化器，包含一系列编译“遍”，对LLVM IR程序进行
+       分析和变换
+     • 遍管理器（PassManager）负责组织遍的执行顺序，
+       用户也可以通过编译选项控制遍的执行
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季            119
+           优化Pass
+   • 目标无关优化，每个 pass 执行的修改，理解 IR 如何在
+     pass 流水线中被修改，各个 pass 是以什么顺序被执行。
+   • 优化通常由分析 Pass 和转换 Pass 组成。
+       • 分析 Pass：负责发掘性质和优化机会；
+       • 转换 Pass：生成必需的数据结构，后续为后者所用
+
+   • Pass举例
+       • -adce: Aggressive Dead Code Elimination死代码消除。
+       • -constmerge: Merge Duplicate Global Constants将重复的全局常量
+         合并到一个共享的常量中。
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                                    120
+           LLVM后端
+    • 后端由一套分析和转换 Pass 组成，它们的任务
+      是代码生成，即将LLVM IR变换为目标代码（或
+      者汇编）
+                      A ST           IR           IR           IR           DAG
+                                                                                             M achine
+C         Front-End          Pa ss        Pa ss        Pa ss        Pa ss         Back-End
+                                                                                               C ode
+
+
+
+
+陈云霁 & 李玲 & 李威 et al    2020年春季                                                                121
+           为什么需要AI编译
+ • 编程框架中早期优化方式存在的问题
+        框架维护成本高：对于新硬件和新算子，都需要程序员手
+         动进行算子开发，开发数量呈平方级增长
+
+        性能受限：性能受限于程序员人工优化算子的能力，且没
+         有充分探索计算图的优化空间
+
+
+  在编程框架中引入AI编译机制
+      减少人工开发工作量：可针对不同硬件平台进行代码生成
+      便于性能优化：（图层级）对完整的计算图进行静态分析和全
+       局优化；（算子层级）利用自动调优技术优化算子，最大限度
+       提升硬件利用率
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季        122
+                                   122
+       AI编译器
+• 前端：基于Python的DSL语言
+  • 如PyTorch, TensorFlow等        计算图IR（DAG)
+                                                   x    *
+                                                            +   y
+                                                  w     b
+
+• 后端：AI加速器
+  • 如GPU, CPU, FPGA, TPU, IPU等
+
+• 中间表达：计算图、算子表达
+                                              算子表达式IR
+  式
+  • 如DAG, TVM IR
+
+• 优化过程：                                       计算调度优化
+
+  • 计算图优化、内存优化、内核优
+    化、调度优化
+内核优化与内核生成
+
+
+
+                   x   *
+      计算图IR（DAG)           +   y
+                   w   b
+
+
+
+
+ 问题: 每个后端平台针对每个算子都需要单独实现至少一个内核
+   考虑：编程模型、数据排布、线程模型、缓存大小等等
+     自动化算子优化
+• 算子迭代更新快
+• 如何应对AI领域算子迭代更新快？如BN-> Layer BN-
+  >Group BN
+• 如何解决同一算子在多平台移植后一致性问题？
+• 如何面对算子组合爆炸问题？如参数多样，融合大算子等
+
+
+1）AI 编译器中正在尝试融合机器学习方法         Auto Tuning
+
+2）算子计算加速正在用编译技术来解决            Polyhedral
+         调度优化
+
+• 循环展开（Loop Unrolling）
+• 循环分块（loop tiling）
+• 循环重排（loop Reorder）        循环优化（Loop Optimization）
+• 循环融合（loop Fusion）
+• 循环拆分（loop Split）
+• 向量化 （Vector）
+• 张量化（Tensor）               指令优化（Instr Optimization）
+• 访存延迟（ Latency Hiding ）
+                            存储优化（Memory Optimization）
+• 存储分配（Memory Allocation）
+   自动调优
+• 每一种优化都可能产生出多个内核代码的实现
+• 利用自动机器学习（Auto Tuner）在给定时间内搜
+  索出最高效的实现
+
+
+
+
+                        Source:
+                        http://dlsys.cs.washington.edu/
+         大模型辅助的国产硬件算子优化
+ ✓大模型辅助的算子优化分析
+   • 算子调度优化
+   • 算子内核优化
+ ✓全面拥抱AI，课程没有不及格学生
+ ✓深入认识AI，前10名都有AI没有发现的优化点
+
+
+
+
+                                128
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季    128
+           赛教融合-校内赛
+       竞赛启动                     竞赛组织              竞赛结果
+➢ 信息学院、高瓴人工智能学院          ➢ 搭建校内竞赛评测和排名打榜平台   ➢ 104人报名参赛，作为课程
+  联合明理书院主办                 ，支持国产加速器的评测         结课期末考核，全部完赛
+➢ 计算机协会、信息技术与管理          ➢ 搭建校内先导杯网站，包括重要信   ➢ 一等奖2名（艰难胜出，最
+  国家级实验教学示范中心承办            息的公告，问题讨论论坛和练习题     后8小时连夜调试）二等奖
+➢ 教务处副处长、国家人工智能            库                   4人，三等奖6人，优秀奖
+  创新平台主任，书院院长            ➢ 组织赛题讲解，基本工具培训，竞     15人
+➢ 院长，教学院长，系主任              赛线上线下讨论           ➢ 书院院长和曙光领导颁奖
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                              129
+           开源平台XPUOJ
+
+ 刷题       首页 / 题库     →     搜索筛选    →     阅读题面    →    提交代码     →   查看评测或讨论
+
+
+  比赛       比赛列表       →     比赛详情    →     选择题目    →    提交代码     →   查看排行或讨论
+
+                                                                    确认提交或自动提
+ Agent     打开题目       →   连接本地 Agent →   读取题面信息   →   生成或修改代码   →
+                                                                       交
+
+
+
+
+                                                                              2/3
+
+
+
+
+         • （https://xpuoj.com.cn/）
+陈云霁 & 李玲 & 李威 et al       2020年春季                                             130
+    FlagOS实验和竞赛
+智源专家进校园赋能科创成长    斩获FlagOS全球挑战赛天津站桂冠
+
+                FlagOS 24小时算子赏金挑战赛影响力辐射全球，
+                赛事共集结50名顶尖选手，覆盖中国、印尼、埃塞
+                俄比亚、印度、意大利、瑞典6个国家，汇聚巴黎
+                文理研究大学、北京大学、浙江大学、中国科学院
+                大学等14所国内外知名高校。
+           竞赛和教改获奖
+➢ 全国大学生系统能力大赛
+  • 2025教师获得“先导智算”专项项目资助
+  • 2025年学生获全国第一
+  • 2026年3支队进决赛，进入决赛队伍最多高校之一
+➢ 2026年FlagOS算子赏金赛天津站第一，全球第二
+➢ 第七届中国计算机教育大会计算机类教学和实验案例
+  一等奖1项，二等奖1项
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   132
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   133
+           计算机体系结构
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   134
+   为什么需要并行计算
+• 节省时间
+• 使用更多的资源来减少运行时间，进而节约成本
+• 更短的运行时间可以执行更多次，调程序更多次
+
+
+
+
+                          135
+           大模型需要更长的训练时间
+
+        老板：你上个月做了什么？
+
+        你：把模型训练了一个 epoch。
+
+         老板：嗯，好吧，那你下个月的计划是什
+         么？
+
+         你：再……再把模型训练一个 epoch？
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   136
+           分布式并行
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   137
+并行技术的发展
+   提纲
+➢ 指令级并行
+ • 记分牌
+ • Tomasulo 算法
+ • ROB：重排序缓冲区
+➢ 线程级并行
+➢ 数据级并行
+ • 向量处理器
+ • GPGPU
+
+
+                 139
+   相关性与冒险
+• 相关性：
+ – 反映原始程序顺序（会影响执行结果）
+ – 表示可能发生冒险
+ – 决定并行度
+
+
+• 相关性是程序的属性
+ – 在设计良好的流水线中不一定导致冒险
+
+
+• 冒险是硬件组织结构的属性
+ – 由指令重排、重叠执行等引起
+
+
+• 三类相关性：
+ – 数据、名称和控制
+                       140
+             记分牌示例
+指令状态                                                                 寄存器结果状态
+                    j       k    IS        RO        EX      WR
+1. LD         F6  34       R2                                        F0
+2. LD         F2  45       R3                                        F2
+3. MUL.D      F0  F2       F4                                        F4
+4. SUB.D      F8  F6       F2                                        F6
+5. DIV. D     F10 F0       F6                                        F8
+6. ADD.D      F6  F8       F2                                        F10
+
+Functio 功能单元 Status                   Dest.     S1    S2   j 对应 FU k 对应 FU Fj 就绪 Fk 就绪
+                                                                              ？    ？
+  Time       Name       Busy    Op    Fi        Fj    Fk      Qj      Qk      Rj   Rk
+            Integer   No
+            Mult1     No
+            Mult2     No
+            Add       No
+            Divide    No
+     假设：Load（2 周期）、Add（2 周期）、Mult（10 周期）、Div（40 周期）
+                                                                                  141
+      Tomasulo 算法的基本结构
+
+
+
+
+    CDB:
+  数据 + 源标签
+（“来自何处”总线）
+
+
+
+
+                         142
+            Tomasulo 示例
+指令状态                                                               寄存器结果
+                             j     k     IS       EX      WR
+        1. LD       F6     34     R2                                     F0
+        2. LD       F2     45     R3          Ex ecution start           F2
+        3. MUL.D    F0     F2     F4                                     F4
+        4. SUB.D    F8     F6     F2                                     F6
+        5. DIV. D   F10    F0     F6                                     F8
+        6. ADD.D    F6     F8     F2                                     F10
+
+保留站
+ Time      Name     Busy     Op    Vj   Vk       Qj     Qk                Busy   Addr.
+           Add1     No                                           Load1    No
+           Add2     No                                           Load2    No
+           Add3     No                                           Load3    No
+           Mult1    No                                                     加载缓冲区
+           Mult2    No
+
+
+        假设：Load（2 周期）、Add（2 周期）、Mult（10 周期）、Div（40 周期）
+                                                                                         143
+     从标量到超标量
+         IF                   IF     IF
+
+        D1                    D1    D1
+
+        D2               D2               D2
+
+         EX              EX               EX
+
+        WB               WB               WB
+
+5 级 i486 标量流水线    5 级 Pentium 超标量流水线：宽度 = 2
+
+• 性能加速比：
+  – 标量：相对于非流水化设计进行衡量
+      • 主要由标量流水线深度决定
+  – 超标量：相对于标量流水线进行衡量
+      • 主要由并行流水线宽度决定
+                                               144
+               “Tomasulo+ROB” 示例
+                                  Instr. Q                       重排序缓冲区
+
+LP: I1   ADD.D   F4   F2    F0                                  Instr.   Dest.     Val.
+                                                    head                                        FP 寄存器
+    I2   MUL.D   F8   F4    F2           I5                 0
+                                                                                                  Val.   Src
+    I3   ADD.D   F6   F8    F6           I4                 1
+    I4   SUB.D   F8   F2    F0                                                             F0     0.0
+                                         I3                 2
+    I5   SUB.I   …                                                                         F2     2.0
+                                         I2                 3
+    I6   BNEZ …                                                                            F4     4.0
+                                         I1                 4
+                                                                                           F6     6.0
+                                                            5
+                                                                                           F8     8.0
+                                                            6
+
+
+
+
+                       #1        instr        des      s1       s2       #1      instr    des     s1     s2
+                       #2                                                #2
+                       #3
+         ALU                                                                                 FP
+                                              FP 加法                                       Multipliers
+                                              器
+                                                                                                               145
+   两类多处理器
+
+  集中式共享内存
+  • 多个处理器共享同一物理内存
+  • 统一内存访问（UMA）
+
+  分布式共享内存
+  • 每个处理器拥有物理上分离的内存
+  • 非统一内存访问（NUMA）
+
+
+
+• 按内存组织方式分类
+• 共享内存意味着地址空间是共享的
+
+                      146
+   集中式共享内存
+
+• 通常称为对称多处理器（SMP）
+ – 处理器访问任意内存位置的时间相同
+
+
+    P1          P1            Pn
+
+   Cache       Cache         Cache
+
+
+
+
+           Memory      I/O
+
+
+                                     147
+   分布式共享内存（DSM）
+       Processor          Processor            Processor
+
+           $                  $                    $
+  Memory       I/O   Memory       I/O     Memory       I/O
+
+
+                     互连网络
+
+
+  Memory       I/O   Memory       I/O     Memory       I/O
+           $                  $                    $
+
+       Processor          Processor            Processor
+
+
+
+• 两大优势                            • 主要缺点
+ – 可扩展的内存带宽                             – 通信复杂
+ – 低延迟本地访问                              – 节点间延迟更高
+                                                             148
+   CMP 与 SMT
+• CMP：片上多处理
+ – 多个物理核心，各自拥有独立资源
+ – L1 缓存、TLB、PC、GPR 独立；L2 缓存可共享
+
+
+• SMT：同时多线程
+ – 多个线程共享全部处理器资源
+ – 缓存和 TLB 共享，PC 和 GPR 独立
+
+
+
+
+                                  149
+   提纲
+➢ 指令级并行
+ • 记分牌算法
+ • Tomasulo 算法
+ • ROB：重排序缓冲区
+➢ 线程级并行
+➢ 数据级并行
+ • 向量处理器
+ • GPGPU
+
+
+                 150
+           分布式训练
+
+
+                           2. 流水线并行:
+                           • 模型按层划分
+                           • 一份模型
+1. 数据并行:                   • 利用率低，内存开销低，通讯开销适中
+• 划分数据
+• 模型N 个副本
+• 利用率高，内存开销高，通讯开销低
+
+• 典型方法: ZeRO 1/2/3, FSDP
+                           3. 张量并行:
+•   Infiniband             • 按照张量粒度划分模型
+    :• EDR:    100Gb/s     • 一份模型
+     • HDR: 200Gb/s        • 利用率高，内存开销低，通信开销高
+     • NDR: 400Gb/s
+
+
+
+                             图源： CMU 15-849 [Jia 2022]
+FlagScale
+           通信
+ 几种任务划分模式
+  数据并行
+
+
+
+
+  模型并行
+     • 算子并行                        流水线并行
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季               153
+           全局归约
+    通过一个环（ring），就可以高效实现全局归约
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   154
+           通信
+    混合使用几种任务划分模式
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   155
+           通信墙问题
+ • AI算力（存储和带宽）跟大模型Scaling law相背离
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季      156
+           提纲
+          01 课程建设背景
+          02 国内外课程情况
+          03 AI技术栈和课程建设思路
+          04 硬件体系结构与 AI 芯片
+          05 AI 编译和算子优化
+          06 并行计算和分布式训练
+          07 课程思政
+陈云霁 & 李玲 & 李威 et al   2020年春季   157
+           课程思政
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   158
+          中国芯
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   159
+           AI芯片产业全景图
+                                basicmi.github.io/AI-chip
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季                               160
+          AI芯片
+• 华为、寒武纪、海光
+
+
+
+
+• 沐兮、昆仑芯、摩尔线程，天数等
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   161
+           国产AI生态
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   162
+           FlagOS， 统一AI系统软件栈
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   163
+           参考资料
+    • 中国科学院大学，《智能计算系统》，陈云霁等
+    • 哈尔滨工业大学，《AI系统》，苏统华等
+    • 北京大学，《计算机组成原理》，陆俊林
+    • 上海交通大学，《计算机体系结构》，李超
+    • 计算机教指委，《智能时代计算机专业系统能力
+      培养纲要》，2021
+
+
+
+
+陈云霁 & 李玲 & 李威 et al   2020年春季   164
+                                站在当下
+
+         AI需求正在驱动教育的一场变革
+
+                         加入这场变革
+
+                         我们还在路上
+
+                         我们携手并肩
+
+陈云霁 & 李玲 & 李威 et al   2020年春季          165
+

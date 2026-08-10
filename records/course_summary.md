@@ -1,6 +1,6 @@
 # 课程资料总结
 
-更新时间：2026-08-08
+更新时间：2026-08-10
 
 ## 一、课程与参训信息
 
@@ -49,7 +49,7 @@ Day 1 的核心任务是补全 Vector Add kernel；Day 2 的核心任务是依�
 2. 集合通信：围绕 Broadcast、Reduce、AllReduce、AllGather、ReduceScatter、AlltoAll，比较树形、环形和 halving-doubling 算法，并把通信量、时延和带宽写成可计算模型。
 3. 性能诊断：先做 Benchmark，再用 Roofline 判断 compute-bound 或 memory-bound，最后用 `ixsmi`、`ixsys`、`ixkn-cli` 找到 kernel 级停顿证据。
 4. Profiler/Debugger：在 Triton/IR 到设备执行之间插入观测算子，分别采集数值摘要、访存地址、完整值和时间线，解决高层语句与底层指令语义难对齐的问题。
-5. 配套 Lab：`modules/05-performance-engineering/labs/performance-analysis/` 已归档，实验产物包括 benchmark、Roofline、诊断结果和最终报告；当前只完成代码与文档审阅，未在 BI-V150 环境运行。
+5. 配套 Lab：`modules/05-performance-engineering/labs/performance-analysis/` 已归档。2026 年 8 月 8 日已在单卡 BI-V150 上验证环境检查、MatMul 冒烟和最小 LoadGen/JSON 链路；完整 Offline/Server、Roofline 图片、平台 profiler 和双卡路径仍待验收。动态证据见 `records/experiments/2026-08-08-flagos-bi-v150-validation.md`。
 
 模块四授课版在原有 AllReduce 比较之后增加了 Broadcast 专题。分析先约定单端口、同构全连接网络和 `α + nβ` 传输模型，再讨论轮数下界、MST/二项树、消息分块流水化及 simultaneous trees。学习时需要区分“启动时延 α 的轮数优化”和“每字节成本 β 的带宽优化”，并根据消息大小选择树、环或流水方案。
 
@@ -70,6 +70,10 @@ Day 1 的核心任务是补全 Vector Add kernel；Day 2 的核心任务是依�
 
 日程封面写“周六”，正文页误写“周五”；2026年8月8日实际为周六。
 
+8 月 10 日补归档王晶教授主讲的 165 页《融合 FlagOS 的智能计算课程建设》。课件从人才目标和“应用驱动、全栈贯通”出发，覆盖课程体系、AI 技术栈、体系结构与 AI 芯片、AI 编译与算子优化、AI 辅助算子调度与内核优化、赛教融合、并行训练、FlagScale、课程思政和 FlagOS。仓库将其定位为跨模块课程总览；五个主模块的代码、推演、环境记录与性能验收仍是技术事实入口。
+
+课件还展示了校内竞赛、OJ Agent 和 FlagOS 赛事案例。104 人报名、全部完赛及赛事名次属于讲者课件报告，本次没有用报名记录、榜单或证书独立核验。第 128 页列出两个算子优化方向，并展示讲者报告的课程结果，但没有给出模型版本、提示词、基线、数据集或测量协议，不能据此采信教学成效或生成性能结论。
+
 ## 三、建议的学习记录模板
 
 每次实验至少记录：
@@ -84,12 +88,12 @@ Day 1 的核心任务是补全 Vector Add kernel；Day 2 的核心任务是依�
 
 ## 四、课件归档状态
 
-截至 2026 年 8 月 8 日，已从微信本地文件缓存归档 26 份唯一 PDF 和 1 份 DOCX，共约 136 MiB，覆盖通知、研修须知、8 月 8 日教学研讨日程、实验资源申请表，以及 8 月 4 日至 7 日已落盘课程材料。课件已按五个教学模块迁入 `materials/`；5 个 Gitee 课程仓库和 FlagPrism 源码已作为普通目录纳入相应模块，详见 `records/code_repository_inventory.md`。
+截至 2026 年 8 月 10 日，已从微信本地文件缓存归档 27 份唯一 PDF（157,507,571 字节，150.21 MiB）和 1 份 DOCX，覆盖通知、研修须知、8 月 8 日教学研讨日程、实验资源申请表，以及 8 月 4 日至 8 日已落盘课程材料。课件已按五个教学模块和专题目录迁入 `materials/`；5 个 Gitee 课程仓库和 FlagPrism 源码已作为普通目录纳入相应模块，详见 `records/code_repository_inventory.md`。
 
 以下内容尚未声称完成：
 
 - 群聊消息的逐条回溯与完整摘要；
-- 8月8日活动结束后的最终增量检查；
+- 8 月 10 日之后群内可能出现的新消息与新文件增量检查；
 - 群文件发布者和每条文件消息时间的逐项映射。
 
 后续应继续在 `source_ledger.md` 中补充发布者、发布时间和对应群消息。
